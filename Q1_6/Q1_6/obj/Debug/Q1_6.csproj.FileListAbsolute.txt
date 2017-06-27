@@ -1,0 +1,5 @@
+D:\Angular\Q1_6\Q1_6\bin\Q1_6.dll
+D:\Angular\Q1_6\Q1_6\bin\Q1_6.pdb
+D:\Angular\Q1_6\Q1_6\obj\Debug\Q1_6.csprojResolveAssemblyReference.cache
+D:\Angular\Q1_6\Q1_6\obj\Debug\Q1_6.dll
+D:\Angular\Q1_6\Q1_6\obj\Debug\Q1_6.pdb

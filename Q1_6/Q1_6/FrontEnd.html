@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body ng-app="myModule">
+
+      <div ng-controller="myController">
+          <br />
+          <br />
+          <br />
+         <h2> Question No.1 </h2>
+          <h3>Employee Details:</h3>
+
+       
+        <table>
+            <thead>
+                <th ng-click="sort();">Name</th>
+                <th ng-click="sort();">Date Of Birth</th>
+                <th ng-click="sort();">Gender</th>
+                <th ng-click="sort();">Salary</th>
+                <th ng-click="sort();">Salary Currency</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="employee in employees | filter: sortName ">
+
+                <td> {{employee.name }}</td>
+                <td>{{employee.dateOfBirth}}</td>
+                <td>{{employee.gender }}</td>
+                <td>{{employee.Salary}}</td>
+                <td>{{employee.Salary}}</td>
+              
+                </tr>
+              
+            </tbody>
+        </table>
+    </div>
+
+      <div ng-controller="myController">
+          <br />
+          <br />
+          <br />
+         <h2> Question No.2 </h2>
+          <h3>Employee Details:</h3>
+
+        <input type="text" placeholder="Search Name" ng-model="filterName"/>
+        <input type="text" placeholder="Search Gender" ng-model="filterGender"/>
+        <input type="checkbox" ng-model="exactMatch">Exact Match</input>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Date Of Birth</th>
+                <th>Gender</th>
+                <th>Salary</th>
+                <th>Salary Currency</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="employee in employees | filter : {name:filterName} | filter : {gender:filterGender}">
+
+                <td> {{employee.name }}</td>
+                <td>{{employee.dateOfBirth}}</td>
+                <td>{{employee.gender }}</td>
+                <td>{{employee.Salary}}</td>
+                <td>{{employee.Salary}}</td>
+              
+                </tr>
+              
+            </tbody>
+        </table>
+    </div>
+    
+      <div ng-controller="myController">
+          <br />
+          <br />
+          <br />
+        <h2> Question No.3 </h2>
+          <h3>Employee Details:</h3>
+
+        <input type="text" placeholder="Search Name or Gender" ng-model="search"/>
+     
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Date Of Birth</th>
+                <th>Gender</th>
+                <th>Salary</th>
+                <th>Salary Currency</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="employee in employees | filter : filterNameGender ">
+
+                <td> {{employee.name }}</td>
+                <td>{{employee.dateOfBirth}}</td>
+                <td>{{employee.gender }}</td>
+                <td>{{employee.Salary}}</td>
+                <td>{{employee.Salary}}</td>
+              
+                </tr>
+              
+            </tbody>
+        </table>
+    </div>
+
+      <div ng-controller="myController">
+          <br />
+          <br />
+          <br />
+        <h2> Question No.4 </h2>
+          <h3>Employee Details:</h3>
+
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Date Of Birth</th>
+                <th>Gender</th>
+                <th>Salary</th>
+                
+            </thead>
+            <tbody>
+                <tr ng-repeat="employee in employees ">
+
+                <td> {{employee.name }}</td>
+                <td>{{employee.dateOfBirth}}</td>
+                <td ng-bind="changeToNumber(employee.gender);">{{employee.gender }}</td>
+                <td>{{employee.Salary}}</td>
+               
+              
+                </tr>
+              
+            </tbody>
+        </table>
+    </div>
+
+      <div ng-controller="myController">
+          <br />
+          <br />
+          <br />
+        <h2> Question No.5 </h2>
+          <h3>Employee Details:</h3>
+
+        <input type="checkbox"  ng-model="showSalary">Show Salary</input>
+     
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Date Of Birth</th>
+                <th>Gender</th>
+                <th ng-show="showSalary">Salary</th>
+                
+            </thead>
+            <tbody>
+                <tr ng-repeat="employee in employees ">
+
+                <td> {{employee.name }}</td>
+                <td>{{employee.dateOfBirth}}</td>
+                <td>{{employee.gender }}</td>
+                <td ng-show="showSalary">{{employee.Salary}}</td>
+              
+                </tr>
+              
+            </tbody>
+        </table>
+    </div>
+
+      <div ng-controller="myController">
+          <br />
+          <br />
+          <br />
+        <h2> Question No.6 </h2>
+          <h3>Employee Details:</h3>
+
+       <input type="checkbox"  ng-click="isChecked();">Mask Salary</input>
+     
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Date Of Birth</th>
+                <th>Gender</th>
+                <th >Salary</th>
+                
+            </thead>
+            <tbody>
+                <tr ng-repeat="employee in employees">
+
+                <td> {{employee.name }}</td>
+                <td>{{employee.dateOfBirth}}</td>
+                <td>{{employee.gender }}</td>
+                <td ng-bind="maskEmpSalary(employee.Salary);" >{{employee.Salary}}</td>
+            
+                </tr>
+              
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
