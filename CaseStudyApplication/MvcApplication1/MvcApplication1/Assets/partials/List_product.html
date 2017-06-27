@@ -1,0 +1,21 @@
+﻿<div class="row" ng-controller="adminController">
+    <h3>Product List</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Unit Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="product in listOfProducts">
+                <td >{{product.sno}}</td>
+                <td >{{product.productid}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.unitprice}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

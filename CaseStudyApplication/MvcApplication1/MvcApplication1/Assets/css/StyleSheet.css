@@ -1,0 +1,16 @@
+﻿body {
+}
+td {
+border: 1px solid black;
+
+}
+
+th {
+border: 1px solid black;
+
+}
+.orange {
+    width:60%;
+    height:400px;
+    background-color:#eea236;
+}

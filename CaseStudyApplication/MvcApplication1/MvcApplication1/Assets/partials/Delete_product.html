@@ -1,0 +1,10 @@
+﻿<div class="row" ng-controller="adminController">
+    <div class="col-lg-12">
+             <label>Select Product ID : </label>
+           <select id="selectProductToDelete" class="form-control">
+              <option ng-repeat="option in listOfProducts" value="{{option.productid}}">{{option.name}}</option>
+           </select>
+            <br />
+            <input type="button" class="form-control  btn btn-warning" value="Delete" ng-click="deleteProduct();"/>
+        </div>
+</div>
