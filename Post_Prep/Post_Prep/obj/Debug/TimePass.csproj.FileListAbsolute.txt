@@ -1,5 +1,0 @@
-D:\Post_Prep\Post_Prep\Post_Prep\bin\Debug\Post_Prep.exe.config
-D:\Post_Prep\Post_Prep\Post_Prep\bin\Debug\Post_Prep.exe
-D:\Post_Prep\Post_Prep\Post_Prep\bin\Debug\Post_Prep.pdb
-D:\Post_Prep\Post_Prep\Post_Prep\obj\Debug\Post_Prep.exe
-D:\Post_Prep\Post_Prep\Post_Prep\obj\Debug\Post_Prep.pdb

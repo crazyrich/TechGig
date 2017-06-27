@@ -1,6 +1,0 @@
-D:\Post_Prep\Post_Prep\Little_Shino_and_Substring_Query\bin\Debug\Little_Shino_and_Substring_Query.exe.config
-D:\Post_Prep\Post_Prep\Little_Shino_and_Substring_Query\bin\Debug\Little_Shino_and_Substring_Query.exe
-D:\Post_Prep\Post_Prep\Little_Shino_and_Substring_Query\bin\Debug\Little_Shino_and_Substring_Query.pdb
-D:\Post_Prep\Post_Prep\Little_Shino_and_Substring_Query\obj\Debug\Little_Shino_and_Substring_Query.exe
-D:\Post_Prep\Post_Prep\Little_Shino_and_Substring_Query\obj\Debug\Little_Shino_and_Substring_Query.pdb
-D:\Post_Prep\Post_Prep\Little_Shino_and_Substring_Query\obj\Debug\Little_Shino_and_Substring_Query.csprojResolveAssemblyReference.cache

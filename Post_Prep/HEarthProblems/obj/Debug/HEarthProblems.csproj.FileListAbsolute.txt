@@ -1,6 +1,0 @@
-D:\Post_Prep\Post_Prep\HEarthProblems\bin\Debug\HEarthProblems.exe.config
-D:\Post_Prep\Post_Prep\HEarthProblems\bin\Debug\HEarthProblems.exe
-D:\Post_Prep\Post_Prep\HEarthProblems\bin\Debug\HEarthProblems.pdb
-D:\Post_Prep\Post_Prep\HEarthProblems\obj\Debug\HEarthProblems.csprojResolveAssemblyReference.cache
-D:\Post_Prep\Post_Prep\HEarthProblems\obj\Debug\HEarthProblems.exe
-D:\Post_Prep\Post_Prep\HEarthProblems\obj\Debug\HEarthProblems.pdb

@@ -1,6 +1,0 @@
-D:\Post_Prep\Post_Prep\PlayWithDictionary\obj\Debug\PlayWithDictionary.csprojResolveAssemblyReference.cache
-D:\Post_Prep\Post_Prep\PlayWithDictionary\bin\Debug\PlayWithDictionary.exe.config
-D:\Post_Prep\Post_Prep\PlayWithDictionary\bin\Debug\PlayWithDictionary.exe
-D:\Post_Prep\Post_Prep\PlayWithDictionary\bin\Debug\PlayWithDictionary.pdb
-D:\Post_Prep\Post_Prep\PlayWithDictionary\obj\Debug\PlayWithDictionary.exe
-D:\Post_Prep\Post_Prep\PlayWithDictionary\obj\Debug\PlayWithDictionary.pdb

@@ -1,5 +1,0 @@
-D:\Post_Prep\Post_Prep\TestResult\bin\Debug\TestResult.exe.config
-D:\Post_Prep\Post_Prep\TestResult\bin\Debug\TestResult.exe
-D:\Post_Prep\Post_Prep\TestResult\bin\Debug\TestResult.pdb
-D:\Post_Prep\Post_Prep\TestResult\obj\Debug\TestResult.exe
-D:\Post_Prep\Post_Prep\TestResult\obj\Debug\TestResult.pdb
