@@ -1,0 +1,6 @@
+D:\Post_Prep\Post_Prep\PlayWithString\bin\Debug\PlayWithString.exe.config
+D:\Post_Prep\Post_Prep\PlayWithString\bin\Debug\PlayWithString.exe
+D:\Post_Prep\Post_Prep\PlayWithString\bin\Debug\PlayWithString.pdb
+D:\Post_Prep\Post_Prep\PlayWithString\obj\Debug\PlayWithString.exe
+D:\Post_Prep\Post_Prep\PlayWithString\obj\Debug\PlayWithString.pdb
+D:\Post_Prep\Post_Prep\PlayWithString\obj\Debug\PlayWithString.csprojResolveAssemblyReference.cache
