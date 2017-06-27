@@ -1,0 +1,149 @@
+﻿<div class="row padLeft" ng-controller="NavigationController">
+    <div ng-controller="dataProgram" id="headerBar">
+
+        <div class="col-xs-12 col-sm-6 col-md-2 portfolio-item" ng-click="changeview('Programs')" ng-mouseenter="ZoomOut(1)" ng-mouseleave="ZoomIn(1)">
+            <div class="info-box" style="display: block; background-color: #6666ff; height: 30px;">
+                <span class="info-box-icon hand" style="background: #ccccff;">
+                    <i class="fa fa-envelope-o"></i>
+                    <img id="ProjectPNG" src="assets/img/Project.png" style="margin-bottom:40px;" />
+                </span>
+                <div class="info-box-content hand">
+                    <div class="info-box-number">
+                        <div style="padding-left:5px;font-size:28px;margin-top: -6px;" class="fFamily2">{{totalCount}}<span class="fontSizeApply fFamily1"> {{name}}</span> </div>
+                        <div class="container" style="width:100px;padding-left:10px;">
+                            <div class="progress" style="height:8px; width:110px; margin-top:6px;">
+                                <div class="progress-bar progress-bar-success" role="progressbar" ng-style="{width: greenBar + '%'}" style="background-color:lightseagreen;">
+                                    <h6 style="margin-top:-3px; color:black;">{{greenBar}}</h6>
+                                </div>
+                                <div class="progress-bar progress-bar-warning" role="progressbar" ng-style="{width: redBar + '%'}" style="background-color: red">
+                                    <h6 style="margin-top: -3px; color: black;">{{redBar}}</h6>
+                                </div>
+                                <div class="progress-bar progress-bar-danger" role="progressbar" ng-style="{width: yellowBar + '%'}" style="background-color: yellow;">
+                                    <h6 style="margin-top: -3px; color: black;">{{yellowBar}}</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div>
+                            <progress value="50" max="100" style="width:100px; height:5px;"></progress>
+                        </div>-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-2 portfolio-item" ng-click="changeview('Amount')" ng-mouseenter="ZoomOut(2)" ng-mouseleave="ZoomIn(2)">
+            <div class="info-box" style="display: block; background-color: #1a90ff; height: 30px; ">
+                <span class="info-box-icon hand" style="background: #80c1ff; ">
+                    <i class="fa fa-envelope-o"></i>
+                    <img id="FinancePNG" src="assets/img/finance.png" style="margin-bottom:40px;" />
+                </span>
+                <div class="info-box-content hand">
+                    <div class="info-box-number">
+                        <div id="TotalAllocatedFinanceForHeader" class="fFamily2" style="padding-left:5px;">$ 0 M</div>
+                        <div class="container" style="margin-top:5px;width:100px;">
+                            <div class="row" style="height:30px;width:220px;">
+                                <div class="col-xs-8" style="height:30px;padding-right:0px;padding-left:0px;">
+                                    <div class="col-xs-3" style="height:30px;padding-right:0px;padding-left:0px;"><div style="font-size:10px;padding-top:0px;margin-top:0px;">spent</div></div>
+                                    <div class="col-xs-4" style="height:30px;padding-left:0px;padding-right:0px;">
+                                        <div class="progress" style="height:8px; width:70px;">
+                                            <div id="TotalUtilizedFinanceForHeader" class="progress-bar progress-bar-success" role="progressbar" style="width: 50%; background-color: lightseagreen;">
+                                            </div>
+                                            &gt;
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2" style="height:30px;padding-right:0px;padding-top:2px;">
+                                        <div id="UtilizationPercentage" style="font-size:9px;color:white;">50%</div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-2" style="height:30px;padding-right:0px;padding-left:0px;">
+
+                                </div>
+                                <div class="col-xs-1" style="height:30px;padding-right:0px;padding-left:0px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-2 portfolio-item" ng-click="changeview('Persons')" ng-mouseenter="ZoomOut(3)" ng-mouseleave="ZoomIn(3)">
+            <div class="info-box" style="display: block; background-color: #1ad1ff; height: 30px; ">
+                <span class="info-box-icon hand" style="background: #66e0ff; ">
+                    <i class="fa fa-envelope-o"></i>
+                    <img id="MemberPNG" src="assets/img/member.png" style="margin-bottom:40px;" />
+                </span>
+                <div class="info-box-content hand">
+                    <span id="spanResourceCount" class="info-box-number" style="padding-left:5px; padding-top:2px;"></span>
+                    <div class="info-box-number" style="padding-left:5px; padding-top:0px;"> 
+
+                        <div  class="fFamily2" style="padding-left:5px;">
+                            <span class="fFamily2" style="font-size:27px;">{{Models.ResourceCount}}</span> 
+                            <span class="fontSizeApply fFamily1">Persons</span>
+                        </div>
+
+                    </div>
+                    <span class="info-box-text"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-2 portfolio-item" ng-click="changeview('Risks')" ng-mouseenter="ZoomOut(4)" ng-mouseleave="ZoomIn(4)">
+            <div class="info-box" style="display: block; background-color: #ff6666; height: 30px; ">
+                <span class="info-box-icon hand" style="background: #ffb3b3; ">
+                    <i class="fa fa-envelope-o"></i>
+                    <img id="RiskPNG" src="assets/img/risk.png" style="margin-bottom:40px;" />
+                </span>
+
+                <div class="info-box-content hand">
+                    <span id="spanRiskCount" class="info-box-number" style="padding-left:5px; padding-top:2px;"></span>
+                    <span class="info-box-number" style="padding-left:5px; padding-top:0px;"> 
+                        <div  class="fFamily2" style="padding-left:5px;">
+                            <span class="fFamily2" style="font-size:27px;">{{Models.RiskCount}}</span> 
+                            <span class="fontSizeApply fFamily1">Risks</span>
+                        </div>
+
+                    </span>
+                    <span class="info-box-text"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-2 portfolio-item" ng-click="changeview('Issues')" ng-mouseenter="ZoomOut(5)" ng-mouseleave="ZoomIn(5)">
+            <div class="info-box" style="background-color: #ffd480; display: block; height: 30px; ">
+                <span class="info-box-icon hand" style="background: #ffe6b3; ">
+                    <i class="fa fa-envelope-o"></i>
+                    <img id="IssuePNG" src="assets/img/issue.png" style="margin-bottom:40px;" />
+                </span>
+
+                <div class="info-box-content hand">
+                    <span id="spanIssueCount" class="info-box-number" style="padding-left:5px; padding-top:2px;"></span>
+                    <span class="info-box-number" style="padding-left:5px; padding-top:0px;"> 
+                        <div  class="fFamily2" style="padding-left:5px;">
+                            <span class="fFamily2" style="font-size:27px;">{{Models.IssueCount}}</span> 
+                            <span class="fontSizeApply fFamily1">Issues</span>
+                        </div>
+
+                    </span>
+                    <span class="info-box-text"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-2 portfolio-item" ng-click="changeview('UndCon')">
+            <div class="info-box bg-teal-active" style="display: block; background-color: #ff6666; height: 30px; ">
+                <span class="info-box-icon bg-teal-gradient hand" style="background: #ffb3b3; ">
+                    <i class="fa fa-envelope-o">
+                        <img id="ReleasePNG" src="assets/img/q5.png" style="margin-bottom: 40px; width: 51px; height: 45px;">
+                    </i>
+                </span>
+                <div class="info-box-content hand">
+                    <span class="info-box-number fFamily2" style="padding-left:5px; font-size:28px;padding-top:0px;">5 <span class="fontSizeApply fFamily1">Release</span></span>
+                    <span class="info-box-text"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

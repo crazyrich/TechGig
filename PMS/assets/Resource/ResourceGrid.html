@@ -1,0 +1,187 @@
+﻿
+<!--<table>
+    <tr>
+        <td align='right' valign='top' style='width:900px'>-->
+            <a href="" ng-controller="ControllerUpdateResourceData" ng-click="editResourceData();" id="editResource" class=" pull-right glyphicon glyphicon-edit marginHeading" style="color:white"></a>
+            <!--<a href="" id="editResource" class=" pull-right glyphicon glyphicon-edit" style="color:white"></a>-->-->
+        <!--</td>
+    </tr>
+</table>-->
+
+<div id="divEditResource" class="modal-Tiles">
+    <!-- Modal content -->
+    <div class="modal-content-Tiles w3-animate-zoom"style="width:78%;">
+        <div class="modal-header-Tiles">
+            <span class="closeResource">×</span>
+            <h2>Resource Details</h2>
+        </div>
+        <div class="modal-body-Tiles" style="height: 400px; overflow: auto;">
+            <div id="divHeaderYear" style="font-weight: bold;text-align:center;"></div>
+            <div id="divEditResourceGrid" class="list-group" ng-controller="ControllerUpdateResourceData" ng-init="">
+
+                <!--<div class="row">
+
+                    <section class="col-lg-12 col-sm-3">
+                        <div class="bg-aqua" style="height:30px; text-align:center;"> <h3>Add a resource</h3> </div>
+                    </section>
+
+                    <section class="col-lg-12">
+                        <div style="height:10px;"></div>
+                    </section>
+
+                    <section class="col-lg-3">
+                        <div style="height:40px;"> <h4 style="font-weight:800;">Program</h4> </div>
+                    </section>
+                    <section class="col-lg-3">
+                        <div style="height:40px;">
+                            
+                            <select ng-model="ddlPrograms" ng-options="s.Program_Id as s.Program_Name for s in programNames">
+                                <option value="">Select</option>
+                            </select>
+
+                        </div>
+                    </section>
+                    <section class="col-lg-3">
+                        <div style="height:40px;"> <h4 style="font-weight:800;">Project</h4> </div>
+                    </section>
+                    <section class="col-lg-3">
+                        <div style="height:40px;">
+
+                            <select ng-model="ddlProjects" ng-options="s.Project_Id as s.Name for s in projectNames">
+                                <option value="">Select</option>
+                            </select>
+
+                        </div>
+                    </section>
+                </div>-->
+
+            </div>
+            <!--<p>Some text in the Modal Body</p>
+            <p>Some other text...</p>-->
+        </div>
+        <div class="modal-footer-Tiles">
+            <h3></h3>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // Get the modal
+
+    var modalResource = document.getElementById('divEditResource');
+
+    // Get the button that opens the modal
+    var btnEditResource = document.getElementById("editResource");
+
+    // Get the <span> element that closes the modal
+    var spanResource = document.getElementsByClassName("closeResource")[0];
+
+    // When the user clicks the button, open the modal
+    btnEditResource.onclick = function () {
+        divEditResource.style.display = "block";
+    }
+
+
+    // When the user clicks on <span> (x), close the modal
+    spanResource.onclick = function () {
+        divEditResource.style.display = "none";
+    }
+
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+
+        if (event.target == modalResource) {
+            modalResource.style.display = "none";
+        }
+
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!--<table>
+    <tr>
+        <td align='right' valign='top' style='width:900px'>-->
+         <!--   <a href="" ng-controller="ControllerUpdateResourceData" ng-click="editResourceData();" id="editResource" class=" pull-right glyphicon glyphicon-edit" style="color:white"></a>
+        <!--</td>
+    </tr>
+</table>-->
+<!--
+<div id="divEditResource" class="modal-Tiles">
+    <!-- Modal content -->
+   <!-- <div class="modal-content-Tiles w3-animate-zoom">
+        <div class="modal-header-Tiles">
+            <span class="close">×</span>
+            <h2>Resource</h2>
+        </div>
+        <div class="modal-body-Tiles" style="overflow:auto;">
+            <div id="divEditResourceGrid" class="list-group">
+
+            </div>
+            <!--<p>Some text in the Modal Body</p>
+            <p>Some other text...</p>-->
+       <!-- </div>
+        <div class="modal-footer-Tiles">
+            <h3></h3>
+        </div>
+    </div>
+</div> -->
+
+<!--
+<script>
+    // Get the modal
+
+    var modalResource = document.getElementById('divEditResource');
+
+    // Get the button that opens the modal
+    var btnEditResource = document.getElementById("editResource");
+
+    // Get the <span> element that closes the modal
+    var span5 = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btnEditResource.onclick = function () {
+        divEditResource.style.display = "block";
+    }
+
+
+    // When the user clicks on <span> (x), close the modal
+    span5.onclick = function () {
+        divEditResource.style.display = "none";
+    }
+
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+
+        if (event.target == modalResource) {
+            modalResource.style.display = "none";
+        }
+
+    }
+</script>-->

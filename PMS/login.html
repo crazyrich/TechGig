@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Portfolio Management</title>
+
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-route.js"></script>
+    <script src="assets/js/Services/ngStorage.min.js"></script>
+    <script src="JS/angular-resource.min.js"></script>
+    <script src="assets/js/Services/AuthenticationSrv.js"></script>
+    <script src="assets/js/appAuth.js"></script>
+
+
+</head>
+<body>
+    <div class="wrapper" ng-app="appAuth">
+        <div class="container" ng-controller="controllerAuth">
+            <h1>Welcome</h1>
+
+            <form class="form">
+                <input id="user" type="text" placeholder="Username" ng-model="models.UserName">
+                <input id="pass" type="password" placeholder="Password" ng-model="models.Password">
+                <button id="login-button" ng-click="methods.login();">Login</button><br />
+                <strong><span id="spanError" style="color:red;font-weight: bold;font-size:x-large;">{{ models.Msg }}</span></strong><br />
+                <strong><span id="spanErrorMsg" style="color:red;font-weight: bold;"></span></strong>
+            </form>
+        </div>
+
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+  
+
+
+</body>
+</html>

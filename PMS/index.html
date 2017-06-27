@@ -1,0 +1,1351 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+ 
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+ 
+    <title>Index</title>
+
+    <!-- Bootstrap Core CSS -->
+
+  
+    <link href="assets/css/vis.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+   
+ 
+    <!--font-->
+    <!--<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />-->
+    
+    <!-- Custom CSS -->
+    <link href="assets/css/2-col-portfolio.css" rel="stylesheet" />
+    <link href="assets/css/AdminLTE.css" rel="stylesheet" />
+    <link href="assets/css/customDesign.css" rel="stylesheet" />
+    <link href="assets/css/Demo.css" rel="stylesheet" />
+    <link href="assets/css/Flip.css" rel="stylesheet" />
+    <link href="assets/css/HeatMap.css" rel="stylesheet" />
+    <link href="assets/css/dataTables.bootstrap.css" rel="stylesheet" />
+    <link href="assets/timeline/vis.css" rel="stylesheet" />
+    <link href="assets/js/Accordian/accordian.css" rel="stylesheet" />
+ 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        <!--<link href="CSS/jquery-ui.css" rel="stylesheet" />-->
+    <link href="assets/css/LeftMenu.css" rel="stylesheet" />
+    <link href="assets/css/jquery.datepick.css" rel="stylesheet" />
+     <script src="assets/js/jquery.js"></script> 
+      <script src="assets/js/jquery.plugin.js"></script>
+    <script src="assets/js/jquery.datepick.js"></script>
+    <!-- jQuery -->
+    
+  
+ 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-sanitize.js"></script>
+    <script src="assets/js/angular-route.js"></script>
+
+    <script src="assets/js/ControllerJS.js"></script>
+    
+    <script src="assets/js/Services/ngStorage.min.js"></script>
+    <script src="JS/angular-resource.min.js"></script>
+
+    <script src="assets/js/Demo.js"></script>
+    <script src="assets/js/Services/ProgrammeSrv.js"></script>
+    <script src="assets/js/Services/BreadCrumbSrv.js"></script>
+    <script src="assets/js/Services/MileStoneSrv.js"></script>
+    
+    <script src="assets/js/ControllerJs/LeftPanal.js"></script>
+    
+    <script src="assets/js/Common.js"></script>
+    <script src="assets/Resource/Validation.js"></script>
+    <script src="assets/Resource/ControllerEditResource.js"></script>
+    <script src="assets/Finance/Finance.js"></script>
+    <script src="assets/Finance/ControllerEditFinance.js"></script>
+    <script src="assets/timeline/TimelineController.js"></script>
+ 
+    <script src="assets/js/ControllerJs/KeyAccomplishment.js"></script>
+ 
+    <script src="assets/js/jquery.base64.js"></script>
+    <script src="assets/js/moment.js"></script>
+    <script src="assets/js/jquery.dataTables.js"></script>
+    <script src="assets/js/dataTables.bootstrap.js"></script>
+    <script src="assets/js/angular-mocks.js"></script>
+ 
+ 
+    <script src="assets/js/BarChart.js"></script>
+    <script src="assets/js/canvasjs.min.js"></script>
+    <script src="assets/js/canvasPieChart.js"></script>
+    <script src="assets/js/Chart.js"></script>
+    <script src="assets/js/ChartDisplay.js"></script>
+    <script src="assets/js/PieChart.js"></script>
+    <script src="assets/js/stackedChart.js"></script>
+ 
+ 
+    <script src="assets/BottomTiles/BottomTilesController.js"></script>
+    <script src="assets/BottomTiles/JSTiles.js"></script>
+    <script src="assets/Header/HeaderController.js"></script>
+ 
+ 
+    <script src="assets/js/CanvasBarChart.js"></script>
+    <script src="assets/js/canvasaActiveChart.js"></script>
+    
+    <script src="assets/timeline/vis.js"></script>
+ 
+    <script src="assets/timeline/timeline.js"></script>
+    <script src="assets/js/FinanceChart.js"></script>
+    <script src="assets/Resource/ResourceChart.js"></script>
+ 
+    <script src="assets/js/bootbox.min.js"></script>
+ 
+    <script src="assets/Risk/ControllerEditRisk.js"></script>
+    <script src="assets/Risk/RiskProgramService.js"></script>
+    <script src="assets/Risk/RiskChart.js"></script>
+    <script src="assets/Issue/ControllerEditIssue.js"></script>
+    <script src="assets/Issue/IssueChart.js"></script>
+    <script src="shared/ChangePasswordJS.js"></script>
+    <!--<script src="assets/js/jquery-2.1.1.js"></script>-->
+    <link href="assets/js/Accordian/myAccordian.css" rel="stylesheet" />
+    <!-- Rich Text Editor -->
+    <script src="assets/RichEditor/tinymce.min.js"></script>
+    
+    <!--Start : Release Module--->
+    <script src="assets/Release/ReleaseSrv.js"></script>
+    <script src="assets/Release/ReleaseController.js"></script>
+    <!--End : Release Module--->
+
+   
+    <script>
+        function editTimeline() {
+            //var content = '<object type="text/html" data="timeline/TestGrid.html" ></object>';
+            var content = $("#divTable")[0].innerHTML;
+            $("#divGrid")[0].innerHTML = "";
+            $("#divGrid")[0].innerHTML = content;
+            //$("#tblDataControl").css("border-style ", "solid");
+
+
+        };
+
+        function viewTimeline() {
+            //    debugger
+            //    var res = $("#visualization")[0].innerHTML;
+            //    var content = res.replace(/650px/g, "1000px");
+
+            //$("#divGrid")[0].innerHTML = "";
+            //$("#divGrid")[0].innerHTML = content;
+        };
+    </script>
+   
+
+     
+<style type="text/css">
+        .ui-datepicker-header {
+ background-color: #364f63;
+        }
+         
+          
+          
+ @media  screen  and (max-width: 810px) {
+         #divEditMYGrid {
+            overflow:auto !important;
+            }
+        }
+ @media  screen and (min-width : 990px) and (max-width : 1214px) {
+    .fontSizeApply {
+        font-size: 11px !important;
+    }
+
+    .info-box-content {
+        padding: 0px 0px !important;
+    }
+
+    .info-box-number {
+        padding-left: 0px !important;
+    }
+    .padRightApply {
+        padding-right: 2px;
+    }
+     .weeklyHeader {
+        width:95%;
+    }
+    .dvBtmComments_b {
+    padding-right:15px;
+    }
+}
+ @media screen and (min-width: 100px) and (max-width:767px) {
+        .removePad_a {
+            margin-left:-10px; 
+            margin-right:-10px;
+            padding-right:15px;
+        }
+        .dvBtmComments_b {
+            margin-left: -10px;
+            margin-right: -10px;
+    padding-left:15px;
+    padding-right:15px;
+
+        }
+        .dvBtmComments_a {
+            margin-left:0px;
+        }
+    .padLeftRight {
+    padding-right:5px;
+    margin-left:4px;
+      
+    }
+        .padLeftRight2 {
+        padding-right:0px;
+        }
+    .padLeftRight {
+     margin-left:4px;
+    }
+
+    }
+
+ @media screen and (min-width : 100px) and (max-width : 513px) {
+
+            .TopIcons {
+            font-size:10px !important;
+            
+            }
+              .brdCrumMedia_a {
+                height:50px;
+            }
+            .brdCrumMedia_b {
+            font-size:12px !important;
+            
+            }
+            .brdCrumEach_a {
+            height:70px;
+            }
+            .brdCrumEach_b {
+            width:140px;
+            }
+        }
+
+ @media screen and (min-width:100px) and (max-width: 990px) {
+    .addMargin_a {
+        margin-top:27px;
+        padding-right: 19px;
+        padding-left: 20px;
+     }
+        .weeklyHeader {
+        width:100%;
+        }
+        .well_a {
+        margin-right:0px;
+        }
+         .addMargin {
+     margin-top:27px;
+    }
+    .weeklyHeader {
+        width:100%;
+    }
+   
+    
+    
+    }
+ @media screen and (min-width : 320px) and (max-width : 405px) {
+
+            #spanDashboard {
+            font-size:12px !important;
+            
+            }
+            .MediaTopIcons {
+            padding-right:0px;
+            padding-left:0px;
+            }
+            .MediaWelcomeText {
+            
+            font-size:12px;
+            }
+
+          
+        }
+    @media screen and (min-width:100px) and (max-width:677px) {
+
+        .brdCrum_a1,.brdCrum_a2,.brdCrum_a3 {
+            font-size:12px;
+            
+        }
+     } 
+ </style>
+
+
+    
+</head>
+ 
+<body data-ng-app="myApp">
+    <div class="row rowTop">
+    <div class="row padLeft">
+        <div class="col-xs-4 col-sm-4 col-md-4">
+            <section class="">
+                <h4 class="fFamily1 fontSizeBottom MediaWelcomeText ">
+                    Welcome,<span class="fFamily2 MediaWelcomeText"> <b> <span id="guestName"></span>!!</b> </span>
+                </h4>
+            </section>
+            
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 centerText">
+            <section class="">
+ 
+                    <div id="spanDashboard"  class="fFamily2" style="font-weight:bold; font-size:20px;margin-top:7px;">Portfolio DashBoard</div>
+ 
+            </section>
+ 
+        </div>
+        
+
+        <div class="col-xs-4 col-sm-4 col-md-4 MediaTopIcons" style="float:right;text-align:right;" ng-controller="ControllerLogoutIndex">
+
+            <section>
+
+                <a  href="#" onclick="location.href = 'index.html';"><i class="glyphicon glyphicon-home TopIcons" style="font-size:16px;padding-right:1em; padding-top:1em;"></i></a>
+                <!--<a id="AdminBtn" href="#" onclick="location.href = 'Admin/AdminPanel.html';"><i class="glyphicon glyphicon-cog" style="font-size:16px;padding-right:1em; padding-top:1em;"></i></a>-->
+                <i class="dropdown glyphicon glyphicon-cog  dropdown-toggle TopIcons" data-toggle="dropdown" style="font-size:16px;padding-right:1em;    color: #3c8dbc; padding-top:1em;">
+                </i> 
+
+                <a href="javascript:void(0);" ng-click="methods.logout();"><i class="glyphicon glyphicon-off TopIcons" style="font-size:16px;padding-right:1em; padding-top:1em;"></i></a>
+
+
+                    <ul class="dropdown-menu" style="left:250px;">
+                   
+                    <li id="adminLinkView"><a href="#"  onclick="location.href = 'Admin/AdminPanel.html';">Admin Panel</a></li>
+                    <li data-toggle="modal" data-target="#CPswrdmodal" id="CPswrdTab"><a href="#" >Change Password</a></li>
+                         
+                    </ul>
+                    <div data-ng-include="'shared/ChangePassowrdHtml.html'"></div>
+              
+               <!-- <div id="showPasswordTab" class="dropdown keep-open">
+                      <a class=" dropdown-toggle" data-toggle="dropdown" href="#">
+                        Change Password
+                        <span class="caret"></span>
+                      </a>
+                     <ul class=" dropdown-menu keep-open" style="left:100px;text-align:right;    right: -10px;">
+                      <br />Old Password : <input type="password"> </input><br />
+                      New Password : <input type="text"> </input><br />
+                      Confirm Password : <input type="text"> </input><br /><br />
+                    <button  id="changePasswordID" class="btn btn-danger">Change</button>
+                         </ul>
+                </div>-->
+
+              
+                
+            </section>
+        </div>
+    </div>
+ 
+        <div class="row">
+            <div data-ng-include="'/assets/Header/HeaderTiles.html'">
+            </div>
+        </div>
+ 
+    <div id="tablesandcharts" class="row padLeft" style="display:none;" data-ng-controller="NavigationController">
+       <!-- starts synced breadcrum -->
+        <!--finance-->
+        <div id="financeBrdCrumShow" class="row" style="display: none;">
+            <div class="row padLeft" style="margin-left: 14px; margin-right: 16px;">
+ 
+            <div class="col-md-12 col-xs-12 padLeft BorderApply shadowApply brdCrumEach_a" >
+                <ul class="ulCustom">
+                    <li class="pull-left header brdcrumText" style="font-size:6px;">
+                        <div class="row" style="padding-left:-25px;">
+                            <a id="PortfolioBreadCrumbForFinance" href="#" onclick="RestoreFinanceChart();" class="brdCrum_a1">Portfolio</a>
+                            <a id="ProgramBreadCrumbForFinance" href="javascript:void(0);" onclick="" class="brdCrum_a2"></a>
+
+                            <span aria-hidden="true" class="brdCrum_a3">Finance Dashboard</span><!--<a href="#" style="display:none;" id="A1" onclick="location.href = 'index.html';"></a>-->
+                        </div>
+                    </li>
+                </ul>
+             </div>
+        </div>
+        </div>
+        <!--finance ENDS-->
+        <!--Resource BreadCrum-->
+         <div id="resourceBrdCrumShow" class="row" style="display: none;">
+            <div class="row padLeft" style="margin-left: 14px; margin-right: 16px;">
+ 
+            <div class="col-md-12 col-xs-12 padLeft BorderApply shadowApply brdCrumEach_a">
+                <ul class="ulCustom">
+                  <li class="pull-left header brdcrumText " style="color:white;"><!--width:340px;-->
+                       <div class="row" style="padding-left:-25px;" >
+                        <a id="PortfolioBreadcrumbForResource" href="javascript:void(0);" onclick="RestoreResourceChart();" style="color:white;width:140px;">Portfolio</a>
+                        <a id="A1" href="javascript:void(0);" onclick="" style="color:white;width:140px;cursor:default;"></a>
+ 
+                        <span aria-hidden="true" style="color:white;position:relative"> Resource Dashboard</span><!--<a href="#" style="display:none;" id="A1" onclick="location.href = 'index.html';"></a>-->
+                      </div>
+                   </li>
+                     <li class="pull-right header">
+                        <div id="divHeaderForYear" style="font-weight: bold;color:black;"></div>
+                    </li>
+                    </ul>
+                </div>
+ 
+            </div>
+             </div>
+        <!--Risk BreadCrum-->
+        <div id="riskBrdCrumShow" class="row" style="display: none;">
+            <div class="row padLeft" style="margin-left: 14px; margin-right: 16px;">
+ 
+            <div class="col-md-12 col-xs-12 padLeft BorderApply shadowApply brdCrumEach_a">
+                <ul class="ulCustom">
+                  <li class="pull-left header brdcrumText" style="color:white;">
+                       <div class="row" style="padding-left:-25px;" >
+                      <a id="PortfolioBreadcrumbForRisk" href="javascript:void(0);" onclick="RestoreRiskChart();" style="color:white;width:140px;">Portfolio</a>
+                        <a id="A2" href="javascript:void(0);" onclick="" style="color:white;width:140px;cursor:default;"></a>
+ 
+                        <span aria-hidden="true" style="color:white;position:relative"> Risk Dashboard</span><!--<a href="#" style="display:none;" id="A1" onclick="location.href = 'index.html';"></a>-->
+                      </div>
+                   </li>
+</ul>
+</div>
+ 
+            </div>
+             </div>
+        <!--Issues BreadCrum-->
+        <div id="issueBrdCrumShow" class="row" style="display: none;">
+            <div class="row padLeft" style="margin-left: 14px; margin-right: 16px;">
+ 
+            <div class="col-md-12 col-xs-12 padLeft BorderApply shadowApply brdCrumEach_a">
+                <ul class="ulCustom">
+         <li class="pull-left header brdcrumText" style="color:white;">
+                       <div class="row" style="padding-left:-25px;" >
+                        <a id="PortfolioBreadcrumbForIssue" href="javascript:void(0);" onclick="RestoreIssueChart();" style="color:white;width:140px;">Portfolio</a>
+                        <a id="A3" href="javascript:void(0);" onclick="" style="color:white;width:140px;"></a>
+
+                        <span aria-hidden="true" style="color:white;position:relative">Issue Dashboard</span><!--<a href="#" style="display:none;" id="A1" onclick="location.href = 'index.html';"></a>-->
+                      </div>
+                   </li>
+                    </ul>
+                </div>
+ 
+            </div>
+             </div>
+        <!--Release BreadCrum-->
+          <div id="releaseBrdCrumShow" class="row" style="display: none;margin-bottom:3px;">
+            <div class="row padLeft" style="margin-left: 14px; margin-right: 16px;">
+ 
+            <div class="col-md-12 col-xs-12 padLeft BorderApply shadowApply brdCrumEach_a">
+                <ul class="ulCustom">
+         <li class="pull-left header brdcrumText" style="color:white;">
+                       <div class="row" style="padding-left:-25px;" >
+                        <a href="#" onclick="location.href = 'index.html';" style="color:white;width:140px;">Portfolio</a>
+                        <a id="A4" href="javascript:void(0);" onclick="RestoreResourceChart();" style="color:white;width:140px;"></a>
+ 
+                        <span aria-hidden="true" style="color:white;position:relative">Release Dashboard</span><!--<a href="#" style="display:none;" id="A1" onclick="location.href = 'index.html';"></a>-->
+                          
+                      </div>
+                   </li>
+                    <li class="pull-right header">
+                         <div style="float:right;text-align:right;">
+                               <div class="col-lg-5 dropdown_a" style=" padding-right: 0px;">
+                                   <select id="keyYear2" style=" float: right;" class="clsParentYear" onchange="BindMonths('keyMonth2','1');"></select>
+                               </div>
+                                   <div class="col-lg-5 dropdown_a" style=" padding-right: 0px;">
+                                       <select id="keyMonth2" class="clsParentMonth"></select>&nbsp;&nbsp;
+                                   </div>
+                           </div>
+                    </li>
+                    </ul>
+                </div>
+ 
+            </div>
+             </div>
+        <!--  ends synced breadcrum  -->
+     <div class="row  boxBottomRight2" id="sectionID3" style="height:70px;margin-left: 15px;margin-right: 15px; background-color:#EEEEEE">
+      
+       <section class="col-lg-12 connectedSortable" style="min-height:70px; padding-top:0px;border:1px solid silver;text-align:center;">
+                 <div class="row" style="">
+                  <div class="col-lg-12 " style="">
+                    <div class="col-lg-4"></div>
+                    <div class="col-lg-4" style="text-align: center;"><h5><b>Release Calender for Month 2016,June</b></h5></div>
+                    <div class="col-lg-4"></div>  
+                      </div>
+                      <div class="col-lg-12 " >
+                          
+                           <div class="col-lg-4"></div>
+                    <div class="col-lg-4" >
+                        <div class="col-lg-3"></div>
+                        <div class="col-lg-6" style="border:1px solid silver;text-align:center;"> Download Here</div>
+                        <div class="col-lg-3"></div>
+                       
+
+                    </div>
+                    <div class="col-lg-4"></div> 
+                      </div>
+                   </div>
+           </section>
+     </div>
+       <section id="sectionID1" class="col-lg-6 connectedSortable">
+ 
+            <div id="divPurple" class="nav-tabs-custom" style="display: none; background-color: #424E66;">
+
+
+                <nav style="background-color: #424E66;padding-top:2px;"  class=" navbar-default" >
+                    <div class="container-fluid">
+                      <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarPurple" aria-expanded="false" aria-controls="navbar">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                        </button>
+           
+                      </div>
+                      <div id="navbarPurple" class="navbar-collapse collapse toRight " style="background-color: #424E66;" >
+                        <ul class="nav navbar-nav">
+                         
+                               <li class="active"><a data-toggle="tab" href="#home">Budget Analysis</a></li>
+                                <li><a data-toggle="tab" href="#menu1">Budget Distribution</a></li>
+      
+                        </ul>
+           
+                      </div><!--/.nav-collapse -->
+                    </div><!--/.container-fluid -->
+                 </nav>
+
+
+               
+                <div class="tab-content no-padding">
+                    <!-- Morris chart - Sales -->
+                    <div id="home" class="tab-pane fade in active" style="height:345px; overflow:auto">
+                        <div id="barchartContainer" style="height: 300px; width: 100%;" ng-click="ShowTable('Purple')">
+                        </div>
+                        <!--<canvas id="mybarChart" height="300"></canvas>-->
+                    </div>
+                    <div id="menu1" class="tab-pane fade" style="height:345px; overflow:auto">
+                        <div id="piechartContainer" style="height: 300px; width: 100%;" ng-click="ShowTable('Purple')"></div>
+                        <!--<canvas id="MyPie" height="300"></canvas>-->
+                    </div>
+ 
+                </div>
+            </div>
+           
+             <div id="divBlue" class="nav-tabs-custom" style="background-color: #424E66; display: none;">
+
+
+        <nav style="background-color: #424E66;padding-top:2px;"  class=" navbar-default" >
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarBlue" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+           
+          </div>
+          <div id="navbarBlue" class="navbar-collapse collapse toRight" style="background-color: #424E66;" >
+            <ul class="nav navbar-nav">
+               <li class="active"><a data-toggle="tab" href="#Resource-Histogram-chart">Resource Designation</a></li>
+                    <li><a data-toggle="tab" href="#ReBar-chart">Resource Utilization</a></li>
+                      <li><a data-toggle="tab" href="#ReBar-ChartType">Resource Type</a></li>
+                      <li><a data-toggle="tab" href="#ReBar-ChartLocation">Resource Location</a></li>
+            </ul>
+           
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+
+
+               
+                <div class="tab-content no-padding">
+ 
+                    <div id="Resource-Histogram-chart" class="tab-pane fade in active" style="height:345px; overflow:auto">
+                        <div id="chartContainer" style="height: 300px; width: 100%;" data-ng-click="ShowTable('Blue')">
+                        </div>
+                    </div>
+                    <div id="ReBar-chart" class="tab-pane fade" style="height:345px; overflow:auto">
+                        <div id="barchartContainerforresource" style="height: 300px; width: 100%;" data-ng-click="ShowTable('Blue')">
+                        </div>
+                    </div>
+                    <div id="ReBar-ChartType" class="tab-pane fade" style="height:345px; overflow:auto">
+                        <div id="barchartContainerForResourceType" style="height: 300px; width: 100%;" data-ng-click="ShowTable('Blue')">
+                        </div>
+                    </div>
+                    <div id="ReBar-ChartLocation" class="tab-pane fade" style="height:345px; overflow:auto">
+                        <div id="barchartContainerForResourceLocation" style="height: 300px; width: 100%;" data-ng-click="ShowTable('Blue')">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="divAqua" class="nav-tabs-custom" style="background-color: #364f63; display: none;">
+
+
+                   <nav style="background-color: #424E66;padding-top:2px;"  class=" navbar-default" >
+                        <div class="container-fluid">
+                          <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarAqua" aria-expanded="false" aria-controls="navbar">
+                              <span class="sr-only">Toggle navigation</span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                              <span class="icon-bar"></span>
+                            </button>
+           
+                          </div>
+                          <div id="navbarAqua" class="navbar-collapse collapse toRight" style="background-color: #424E66;" >
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a data-toggle="tab" href="#RiskHesto-chart" ">Open Risks By Track  </a></li>
+                    
+                                    <li><a data-toggle="tab" href="#RiskPie-Chart">Open Risks By Type </a></li>
+                                    <li><a data-toggle="tab" href="#RiskItem-chart">Open Risks By Impact </a></li>
+                                    
+                            </ul>
+           
+                          </div><!--/.nav-collapse -->
+                        </div><!--/.container-fluid -->
+                   </nav>
+
+                <div class="tab-content no-padding">
+                   
+                    <div id="RiskHesto-chart" class="tab-pane fade in active" style="height:345px; overflow:auto" ng-controller="RiskChartController">
+                        <div id="RiskHistochartContainer" style="height: 300px; width: 100%;" data-ng-click="ShowTable('Aqua')">
+                        </div>
+                    </div>
+                    <div id="RiskItem-chart" class="tab-pane fade" style="height:345px; overflow:auto" ng-controller="RiskChartController">
+                        <div id="RiskItemChartContainer" style="height: 300px; width: 100%;" data-ng-click="ShowTable('Aqua')">
+                        </div>
+                    </div>
+                    <div id="RiskPie-Chart" class="tab-pane fade" style="height:345px; overflow:auto" ng-controller="RiskChartController">
+                        <div id="piechartContainerRisk" style="height: 300px; width: 100%;" data-ng-click="ShowTable('Aqua')">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="divRed" class="nav-tabs-custom" style="background-color: #364f63; display: none;">
+
+                   <nav style="background-color: #424E66;padding-top:2px;"  class=" navbar-default" >
+                                <div class="container-fluid">
+                                  <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarRed" aria-expanded="false" aria-controls="navbar">
+                                      <span class="sr-only">Toggle navigation</span>
+                                      <span class="icon-bar"></span>
+                                      <span class="icon-bar"></span>
+                                      <span class="icon-bar"></span>
+                                    </button>
+           
+                                  </div>
+                                  <div id="navbarRed" class="navbar-collapse collapse toRight" style="background-color: #424E66;" >
+                                    <ul class="nav navbar-nav">
+                                         <li class="active"><a data-toggle="tab" href="#IssueHesto-chart">Open Issues By Track </a></li>
+                                            <li><a data-toggle="tab" href="#IssuePieChartByType">Open Issues By Type </a></li>
+                                            <li><a data-toggle="tab" href="#IssuePieChartAging">Open Issues By Aging </a></li>
+                                    </ul>
+           
+                                  </div><!--/.nav-collapse -->
+                                </div><!--/.container-fluid -->
+                    </nav>
+
+
+               
+                <div class="tab-content no-padding" >
+                    <!-- Morris chart - Sales -->
+                    <div id="IssueHesto-chart" class="tab-pane fade in active" style="height:345px; overflow:auto"  ng-controller="IssueChartController">
+                        <div id="IssueHistochartContainer" style="height: 300px; width: 100%;" ng-click="ShowTable('Red')"></div>
+                    </div>
+                    <div id="IssuePieChartByType" class="tab-pane fade" style="height:345px; overflow:auto"  ng-controller="IssueChartController">
+                        <div id="piechartContainerIssueByType" style="height: 300px; width: 100%;" ng-click="ShowTable('Red')">
+                        </div>
+                    </div>
+                    <div id="IssuePieChartAging" class="tab-pane fade" style="height:345px; overflow:auto"  ng-controller="IssueChartController">
+                        <div id="piechartContainerIssueAging" style="height: 300px; width: 100%;" ng-click="ShowTable('Red')">
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+            <div id="divYellow" class="nav-tabs-custom" style="background-color: #364f63; display: none;">
+
+                           <nav style="background-color: #424E66;padding-top:2px;"  class=" navbar-default" >
+                                <div class="container-fluid">
+                                  <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarYellow" aria-expanded="false" aria-controls="navbar">
+                                      <span class="sr-only">Toggle navigation</span>
+                                      <span class="icon-bar"></span>
+                                      <span class="icon-bar"></span>
+                                      <span class="icon-bar"></span>
+                                    </button>
+           
+                                  </div>
+                                  <div id="navbarYellow" class="navbar-collapse collapse toRight" style="background-color: #424E66;" >
+                                    <ul class="nav navbar-nav">
+                                         <li class="active"><a data-toggle="tab" href="#Issuehome">Aggregate</a></li>
+                                            <li><a data-toggle="tab" href="#IssueHisto">Histogram</a></li>
+                                            <li class="pull-left header" style="color:white;"><i class="fa fa-inbox"></i>Issues</li>
+                                    </ul>
+           
+                                  </div><!--/.nav-collapse -->
+                                </div><!--/.container-fluid -->
+                              </nav>
+                           <div class="tab-content no-padding">
+                    <!-- Morris chart - Sales -->
+                    <div id="Div1" class="tab-pane fade in active" style="height:345px; overflow:auto">
+                        <div id="Div2" style="height: 300px; width: 100%;" ng-click="ShowTable('Yellow')"></div>
+                    </div>
+                    <div id="Div3" class="tab-pane fade" style="height:345px; overflow:auto">
+                        <div id="Div4" style="height: 300px; width: 100%;" ng-click="ShowTable('Yellow')">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="divTeal" class="nav-tabs-custom " style="background-color: #364f63; display: none;">
+
+                 <div class="col-lg-12 connectedSortable" style="padding-left: 0px;padding-right: 0px;padding-top:2px;">
+                    <div class="box-solid" style="background-color: rgb(66, 78, 102);">
+                        <div class="box-header" style="height:30px; ">
+                            <div class="pull-right box-tools">
+                            </div>
+                            <i class="fa"></i>
+                            <h3 class="box-title marginHeading">
+                                <span class="pull-left financeHeading" style="color:white;">
+                                    Previous Releases
+                                </span>
+                            </h3>
+                        </div>
+
+                        <div class="box-body bg-gray-light">
+                            <div style=" height: 280px; overflow:auto;">
+                                {{arrPreRelease}}
+                                <ul>
+                                    <li ng-repeat="rel in models.arrPreRelease">
+                                        {{rel.Title}}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+     </section>
+ 
+       <section  id="sectionID2" class="col-lg-6 connectedSortable">
+ 
+            <div id="tablePurple" class="box-solid" style=" background-color: #424E66; display: none;">
+
+                
+                                  
+
+                <div class="box-header" style="height:30px; ">
+                        <span ng-include="'/assets/finance/FinanceGrid.html'" class="pull-right"></span>
+ 
+                    <div class="pull-right box-tools">
+ 
+                    </div>
+                    <i class="fa"></i>
+                    <h3 class="box-title marginHeading">
+                        <span id="NameForFinanceGrid" class="pull-left financeHeading"  style="color:white;">Program wise Details</span>
+ 
+                    </h3>
+                </div>
+                <div class="box-body bg-gray-light">
+                   
+                    <div style=" height: 328px; overflow:auto;" ng-controller="ControllerShowFinances">
+                        <div id="DivFinanceDataForTable"></div>
+                        <!--<table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Program Name</th>
+                                    <th>Allocated Budget</th>
+                                    <th>Actual Spent Till Date</th>
+                                    <th>New Estimates</th>
+                                </tr>
+                             </thead>
+                            <tbody >
+                                <tr ng-repeat="Finance in Financedata">
+                                    <td>{{Finance.ProgramName}}</td>
+                                    <td>{{Finance.AllocatedBudget}}</td>
+                                    <td>{{Finance.UsedBudget}}</td>
+                                    <td>{{Finance.RevisedBudget}}</td>
+                                </tr>
+                            </tbody>
+                            
+                        </table>-->
+                    </div>
+                </div><!-- /.box-body-->
+ 
+            </div>
+            <div id="tableBlue" class="box-solid" style="background-color: #424E66; display: none;" ng-controller="shareData">
+                <div class="box-header" style="height:30px; ">
+                     <span ng-include="'/assets/Resource/ResourceGrid.html'"></span>
+                           
+ 
+                    <div class="pull-right box-tools">
+ 
+                    </div>
+                    <i class="fa"></i>
+                    <h3 class="box-title marginHeading">
+                        <span class="pull-left header financeHeading" style="color:white; margin-left:-20px;">Resource</span>
+                    </h3>
+                </div>
+               <div class="box-body bg-gray-light">
+                    <div id="toShowProjects" style="height: 328px; overflow:auto;" ng-controller="ControllerShowResources">
+                        <div id="DivResourceDataForTable">
+ 
+ 
+                        </div>
+                       <!-- <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Project</th>
+                                    <th>Resource Count</th>
+                                    <th>Utilization%</th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="item in PortfolioData">
+                                    <td> {{ item.PID }} </td>
+                                    <td>{{ item.PName }}</td>
+                                    <td>{{ item.ResourceCount }}</td>
+                                    <td>{{ item.Utilization }}</td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>-->
+                    </div>
+                </div><!-- /.box-body-->
+ 
+            </div>
+            <div id="tableAqua" class="box-solid" style="background-color: #364f63; display: none;">
+                <div class="box-header" style="height:30px;background-color: #424E66; ">
+                     <span ng-include="'/assets/Risk/RiskGrid.html'"></span>
+                    <!-- tools box -->
+                    <div class="pull-right box-tools">
+ 
+                    </div><!-- /. tools -->
+                    <i class="fa"></i>
+                     <h3 class="box-title marginHeading">
+                        <span class="pull-left header financeHeading" style="color:white; margin-left:-3px;">Risk</span>
+                    </h3>
+                </div>
+                <div class="box-body bg-gray-light">
+                    <div style="height: 328px; overflow:auto;" >
+                         <div id="DivRiskDataForTable" ng-controller="RiskController" ng-init="riskDataForTable()">
+                             <!--Right Data Table Here-->
+                         </div>
+                    </div>
+                </div><!-- /.box-body-->
+ 
+            </div>
+            <div id="tableRed" class="box-solid" style="background-color: #364f63; display: none;">
+                <div class="box-header"  style="height:30px;background-color: #424E66; ">
+                     <span ng-include="'/assets/Issue/IssueGrid.html'"></span>
+                    <div class="pull-right box-tools">
+                    </div>
+                    <i class="fa"></i>
+                    <h3 class="box-title">
+                       <span class="pull-left header financeHeading" style="color:white; margin-left:-3px;">Issue</span>
+                    </h3>
+                </div>
+                <div class="box-body bg-gray-light">
+                    <div style="height: 328px; overflow:auto;">
+                      <div id="DivIssueDataForTable" ng-controller="IssueController" ng-init="issueDataForTable()">
+                             <!--Right Data Table Here-->
+                         </div> 
+                    </div>
+                </div>
+ 
+            </div>
+            <div id="tableYellow" class="box-solid" style="background-color: #364f63; display: none;">
+                <div class="box-header" style="height:40px;">
+                    <div class="pull-right box-tools">
+ 
+                    </div>
+                    <i class="fa"></i>
+                    <h3 class="box-title">
+                        Issue
+                    </h3>
+                </div>
+                <div class="box-body bg-gray-light">
+                    <div style="height: 328px; overflow:auto;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Project</th>
+                                    <!--<th>Created On</th>
+                                    <th>Due Date</th>-->
+                                    <th>Sub Area</th>
+                                    <th>Priority</th>
+                                    <th>Assigned To</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Production Monitoring</td>
+                                    <td>Ph.Data Warehouse</td>
+                                    <!--<td>24-1-2015</td>
+                                    <td>24-1-2016</td>-->
+                                    <td>OPPR/ESB</td>
+                                    <td>High</td>
+                                    <td>IT</td>
+                                    <td>In Progress</td>
+                                </tr>
+                                <tr>
+                                    <td>Non Prod Monitoring</td>
+                                    <td>Systems Integration</td>
+                                    <!--<td>2-12-2015</td>
+                                    <td>2-12-2016</td>-->
+                                    <td>OPPR/ESB</td>
+                                    <td>Medium</td>
+                                    <td>IT</td>
+                                    <td>In Progress</td>
+                                </tr>
+                                <tr>
+                                    <td>Non Production</td>
+                                    <td>Ph. Business Support</td>
+                                    <!--<td>22-1-2015</td>
+                                    <td>22-1-2016</td>-->
+                                    <td>OPPR/ESB</td>
+                                    <td>Low</td>
+                                    <td>IT</td>
+                                    <td>In Progress</td>
+                                </tr>
+                                <tr>
+                                    <td>Production Deployments</td>
+                                    <td>Infrastructure stability</td>
+                                    <!--<td>6-6-2015</td>
+                                    <td>6-6-2016</td>-->
+                                    <td>OPPR/ESB</td>
+                                    <td>High</td>
+                                    <td>IT</td>
+                                    <td>In Progress</td>
+                                </tr>
+                                <tr>
+                                    <td>Automation</td>
+                                    <td>Outpatient Ph. Repla</td>
+                                    <!--<td>16-8-2015</td>
+                                    <td>16-8-2016</td>-->
+                                    <td>OPPR/ESB</td>
+                                    <td>Low</td>
+                                    <td>IT</td>
+                                    <td>In Progress</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="tableTeal" class="box-solid " style="display: none;padding-top: 2px;">
+                <div class="box-header" style="height:30px; background-color: #424E66;    ">
+ 
+                    <div class="pull-right box-tools">
+ 
+                    </div>
+                    <i class="fa"></i>
+                   <h3 class="box-title">
+                       <span class="pull-left header financeHeading" style="color:white; margin-left:-3px;">UpComing Release Information</span>
+                    </h3>
+                </div>
+                <div class="box-body bg-gray-light">
+                    <div style="height: 280px; overflow:auto;">
+                              <!--Start : Right Part-->
+                         <table class="table" style="height:327px;">
+                                    <thead><tr><th>Release </th><th>Date/Time</th><th>Description</th><th>Contact Person</th></tr></thead>
+                                     <tbody>
+                                         <tr ng-repeat="relFuture in models.arrFutureRelease"><td style="text-align: center;"> <a href="javascript:void(0);" data-id="{{relFuture.ReleaseId}}" ng-click="methods.GetReleaseData(relFuture.ReleaseId);"> {{relFuture.Title}} </a></td>
+                                         <td style="text-align: center;" >{{relFuture.ReleaseDate}}  </td>
+                                         <td style="text-align: center;"> {{relFuture.Description}}  </td>
+                                         <td style="text-align: center;"> {{relFuture.ContactPerson}}  </td>
+                                         </tr>
+                                    </tbody>
+                            </table>
+                
+                <!--End : Right Part-->
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+ 
+
+       <section class="col-lg-12" id="sectionID4" style="height:70px; padding-top:4px;margin-left:15px;width:97.7%;">
+                 <div class="row" style="border:1px solid silver;height:70px;">
+                  <div class="col-lg-12 " style="overflow-y:scroll;height:70px; padding-top:3px;padding-bottom:3px;">
+
+                    This is Tab Content Data :::Bottom Comment Tile fro the Release tab.This is Tab Content Data :::Bottom Comment Tile fro the Release tab.This is Tab Content Data :::Bottom Comment Tile fro the Release tab.This is Tab Content Data :::Bottom Comment Tile fro the Release tab.
+                      This is Tab Content Data :::Bottom Comment Tile fro the Release tab.This is Tab Content Data :::Bottom Comment Tile fro the Release tab.This is Tab Content Data :::Bottom Comment Tile fro the Release tab.This is Tab Content Data :::Bottom Comment Tile fro the Release tab.
+                     Co This is Tab Content Data :::Bottom Comment Tile fro the Release tab.This is Tab Content Data :::Bottom Comment Tile fro the Release tab.This is Tab Content Data :::Bottom Comment Tile fro the Release tab.This is Tab Content Data :::Bottom Comment Tile fro the Release tab.
+                     CoCThis is Tab Content Data :::Bottom Comment Tile fro the Release tab.This is Tab Content Data :::Bottom Comment Tile fro the Release tab.This is Tab Content Data :::Bottom Comment Tile fro the Release tab.This is Tab Content Data :::Bottom Comment Tile fro the Release tab.
+                     ment Tile fro the Release tab.This is Tab Content Data :::Bottom Comment Tile fro the Release tab.This is Tab Content Data :::Bottom Comment Tile fro the Release tab.This is Tab Content Data :::Bottom Comment Tile fro the Release tab.
+                </div>
+                     </div>
+       </section>
+            </div>
+
+            <!--  -->
+        
+        
+            <!--  -->
+        </div>
+        
+    
+   
+ 
+    <div class="row">
+        <div id="ProgramDiv" style="padding-bottom:0px;" class="padLeft">
+ 
+        <div class="row padLeft" style="margin-left: 14px; margin-right: 16px;">
+ 
+            <div class="col-md-12 col-xs-12 padLeft BorderApply shadowApply brdCrumMedia_a"  data-ng-controller="dataProgram" id="nameDashboard">
+                <!--<h4 style="color:white;">{{name}} Dashboard</h4>-->
+                <!--<a href="#" style="color:white;">Programs</a>||
+                <a href="#" style="color:white;">Projects</a>||
+                <a href="#" style="color:white;">Program Name</a>||
+                <a href="#" style="color:white;">Project Name</a>-->
+                <ol class="breadcrumb padLeft" style="background-color: #424E66;" ng-controller="BreadCrumbCtrl">
+                    <li data-ng-repeat="bread in viewModel.ItemList">
+                        <a href="javascript:void(0)" class="brdCrumMedia_b " ng-click="methods.ReloadProgram();">{{bread.Name}}</a> 
+
+                    </li>
+
+                  
+                     <li style="display:none;">
+                        <a href="index.html" style="display:none;">Program <span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="color:white;"></span></a>
+                        <a href="#" style="display:none;" id="idBrdScrProgName" onclick="location.href = 'index.html';"></a>
+                        <a style="display:none;" id="idBrdScrProj"> <span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="color:white;"></span></a>
+                        <a style="display:none;" id="idBrdScrProjName"><span class="glyphicon glyphicon-menu-right" aria-hidden="true" style="color:white;"></span> </a>
+                    </li>
+  
+                </ol>    
+            </div>
+ 
+        </div>
+ 
+            
+ 
+        <div class="row" style="padding-top:0px;margin-right: 15px;">
+ 
+            <div id="divprogramid" class="col-xs-12 col-sm-12 col-md-2" ng-controller="MainCtrl">
+                <div class="info-box  removeBorder shadowApply leftMenu"  id="divleftmenu"  ng-include="'/shared/LeftNavigation.html'">
+                    <!-- Start : left Navigation-->
+                    <!-- leftNavigation.html -->
+                    <!-- End : left Navigation-->
+                </div>
+ 
+                <div id="pstatus" class="pop-up" onmouseleave="statushide(event)">
+                    <div style="float:right">
+                        <a href="#" onclick="statushide(event)">
+                            <span class="glyphicon glyphicon-remove"></span>
+                        </a>
+                    </div>
+                    <form role="form">
+                        <div ng-controller="chemCtrl">
+                            <input type="radio" id="rdgreen" name="statuscolor" ng-click="SaveprojectStatus('G')" onclick="backstatuscolor('#80E383')" value="G"><b> Green</b><br />
+                            <input type="radio" id="rdyellow" name="statuscolor" ng-click="SaveprojectStatus('Y')" onclick="backstatuscolor('#F2F757')" value="Y"> <b>Yellow</b><br />
+                            <input type="radio" id="rdred" name="statuscolor" ng-click="SaveprojectStatus('R')" onclick="backstatuscolor('#FF6666')" value="R"> <b>Red</b>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+            
+            <script type="text/javascript">
+
+                function statusshow(e, color) {
+                    document.getElementById('rdgreen').checked = false;
+                    document.getElementById('rdyellow').checked = false;
+                    document.getElementById('rdred').checked = false;
+
+                    var moveLeft = 10;
+                    var moveDown = -156;
+                    var isFirefox = typeof InstallTrigger !== 'undefined';
+                    var isIE = /*@cc_on!@*/false || !!document.documentMode;
+                    if (isFirefox == true || isIE == true) {
+                        moveLeft = 10;
+                        moveDown = -180;
+                        $('div#pstatus').css('width', 200)
+
+                    }
+                    //calculating offset for displaying popup message
+                    leftVal = e.pageX + moveLeft;
+                    topVal = e.pageY + moveDown;
+
+                    //$('div#pstatus').show().css({ left: e.pageX, top: e.pageY });
+                    $('div#pstatus').toggle("slide").css('top', topVal).css('left', leftVal).css('z-index', 1).css('background', color);
+
+
+
+                }
+
+                function statushide(e) {
+                    $('div#pstatus').fadeOut(200);
+
+                }
+
+                function backstatuscolor(color) {
+                    $('div#pstatus').css('background', color);
+                    setTimeout(doSomething, 100);
+                    function doSomething() {
+                        $('div#pstatus').fadeOut(200);
+                    };
+
+                }
+
+            </script>
+            <!--<script>
+                $(document).click(function (e) {
+                    //getting height and width of the message box
+                    var height =200;
+                    var width = 100;
+                    //calculating offset for displaying popup message
+                    leftVal = e.pageX - (width / 2) + "px";
+                    topVal = e.pageY - ((height + 450) / 2) + "px";
+                    //show the popup message and hide with fading effect
+                    $('#mpopup').css({ left: leftVal, top: topVal });
+                });
+            </script>-->
+ 
+            <div class="col-xs-12 col-sm-12 col-md-10">
+ 
+                <div class="headerTimeline" style="background: #364f63; display:none;">
+                    <div id="header">
+ 
+                    </div>
+                </div>
+ 
+                <!--<div style="height:375px; width:50%; overflow:auto " ng-controller="timeLineEditable">
+                    <div id="visualization" style="width:1500px;height:500px;" ng-click="winEditableGrid()"></div>
+                </div>-->
+                <div class="row rowTop2 boxBottomRight">
+                <div class="row">
+                    <div class="col-md-7 addMargin_a" >
+                        <div class="row milestoneHeader BorderApply">
+                            <span class="milestoneHeading">Milestone</span>
+                            
+                <a  style="float:right;padding:5px;" href="" id="view" ng-controller="viewTimeline" ng-click="timeline();" class="colorWhite glyphicon glyphicon-fullscreen"></a>
+                <a style="float:right;padding:5px;" href="" id="edit" ng-controller="editTimelineData" ng-click="editData();" class="colorWhite glyphicon glyphicon-edit"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ 
+                <!--<a href="" id="view" ng-controller="chemCtrl" ng-click="timeline();" class="glyphicon glyphicon-fullscreen"></a>-->
+           
+                        </div>
+                        <table ng-include="'/assets/timeline/TimelineView.html'"></table>
+ 
+                    </div>
+                    <div class="col-md-5 addMargin padRightApply rightBox">
+                        <!--Start:According --->
+                        <div class="row weeklyHeader BorderApply">
+                            <span class="milestoneHeading">Weekly Status Report</span><a href="javascript:void(0)" id="dvOpenKeymdl" class="colorWhite glyphicon glyphicon-edit" style="float:right;top: 7px; right: 5px;"></a>
+                        </div>
+                        <div class="well well_a1 shadowApply removeBorder well_a">
+                            <div ng-include="'shared/RightPanel.html'"></div>
+                            <!--End:According --->
+                        </div>
+                           
+
+                            <!--<div class="well shadowApply removeBorder" style="height: 280px;  margin-right: 14px;">
+                                <legend class="weaklyStatusSub fFamily1">Key Accomplishments</legend>
+                                <div id="divrootKeyAcco" class="control-group" style="height: 80px; overflow-x: hidden">
+
+                                    <div id="divKeyAcco" class="list-inline" style="padding-left:10px" spellcheck="false">
+
+                                        {{models.KeyAccomplishments}}
+                                    </div>
+                                    <div id="myProgress" class="container;vertical-align:right;" style="display: none;width:100%">
+                                        <div style="width:100px;padding-left:125px;padding-top:30px">
+                                            <button class="btn btn-lg btn-warning;backgroud-color:black;vertical-align: middle;top: 50%;left: 50%;margin-right:">
+                                                <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>
+                                                Saving...
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                   
+
+                                </div>
+                                <legend class="weaklyStatusSub fFamily1">Next Step</legend>
+                                <div id="divrootfutureplan" class="control-group" style="height: 40px; overflow-x: hidden; ">
+
+                                    <div id="divfutureplan" class="list-inline" style="padding-left:10px;" spellcheck="false">
+
+
+                                    </div>
+                                    <div id="myProgress1" class="container;vertical-align:right;" style="display: none;width:100%">
+                                        <div style="width:100px;padding-left:125px;padding-top:30px">
+                                            <button class="btn btn-lg btn-warning;backgroud-color:black;vertical-align: middle;top: 0%;left: 50%;margin-right: 50%;">
+                                                <span class="glyphicon glyphicon-refresh glyphicon-refresh-animate"></span>
+                                                Saving...
+                                            </button>
+                                        </div>
+                                    </div>
+                                 
+                                </div>
+
+                            </div>-->
+                        
+
+                  
+
+
+                       <!-- <script>
+                            $('.dropdown.keep-open').on({
+                                "shown.bs.dropdown": function () { this.closable = true; },
+                                "click": function (e) {
+                                    var target = $(e.target);
+                                    var d = target.data();
+                                    if (typeof d.toggle != 'undefined' && d.toggle == 'dropdown')
+                                        this.closable = true;
+                                    else {
+                                        var p = target.parent();
+                                        var dd = p.data();
+                                        if (typeof dd.toggle != 'undefined' && dd.toggle == 'dropdown')
+                                            this.closable = true;
+                                        else {
+                                            if (target.hasClass('dropdown-menu'))
+                                                this.closable = false;
+                                            else {
+                                                var pp = target.parent('.dropdown-menu');
+                                                if (typeof pp != 'undefined')
+                                                    this.closable = false;
+                                                else
+                                                    this.closable = true;
+                                            }
+                                        }
+                                    }
+                                 
+                                },
+                                "hide.bs.dropdown": function () { return this.closable; }
+                            });
+
+                            //$('#changePasswordID').click(function () {
+                            //    $('.dropdown-menu').css("display", "none");
+                            //});
+                        </script>-->
+
+                        
+
+ 
+                    </div>
+
+                </div>
+ 
+                <!--<hr style="display: block; margin-left: auto; margin-right: auto; border-style: inset; border-width: 1px; " />-->
+ 
+                <div ng-include="'/assets/BottomTiles/BottomTiles.html'">
+ 
+                </div>
+                </div>
+                
+            </div>
+ 
+        </div>
+ 
+    </div>
+    </div>
+ 
+    <!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+ 
+    <!-- Modal Windows -->
+ 
+    <div ng-include="'/assets/ModalWindow/ModalWindows.html'">
+ 
+    </div>
+ 
+    <!--<script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        var modal1 = document.getElementById('myModal1');
+        var modal2 = document.getElementById('myModal2');
+ 
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        var btn2 = document.getElementById("myBtn2");
+        var btn3 = document.getElementById("myBtn3");
+ 
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        var span1 = document.getElementsByClassName("close1")[0];
+        var span2 = document.getElementsByClassName("close2")[0];
+ 
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        btn2.onclick = function () {
+            modal1.style.display = "block";
+        }
+        btn3.onclick = function () {
+            modal2.style.display = "block";
+        }
+ 
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        span1.onclick = function () {
+            modal1.style.display = "none";
+        }
+        span2.onclick = function () {
+            modal2.style.display = "none";
+        }
+ 
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            if (event.target == modal1) {
+                modal1.style.display = "none";
+            }
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+    </script>-->
+ 
+    <div id="divTable" style="display:none;">
+    </div>
+    <input type="hidden" id="programid" value="0" />
+    <input type="hidden" id="statusProgramOrProject" />
+    <input type="hidden" id="milestone" value="Y" />
+    <input type="hidden" id="weeklyStatusID" value="0" />
+    <input type="hidden" id="hdSetpageindex" value="20" />
+    <input type="hidden" id="hdGlobalID" value="0" />
+    
+    
+
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+
+                $("#accordion > li > div").click(function () {
+                    
+                    if (false == $(this).next().is(':visible')) {
+                        $('#accordion ul').slideUp(300);
+                    }
+                    $(this).next().slideToggle(300);
+                });
+
+                $('#accordion ul:eq(0)').show();
+
+           
+
+            }, 3000);
+
+          
+           
+        });
+
+        BindYears('keyYear2');
+        BindMonths('keyMonth2', '0');
+     
+    </script>
+
+   
+</body>
+
+</html>

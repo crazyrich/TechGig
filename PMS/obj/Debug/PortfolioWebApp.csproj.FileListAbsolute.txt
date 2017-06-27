@@ -1,0 +1,10 @@
+E:\PMS\PMS\bin\PortfolioWebApp.dll.config
+E:\PMS\PMS\bin\PortfolioWebApp.dll
+E:\PMS\PMS\bin\PortfolioWebApp.pdb
+E:\PMS\PMS\obj\Debug\PortfolioWebApp.dll
+E:\PMS\PMS\obj\Debug\PortfolioWebApp.pdb
+D:\PMS\PMS\bin\PortfolioWebApp.dll
+D:\PMS\PMS\bin\PortfolioWebApp.pdb
+D:\PMS\PMS\obj\Debug\PortfolioWebApp.dll
+D:\PMS\PMS\obj\Debug\PortfolioWebApp.pdb
+D:\PMS\PMS\obj\Debug\PortfolioWebApp.csprojResolveAssemblyReference.cache

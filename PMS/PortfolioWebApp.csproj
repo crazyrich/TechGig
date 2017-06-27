@@ -1,0 +1,648 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{01CC9D52-D0E2-4662-9EC2-8E18CB06E140}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PortfolioWebApp</RootNamespace>
+    <AssemblyName>PortfolioWebApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Tracing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Tracing.4.0.30506\lib\net40\System.Web.Http.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.OData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.OData.4.0.30506\lib\net40\System.Web.Http.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Spatial, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\BreadCrumbController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\FinanceController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controllers\HttpPost.cs" />
+    <Compile Include="Controllers\IssueController.cs" />
+    <Compile Include="Controllers\ManageUserController.cs" />
+    <Compile Include="Controllers\MileStoneController.cs" />
+    <Compile Include="Controllers\ProgramController.cs" />
+    <Compile Include="Controllers\ProjectController.cs" />
+    <Compile Include="Controllers\ReleaseController.cs" />
+    <Compile Include="Controllers\ResourceController.cs" />
+    <Compile Include="Controllers\RoleController.cs" />
+    <Compile Include="Controllers\WeeklystatusController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CustomAuthorizeAttribute.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\CustomerRepository.cs" />
+    <Compile Include="Models\Finance.cs" />
+    <Compile Include="Models\FinanceRepository.cs" />
+    <Compile Include="Models\GetAllResourceForEdit.cs" />
+    <Compile Include="Models\IBreadCrumb.cs" />
+    <Compile Include="Models\ICustomerRepository.cs" />
+    <Compile Include="Models\IFinanceRepository.cs" />
+    <Compile Include="Models\IIssue.cs" />
+    <Compile Include="Models\IMileStoneRepository.cs" />
+    <Compile Include="Models\IProgramRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\IProjectRepository.cs" />
+    <Compile Include="Models\IRelease.cs" />
+    <Compile Include="Models\IResource.cs" />
+    <Compile Include="Models\IRiskRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\IRoleRepository.cs" />
+    <Compile Include="Models\Issue.cs" />
+    <Compile Include="Models\IssueRepository.cs" />
+    <Compile Include="Models\IUserRepository.cs" />
+    <Compile Include="Models\IWeeklystatus.cs" />
+    <Compile Include="Models\MileStone.cs" />
+    <Compile Include="Models\MileStoneRepository.cs" />
+    <Compile Include="Models\Program.cs" />
+    <Compile Include="Models\ProgramRepository.cs" />
+    <Compile Include="Models\Project.cs" />
+    <Compile Include="Models\ProjectRepository.cs" />
+    <Compile Include="Controllers\RiskController.cs" />
+    <Compile Include="Models\Release.cs" />
+    <Compile Include="Models\ReleaseRepository.cs" />
+    <Compile Include="Models\Resource.cs" />
+    <Compile Include="Models\ResourceForModal.cs" />
+    <Compile Include="Models\ResourceRepository.cs" />
+    <Compile Include="Models\Risk.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\RiskRepository.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\RoleRepository.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserRepository.cs" />
+    <Compile Include="Models\ViewModelResource.cs" />
+    <Compile Include="Models\Weeklystatus.cs" />
+    <Compile Include="Models\WeeklystatusRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\assets\css\adminCustomCss.css" />
+    <Content Include="Admin\assets\DataTables\jquery.dataTables.min.js" />
+    <Content Include="Admin\assets\js\angular-datatables.min.js" />
+    <Content Include="Admin\assets\js\angular.min.js" />
+    <Content Include="Admin\assets\js\jquery-1.11.3.min.js" />
+    <Content Include="Admin\assets\js\Services\ManageUserService.js" />
+    <Content Include="Admin\template\ManageUser.html" />
+    <Content Include="Admin\AdminPanel.html" />
+    <Content Include="Admin\assets\css\bootstrap.min.css" />
+    <Content Include="Admin\assets\css\distmain.css" />
+    <Content Include="Admin\assets\css\main.css" />
+    <Content Include="Admin\assets\js\adminApp.js" />
+    <Content Include="Admin\assets\js\bootstrap-responsive-tabs.js" />
+    <Content Include="Admin\assets\js\bootstrap.min.js" />
+    <Content Include="Admin\assets\js\Controller\ManageRole.js" />
+    <Content Include="Admin\assets\js\Controller\ManageUser.js" />
+    <Content Include="Admin\assets\js\jquery.js" />
+    <Content Include="Admin\assets\js\lorem.js" />
+    <Content Include="Admin\template\AssignUserRole.html" />
+    <Content Include="Admin\template\Welcome.html" />
+    <Content Include="app.module.js" />
+    <Content Include="app.routes.js" />
+    <Content Include="article\articleDirective.js" />
+    <Content Include="article\articleView.html" />
+    <Content Include="assets\BottomTiles\BottomTiles.html" />
+    <Content Include="assets\BottomTiles\BottomTilesController.js" />
+    <Content Include="assets\BottomTiles\JSTiles.js" />
+    <Content Include="assets\Content\bootstrap-datetimepicker\bootstrap-datetimepicker.css" />
+    <Content Include="assets\Content\bootstrap-datetimepicker\bootstrap-datetimepicker.min.css" />
+    <Content Include="assets\Content\bootstrap-theme.css" />
+    <Content Include="assets\Content\bootstrap-theme.min.css" />
+    <Content Include="assets\Content\bootstrap.css" />
+    <Content Include="assets\Content\bootstrap.min.css" />
+    <Content Include="assets\Content\datatables-plugins\dataTables.bootstrap.css" />
+    <Content Include="assets\Content\dataTables.responsive\dataTables.responsive.css" />
+    <Content Include="assets\Content\Site.css" />
+    <Content Include="assets\Content\toastr.css" />
+    <Content Include="assets\Content\toastr.min.css" />
+    <Content Include="assets\css\2-col-portfolio.css" />
+    <Content Include="assets\css\AdminLTE.css" />
+    <Content Include="assets\css\AdminLTE_14mar.css" />
+    <Content Include="assets\css\bootstrap-theme.css" />
+    <Content Include="assets\css\bootstrap-theme.min.css" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\customDesign.css" />
+    <Content Include="assets\css\dataTables.bootstrap.css" />
+    <Content Include="assets\css\Demo.css" />
+    <Content Include="assets\css\Flip.css" />
+    <Content Include="assets\css\HeatMap.css" />
+    <Content Include="assets\css\jquery-ui.css" />
+    <Content Include="assets\css\jquery.datepick.css" />
+    <Content Include="assets\css\LeftMenu.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\css\toastr.min.css" />
+    <Content Include="assets\css\vis.css" />
+    <Content Include="assets\Finance\ControllerEditFinance.js" />
+    <Content Include="assets\Finance\Finance.js" />
+    <Content Include="assets\Finance\FinanceGrid.html" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\Header\HeaderController.js" />
+    <Content Include="assets\Header\HeaderTiles.html" />
+    <Content Include="assets\img\a6.png" />
+    <Content Include="assets\img\circle-green.ico" />
+    <Content Include="assets\img\circle-red.ico" />
+    <Content Include="assets\img\circle-yellow.ico" />
+    <Content Include="assets\img\comment_small.png" />
+    <Content Include="assets\img\finance.png" />
+    <Content Include="assets\img\Home.png" />
+    <Content Include="assets\img\Info.png" />
+    <Content Include="assets\img\issue.png" />
+    <Content Include="assets\img\issue_small.png" />
+    <Content Include="assets\img\member.png" />
+    <Content Include="assets\img\member_small.png" />
+    <Content Include="assets\img\plus.png" />
+    <Content Include="assets\img\plus1.png" />
+    <Content Include="assets\img\plus_white.png" />
+    <Content Include="assets\img\project.png" />
+    <Content Include="assets\img\project_list.png" />
+    <Content Include="assets\img\project_list12.png" />
+    <Content Include="assets\img\q2.png" />
+    <Content Include="assets\img\q5.png" />
+    <Content Include="assets\img\rightarrow.png" />
+    <Content Include="assets\img\risk.png" />
+    <Content Include="assets\img\risk_small.png" />
+    <Content Include="assets\img\Settings.png" />
+    <Content Include="assets\img\tick_small.png" />
+    <Content Include="assets\Issue\ControllerEditIssue.js" />
+    <Content Include="assets\Issue\IssueChart.js" />
+    <Content Include="assets\Issue\IssueGrid.html" />
+    <Content Include="assets\js\Accordian\accordian.css" />
+    <Content Include="assets\js\Accordian\myAccordian.css" />
+    <Content Include="assets\js\angular-mocks.js" />
+    <Content Include="assets\js\angular-resource.min.js" />
+    <Content Include="assets\js\angular-route.js" />
+    <Content Include="assets\js\angular-sanitize.js" />
+    <Content Include="assets\js\angular.min.js" />
+    <Content Include="assets\js\appAuth.js" />
+    <Content Include="assets\js\BarChart.js" />
+    <Content Include="assets\js\bootbox.min.js" />
+    <Content Include="assets\js\bootstrap-datepicker.js" />
+    <Content Include="assets\js\bootstrap.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\canvasaActiveChart.js" />
+    <Content Include="assets\js\CanvasBarChart.js" />
+    <Content Include="assets\js\canvasjs.min.js" />
+    <Content Include="assets\js\canvasPieChart.js" />
+    <Content Include="assets\js\Chart.js" />
+    <Content Include="assets\js\ChartDisplay.js" />
+    <Content Include="assets\js\Common.js" />
+    <Content Include="assets\js\ControllerJS.js" />
+    <Content Include="assets\js\ControllerJs\ControllerShowRisk.js" />
+    <Content Include="assets\js\ControllerJs\KeyAccomplishment.js" />
+    <Content Include="assets\js\ControllerJs\LeftPanal.js" />
+    <Content Include="assets\js\dataTables.bootstrap.js" />
+    <Content Include="assets\js\Demo.js" />
+    <Content Include="assets\fonts\Raleway-ExtraLight.woff" />
+    <Content Include="assets\fonts\Raleway-SemiBold.woff" />
+    <Content Include="assets\fonts\raleway.extralight.ttf" />
+    <Content Include="assets\fonts\Raleway.woff" />
+    <Content Include="assets\fonts\ubuntu.light.ttf" />
+    <Content Include="assets\fonts\ubuntu.woff" />
+    <None Include="assets\js\jquery-2.1.1.intellisense.js" />
+    <Content Include="assets\js\FinanceChart.js" />
+    <Content Include="assets\js\jquery-2.1.1.js" />
+    <Content Include="assets\js\jquery-2.1.1.min.js" />
+    <Content Include="assets\js\jquery-ui.js" />
+    <Content Include="assets\js\jquery.base64.js" />
+    <Content Include="assets\js\jquery.dataTables.js" />
+    <Content Include="assets\js\jquery.dataTables.min.js" />
+    <Content Include="assets\js\jquery.datepick.js" />
+    <Content Include="assets\js\jquery.js" />
+    <Content Include="assets\js\jquery.plugin.js" />
+    <Content Include="assets\js\jquery.signalR-2.1.1.js" />
+    <Content Include="assets\js\jquery.signalR-2.1.1.min.js" />
+    <Content Include="assets\js\loginForm.js" />
+    <Content Include="assets\js\moment.js" />
+    <Content Include="assets\js\PieChart.js" />
+    <Content Include="assets\js\ProjectController.js" />
+    <Content Include="assets\js\Services\AuthenticationSrv.js" />
+    <Content Include="assets\js\Services\BreadCrumbSrv.js" />
+    <Content Include="assets\js\Services\MileStoneSrv.js" />
+    <Content Include="assets\js\Services\ngStorage.min.js" />
+    <Content Include="assets\js\Services\ProgrammeSrv.js" />
+    <Content Include="assets\js\stackedChart.js" />
+    <Content Include="assets\js\toastr.js" />
+    <Content Include="assets\js\toastr.min.js" />
+    <Content Include="assets\ModalWindow\ModalWindows.html" />
+    <Content Include="assets\Release\ReleaseController.js" />
+    <Content Include="assets\Release\ReleaseSrv.js" />
+    <Content Include="assets\Resource\ControllerEditResource.js" />
+    <Content Include="assets\Resource\ResourceChart.js" />
+    <Content Include="assets\Resource\ResourceGrid.html" />
+    <Content Include="assets\Resource\Validation.js" />
+    <Content Include="assets\RichEditor\img\nicEditorIcons.gif" />
+    <Content Include="assets\RichEditor\nicEdit.js" />
+    <Content Include="assets\RichEditor\skins\lightgray\content.inline.min.css" />
+    <Content Include="assets\RichEditor\skins\lightgray\content.min.css" />
+    <Content Include="assets\RichEditor\skins\lightgray\fonts\tinymce-small.svg" />
+    <Content Include="assets\RichEditor\skins\lightgray\fonts\tinymce.svg" />
+    <Content Include="assets\RichEditor\skins\lightgray\img\anchor.gif" />
+    <Content Include="assets\RichEditor\skins\lightgray\img\loader.gif" />
+    <Content Include="assets\RichEditor\skins\lightgray\img\object.gif" />
+    <Content Include="assets\RichEditor\skins\lightgray\img\trans.gif" />
+    <Content Include="assets\RichEditor\skins\lightgray\skin.ie7.min.css" />
+    <Content Include="assets\RichEditor\skins\lightgray\skin.min.css" />
+    <Content Include="assets\RichEditor\themes\modern\theme.min.js" />
+    <Content Include="assets\RichEditor\tinymce.min.js" />
+    <Content Include="assets\Risk\ControllerEditRisk.js" />
+    <Content Include="assets\Risk\RiskChart.js" />
+    <Content Include="assets\Risk\RiskGrid.html" />
+    <Content Include="assets\Risk\RiskProgramService.js" />
+    <Content Include="assets\timeline\timeline.js" />
+    <Content Include="assets\timeline\TimelineController.js" />
+    <Content Include="assets\timeline\TimelineView.html" />
+    <Content Include="assets\timeline\vis.css" />
+    <Content Include="assets\timeline\vis.js" />
+    <Content Include="assets\timeline\vis.min.css" />
+    <Content Include="assets\timeline\vis.min.js" />
+    <Content Include="bin\Antlr3.Runtime.dll" />
+    <Content Include="bin\de\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\de\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\de\System.Spatial.resources.dll" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.xml" />
+    <Content Include="bin\es\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\es\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\es\System.Spatial.resources.dll" />
+    <Content Include="bin\fr\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\fr\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\fr\System.Spatial.resources.dll" />
+    <Content Include="bin\it\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\it\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\it\System.Spatial.resources.dll" />
+    <Content Include="bin\ja\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\ja\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\ja\System.Spatial.resources.dll" />
+    <Content Include="bin\ko\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\ko\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\ko\System.Spatial.resources.dll" />
+    <Content Include="bin\Microsoft.Data.Edm.dll" />
+    <Content Include="bin\Microsoft.Data.Edm.xml" />
+    <Content Include="bin\Microsoft.Data.OData.dll" />
+    <Content Include="bin\Microsoft.Data.OData.xml" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Microsoft.Web.Mvc.FixedDisplayModes.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\PortfolioWebApp.dll" />
+    <Content Include="bin\PortfolioWebApp.pdb" />
+    <Content Include="bin\ru\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\ru\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\ru\System.Spatial.resources.dll" />
+    <Content Include="bin\System.Net.Http.Formatting.dll" />
+    <Content Include="bin\System.Net.Http.Formatting.xml" />
+    <Content Include="bin\System.Spatial.dll" />
+    <Content Include="bin\System.Spatial.xml" />
+    <Content Include="bin\System.Web.Cors.dll" />
+    <Content Include="bin\System.Web.Helpers.dll" />
+    <Content Include="bin\System.Web.Helpers.xml" />
+    <Content Include="bin\System.Web.Http.Cors.dll" />
+    <Content Include="bin\System.Web.Http.Cors.xml" />
+    <Content Include="bin\System.Web.Http.dll" />
+    <Content Include="bin\System.Web.Http.OData.dll" />
+    <Content Include="bin\System.Web.Http.OData.xml" />
+    <Content Include="bin\System.Web.Http.Tracing.dll" />
+    <Content Include="bin\System.Web.Http.Tracing.xml" />
+    <Content Include="bin\System.Web.Http.WebHost.dll" />
+    <Content Include="bin\System.Web.Http.WebHost.xml" />
+    <Content Include="bin\System.Web.Http.xml" />
+    <Content Include="bin\System.Web.Mvc.dll" />
+    <Content Include="bin\System.Web.Mvc.xml" />
+    <Content Include="bin\System.Web.Optimization.dll" />
+    <Content Include="bin\System.Web.Providers.dll" />
+    <Content Include="bin\System.Web.Razor.dll" />
+    <Content Include="bin\System.Web.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.Deployment.dll" />
+    <Content Include="bin\System.Web.WebPages.Deployment.xml" />
+    <Content Include="bin\System.Web.WebPages.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.dll" />
+    <Content Include="bin\System.Web.WebPages.Razor.xml" />
+    <Content Include="bin\System.Web.WebPages.xml" />
+    <Content Include="bin\WebGrease.dll" />
+    <Content Include="bin\zh-Hans\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\zh-Hans\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\zh-Hans\System.Spatial.resources.dll" />
+    <Content Include="bin\zh-Hant\Microsoft.Data.Edm.resources.dll" />
+    <Content Include="bin\zh-Hant\Microsoft.Data.OData.resources.dll" />
+    <Content Include="bin\zh-Hant\System.Spatial.resources.dll" />
+    <Content Include="blog\blogController.js" />
+    <Content Include="blog\blogService.js" />
+    <Content Include="blog\blogView.html" />
+    <Content Include="CSS\2-col-portfolio.css" />
+    <Content Include="CSS\AdminLTE.css" />
+    <Content Include="CSS\bootstrap-theme.css" />
+    <Content Include="CSS\bootstrap-theme.min.css" />
+    <Content Include="CSS\bootstrap.css" />
+    <Content Include="CSS\bootstrap.min.css" />
+    <Content Include="CSS\Demo.css" />
+    <Content Include="CSS\Flip.css" />
+    <Content Include="CSS\LeftMenu.css" />
+    <Content Include="CSS\toastr.min.css" />
+    <Content Include="DatabaseScript\DatabaseScript.sql" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="home\homeController.js" />
+    <Content Include="home\homeService.js" />
+    <Content Include="home\homeView.html" />
+    <Content Include="index.html" />
+    <Content Include="JS\angular-resource.min.js" />
+    <Content Include="JS\angular.min.js" />
+    <Content Include="JS\bootstrap.js" />
+    <Content Include="JS\bootstrap.min.js" />
+    <Content Include="JS\Demo.js" />
+    <Content Include="assets\Content\bootstrap-theme.css.map" />
+    <Content Include="assets\Content\bootstrap.css.map" />
+    <Content Include="assets\Content\dataTables.responsive\dataTables.responsive.scss" />
+    <Content Include="assets\Content\toastr.less" />
+    <Content Include="assets\Content\toastr.scss" />
+    <Content Include="assets\css\bootstrap-theme.css.map" />
+    <Content Include="assets\css\bootstrap-theme.min.css.map" />
+    <Content Include="assets\css\bootstrap.css.map" />
+    <Content Include="assets\css\bootstrap.min.css.map" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="assets\timeline\vis.map" />
+    <Content Include="bin\PortfolioWebApp.dll.config" />
+    <Content Include="assets\RichEditor\skins\lightgray\fonts\tinymce-small.eot" />
+    <Content Include="assets\RichEditor\skins\lightgray\fonts\tinymce-small.ttf" />
+    <Content Include="assets\RichEditor\skins\lightgray\fonts\tinymce-small.woff" />
+    <Content Include="assets\RichEditor\skins\lightgray\fonts\tinymce.eot" />
+    <Content Include="assets\RichEditor\skins\lightgray\fonts\tinymce.ttf" />
+    <Content Include="assets\RichEditor\skins\lightgray\fonts\tinymce.woff" />
+    <None Include="JS\jquery-2.1.1.intellisense.js" />
+    <Content Include="JS\jquery-2.1.1.js" />
+    <Content Include="JS\jquery-2.1.1.min.js" />
+    <Content Include="JS\jquery.js" />
+    <Content Include="JS\jquery.signalR-2.1.1.js" />
+    <Content Include="JS\jquery.signalR-2.1.1.min.js" />
+    <Content Include="JS\ShowRiskController.js" />
+    <Content Include="JS\toastr.js" />
+    <Content Include="JS\toastr.min.js" />
+    <Content Include="login.html" />
+    <Content Include="packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\portable-wp8+netcore45+net45+wp81+wpa81\System.Net.Http.Formatting.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\portable-wp8+netcore45+net45+wp81+wpa81\System.Net.Http.Formatting.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.xml" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.xml" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\net20\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\net20\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\net35\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\net35\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\net40\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\net40\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\netcore45\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\netcore45\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.xml" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.xml" />
+    <Content Include="shared\LeftNavigation.html" />
+    <Content Include="shared\RightPanel.html" />
+    <Content Include="shared\RiskTemplate.html" />
+    <Content Include="sidebar\sidebarDirective.js" />
+    <Content Include="sidebar\sidebarView.html" />
+    <Content Include="Top-Navigation.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="packages\Microsoft.AspNet.Cors.5.2.3\Microsoft.AspNet.Cors.5.2.3.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.Cors.5.2.3\Microsoft.AspNet.Cors.5.2.3.nuspec" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.5.2.3\Microsoft.AspNet.WebApi.5.2.3.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.5.2.3\Microsoft.AspNet.WebApi.5.2.3.nuspec" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.5.2.3\Microsoft.AspNet.WebApi.Client.5.2.3.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Client.5.2.3\Microsoft.AspNet.WebApi.Client.5.2.3.nuspec" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Core.5.2.3\Content\web.config.transform" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Core.5.2.3\Microsoft.AspNet.WebApi.Core.5.2.3.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Core.5.2.3\Microsoft.AspNet.WebApi.Core.5.2.3.nuspec" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Cors.5.2.3\Microsoft.AspNet.WebApi.Cors.5.2.3.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.Cors.5.2.3\Microsoft.AspNet.WebApi.Cors.5.2.3.nuspec" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\Microsoft.AspNet.WebApi.WebHost.5.2.3.nupkg" />
+    <Content Include="packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\Microsoft.AspNet.WebApi.WebHost.5.2.3.nuspec" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\Newtonsoft.Json.6.0.4.nupkg" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\Newtonsoft.Json.6.0.4.nuspec" />
+    <Content Include="packages\Newtonsoft.Json.6.0.4\tools\install.ps1" />
+    <Content Include="packages\repositories.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Copy of OPPR ESB Support Weekly Status Report_Week Ending_02032016.xlsx" />
+    <Content Include="App_Data\Issues_TechnologyTracks_Export_01_30_2012.xlsx" />
+    <Content Include="App_Data\Risks 5.10.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Customers.xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\bootstrap-theme.css.map" />
+    <Content Include="CSS\bootstrap-theme.min.css.map" />
+    <Content Include="CSS\bootstrap.css.map" />
+    <Content Include="CSS\bootstrap.min.css.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\libs\" />
+    <Folder Include="components\" />
+    <Folder Include="obj\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56193</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56193/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

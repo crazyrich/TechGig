@@ -1,0 +1,53 @@
+﻿<nav id="mainnav" class="colorBlack" ng-controller="chemCtrl">
+
+    <ul data-ng-repeat="item in  viewModel.Listdata" id="ulProjectOrProgram">
+        <li class="box removeBorder removeMargin" ng-class="{'selected-item': $index == $parent.pageNumber }" ng-click="methods.setPageNumber($index,(item.Name),(item.Id),(item.STATUS),(item.project_Id),(item.WeeklyStatusId))">
+            <div style="display: inline; ">
+                 <div class="containerpopup" ng-if="(item.StatusOfProject)=='R'" style="display: inline; float: left; width: 30px; height: 30px; margin-left: 20px; margin-top: 4px; ">
+
+                    <img id="img" src="assets/img/circle-red.ico" onclick='statusshow(event, "#FF6666")' width="15px" height="15px" style="cursor:pointer;" />
+
+                </div>
+                <div class="containerpopup" ng-if="(item.StatusOfProject)=='G'" style="display: inline; float: left; width: 30px; height: 30px; margin-left: 20px; margin-top: 4px;">
+
+                    <img id="img1" src="assets/img/circle-green.ico" onclick='statusshow(event, "#80E383")' width="15px" height="15px" style="cursor:pointer;" />
+                </div>
+                <div class="containerpopup" ng-if="(item.StatusOfProject)=='Y'" style="display: inline; float: left; width: 30px; height: 30px; margin-left: 20px; margin-top: 4px;">
+
+                    <img id="img2" src="assets/img/circle-yellow.ico" onclick='statusshow(event, "#F2F757")' width="15px" height="15px" style="cursor:pointer;" />
+                </div>
+                <div class="containerpopup" ng-if="(item.WeeklyStatusId)=='0'" style="display: inline; float: left; width: 30px; height: 30px; margin-left: 20px; margin-top: 8px;">
+                    <div style="height:15px;width:15px;border-radius:50%;background-color:gray;">
+
+
+                    </div>
+
+                </div>
+                <div>
+                    <a href="" class="removeBorder">
+                        <div style="display: inline;">
+                            <h3 class="leftFontColor" style="text-align:left;margin-top:7px; padding-bottom:5px;">
+                                <b>{{ item.Name | limitTo: 20 }}{{item.Name.length > 20 ? '...' : ''}}&nbsp;</b>
+                            </h3>
+                        </div>
+
+                        <div>
+                            <div class="fFamily2 fontSize10" style="display: inline;"><img src="assets/img/member_small.png" />{{item.ResourceCount}}</div>&nbsp;
+
+                            <div class="fFamily2 fontSize10" style="display: inline;"><img src="assets/img/risk_small.png" />{{item.RiskCount}}</div>&nbsp;
+                            <div class="fFamily2 fontSize10" style="display: inline;"><img src="assets/img/issue_small.png" />{{item.IssueCount}}</div>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <div class="fFamily2" ng-if="GlobalId =='0'" style="display: inline;" ng-click="methods.doubleclick((item.Id),(item.STATUS));"><img src="assets/img/a6.png" width="20px" height="20px" /></div>
+
+                        </div>
+                        <script>
+                            $("#divleftmenu").mouseover(function () { $(this).css("overflow-Y", "auto"); });
+                            $("#divleftmenu").mouseout(function () { $(this).css("overflow-Y", "hidden"); });
+                        </script>
+
+                    </a>
+                </div>
+
+            </div>
+        </li>
+    </ul>
+</nav>

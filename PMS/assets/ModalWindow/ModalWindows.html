@@ -1,0 +1,135 @@
+﻿<div id="allModals" data-ng-controller="tilesData">
+    <div id="myModal" class="modal-Tiles">
+        <div class="modal-content-Tiles  w3-animate-zoom">
+            <div class="modal-header-Tiles">
+                <span class="closeIssueTile">×</span>
+                <h2 class="milestoneHeading">Critical Issues</h2>
+            </div>
+            <div class="modal-body-Tiles" style="height:400px; overflow:auto;" >
+             
+                <div data-ng-repeat="x in IssuesForTile">
+                    <a href="#" class="list-group-item">{{x.IssueTitle}}</a>
+                </div>
+               
+            </div>
+            <div class="modal-footer-Tiles">
+                <h3></h3>
+            </div>
+        </div>
+    </div>
+    <div id="myModal1" class="modal-Tiles" >
+        <!-- Modal content -->
+        <div class="modal-content-Tiles  w3-animate-zoom">
+            <div class="modal-header-Tiles">
+                <span class="close1">×</span>
+                <h2 class="milestoneHeading">Risks</h2>
+            </div>
+            <div class="modal-body-Tiles" style="height:400px; overflow:auto;">
+                <div class="list-group">
+
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <!--<th>ID</th>
+                                <th>Risk Owner</th>-->
+                                <th>Risk Title</th>
+                                <th>Description</th>
+                                <!--<th>Risk Status</th>-->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-ng-repeat="x in value">
+                                <!--<tr> -->
+                                <!--<td>{{x.ID}}</td>
+                                <td>{{x.RiskOwner}}</td>-->
+                                <td>{{x.RiskTitle}}</td>
+                                <td>{{x.Description}}</td>
+                                <!--<td>{{x.RiskStatus}}</td>-->
+                                
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <div class="modal-footer-Tiles">
+                <h3></h3>
+            </div>
+        </div>
+    </div>
+    <div id="myModal2" class="modal-Tiles" >
+        <!-- Modal content -->
+        <div class="modal-content-Tiles  w3-animate-zoom">
+            <div class="modal-header-Tiles">
+                <span class="close2">×</span>
+                <h2 class="milestoneHeading">Comments</h2>
+            </div>
+            <div id="divCommentBody" class="modal-body-Tiles" contenteditable="true" style="height:400px; overflow:auto;" onblur="onBlurTile()">
+                {{ViewModels.listComments}}
+            </div>
+            <div class="modal-footer-Tiles">
+                <h3></h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    var modal1 = document.getElementById("myModal1");
+    var modal2 = document.getElementById("myModal2");
+
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtnIcon");
+    var btn2 = document.getElementById("myBtn2Icon");
+    var btn3 = document.getElementById("myBtn3Icon");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("closeIssueTile")[0];
+    var span1 = document.getElementsByClassName("close1")[0];
+    var span2 = document.getElementsByClassName("close2")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function () {
+        modal.style.display = "block";
+        angular.element(document.getElementById("myModal")).scope().getElementID();
+    }
+    btn2.onclick = function () {
+        modal1.style.display = "block";
+        angular.element(document.getElementById("myModal1")).scope().getElementID();
+    }
+    btn3.onclick = function () {
+        modal2.style.display = "block";
+        angular.element(document.getElementById("myModal2")).scope().getElementID();
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+    span1.onclick = function () {
+        modal1.style.display = "none";
+    }
+    span2.onclick = function () {
+        modal2.style.display = "none";
+    }
+
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+        if (event.target == modal1) {
+            modal1.style.display = "none";
+        }
+        if (event.target == modal2) {
+            modal2.style.display = "none";
+        }
+
+    }
+
+</script>

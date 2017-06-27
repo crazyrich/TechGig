@@ -1,0 +1,76 @@
+﻿<div class="" data-ng-controller="ControllerManageResource">
+    <div class="panel panel-info" style="margin-bottom: 2px; height:564px;">
+        <div class="panel-heading fFamily2" style="font-size:17px">
+            Release Resource
+        </div>
+        <div class="panel-body">
+            <div class="row" style="margin-top: 3px; margin-bottom: 2px;">
+                <div class="col-lg-6">
+                    <div class="col-md-4">Select Resource</div>
+                    <div class="col-md-4">
+                        <input type="text" ng-model="models.selectedResource" data-ng-changed="" placeholder="Search Resource" typeahead="c.Name+' (EmpCode-'+c.ResourceEmpID+')' as c for c in models.Resource | filter:$viewValue | limitTo:10" typeahead-min-length='1' typeahead-on-select="methods.GetResourceNameSearchList()" typeahead-template-url="customTemplate.html" class="form-control" style="width:350px;">
+                        <i class="icon-search nav-search-icon"></i>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="col-md-6">Select Program</div>
+                    <div class="col-md-6">
+                        <select id="ProgramDropdown" data-ng-model="models.selectedProgram" data-ng-options="x.Program_Id as x.Program_Name for x in models.ProgramList" class="form-control" data-ng-change="methods.GetResourceProgramSearchList();">
+                            <option value="" selected="" class="ng-binding">Please select</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-2" style="text-align:right;margin-bottom:4px;">
+                </div>
+            </div>
+
+
+            <table id="table_id3" class="table table-striped"  show-filter="true">
+                <thead>
+                    <tr>
+                        <th style='display:none'></th>
+                        <th>Resource Name</th>
+                        <th>Employee Id</th>
+                        <th>Role</th>
+                        <th>
+                            ProgramName
+                            <!--<i><a href="" ng-click="sort('ProgramName')" class="sortDir" ng-class="{ active: isSorted('ProgramName') }">&#x25B2;</a></i>
+                            <i><a href="" ng-click="sort('-ProgramName')" class="sortDir" ng-class="{ active: isSorted('-ProgramName' ) }">&#x25BC;</a></i>-->
+                        </th>
+                        <th>
+                            ProjectName
+                            <!--<i><a href="" ng-click="sort('ProjectName')" class="sortDir" ng-class="{ active: isSorted('ProjectName') }">&#x25B2;</a></i>
+                            <i><a href="" ng-click="sort('-ProjectName')" class="sortDir" ng-class="{ active: isSorted('-ProjectName' ) }">&#x25BC;</a></i>-->
+
+                        </th>
+                        <th>Release</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr data-ng-repeat="listData in models.ResourceAssignedProgramList ">
+                        <td style='display:none'>{{listData.Id}}</td>
+                        <td>{{ listData.Name}}</td>
+                        <td>{{listData.EmpId}}</td>
+                        <td>{{listData.Role}}</td>
+                        <td>{{listData.ProgramName}}</td>
+                        <td>{{listData.ProjectName}}</td>
+                        <td> <a href="javascript:void(0)" ng-click="HelperMethods.DeleteResourceProject(listData.Id);"><i class="glyphicon glyphicon-remove-circle"> </i></a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" data-ng-show="!models.ResourceAssignedProgramList.length">No Data Available !!</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+</div>
+<script type="text/ng-template" id="customTemplate.html">
+    <a>
+        <span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
+        <i>{{match.model.Name}}     (EmpCode-{{match.model.ResourceEmpID}})</i>
+
+    </a>
+</script>
