@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<h4>A View In MVC </h4>
+
+@{
+    if(ViewBag.Id!=null)
+    {
+        int str = ViewBag.Id;
+        Response.Write(str);
+   
+    }
+    
+ }

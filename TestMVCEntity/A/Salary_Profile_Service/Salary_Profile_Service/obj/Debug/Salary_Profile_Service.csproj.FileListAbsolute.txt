@@ -1,0 +1,6 @@
+D:\TestMVCEntity\Salary_Profile_Service\Salary_Profile_Service\bin\Salary_Profile_Service.dll
+D:\TestMVCEntity\Salary_Profile_Service\Salary_Profile_Service\bin\Salary_Profile_Service.pdb
+D:\TestMVCEntity\Salary_Profile_Service\Salary_Profile_Service\bin\EntityFramework.dll
+D:\TestMVCEntity\Salary_Profile_Service\Salary_Profile_Service\bin\EntityFramework.xml
+D:\TestMVCEntity\Salary_Profile_Service\Salary_Profile_Service\obj\Debug\Salary_Profile_Service.dll
+D:\TestMVCEntity\Salary_Profile_Service\Salary_Profile_Service\obj\Debug\Salary_Profile_Service.pdb

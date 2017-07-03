@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Day4_Demos
+{
+    class Employee
+    {
+        public int YearOfExp;
+        public Employee(int yearofexp)
+        {
+            YearOfExp = yearofexp;
+        }
+
+        public static Employee operator ++(Employee e)
+        {
+            ////differentiate pre and post
+            //Employee ee  = new Employee(e.YearOfExp);
+            //ee.YearOfExp++;
+            //return ee;
+
+            //dont differentiate pre and post
+            e.YearOfExp++;
+            return e;
+        }
+    }
+
+    class overloading_Unary
+    {
+        public static void Main(string[] args)
+        {
+          Employee suresh = new Employee(10);
+          Employee suresh1;
+          suresh1 = ++suresh;
+          suresh1 = suresh++;
+          Console.WriteLine(suresh1.YearOfExp);
+        }
+        
+
+ }
+}
+
+//The key is in understanding how the line Account b = a++; works. Given how your code is written, this line is the equivalent of this:
+//Account b = a;
+//a++;
+
+//And that is the order it will execute in. The assignment effectively(1) happens before the increment. So, the first effect of this line is that a and b both refer to the original object a.
+
+//Now the ++ portion will be evaluated. Inside of the operator method, we increment the Balance of the original object. At this point a and b are both pointing at the original, with a Balance of 11, and b will continue to do so.
+
+//However, you've created a new object inside the operator method and returned it as the output of the operator. a will now be updated to point at the newly created object.
+
+//So, a now points to a new object, while b continues to point to the original. That's why the WriteLine output appears swapped.
+

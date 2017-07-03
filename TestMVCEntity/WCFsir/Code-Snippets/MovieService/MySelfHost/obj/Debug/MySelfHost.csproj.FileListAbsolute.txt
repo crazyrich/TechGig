@@ -1,0 +1,8 @@
+C:\Users\Ankur.Pathak\Desktop\MovieService\MySelfHost\bin\Debug\MySelfHost.exe
+C:\Users\Ankur.Pathak\Desktop\MovieService\MySelfHost\bin\Debug\MySelfHost.pdb
+C:\Users\Ankur.Pathak\Desktop\MovieService\MySelfHost\bin\Debug\MovieService.dll
+C:\Users\Ankur.Pathak\Desktop\MovieService\MySelfHost\bin\Debug\MovieService.pdb
+C:\Users\Ankur.Pathak\Desktop\MovieService\MySelfHost\obj\Debug\MySelfHost.csprojResolveAssemblyReference.cache
+C:\Users\Ankur.Pathak\Desktop\MovieService\MySelfHost\obj\Debug\MySelfHost.exe
+C:\Users\Ankur.Pathak\Desktop\MovieService\MySelfHost\obj\Debug\MySelfHost.pdb
+C:\Users\Ankur.Pathak\Desktop\MovieService\MySelfHost\bin\Debug\MySelfHost.exe.config

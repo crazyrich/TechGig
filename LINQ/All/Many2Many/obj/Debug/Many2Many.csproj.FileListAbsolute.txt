@@ -1,0 +1,8 @@
+D:\LINQ\All\Many2Many\bin\Debug\Many2Many.exe.config
+D:\LINQ\All\Many2Many\bin\Debug\Many2Many.exe
+D:\LINQ\All\Many2Many\bin\Debug\Many2Many.pdb
+D:\LINQ\All\Many2Many\bin\Debug\EntityFramework.dll
+D:\LINQ\All\Many2Many\bin\Debug\EntityFramework.xml
+D:\LINQ\All\Many2Many\obj\Debug\Many2Many.csprojResolveAssemblyReference.cache
+D:\LINQ\All\Many2Many\obj\Debug\Many2Many.exe
+D:\LINQ\All\Many2Many\obj\Debug\Many2Many.pdb

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="EmpComp" />
+  <Alias Key="Target" Value="EmpComp.Store" />
+  <EntityContainerMapping CdmEntityContainer="EmpCompContainer" StorageEntityContainer="EmpCompStoreContainer">
+    <EntitySetMapping Name="Computers">
+      <EntityTypeMapping TypeName="EmpComp.Computer">
+        <MappingFragment StoreEntitySet="Computer">
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="CompName" ColumnName="CompName" />
+          <ScalarProperty Name="CompID" ColumnName="CompID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="EmpComp.Employee">
+        <MappingFragment StoreEntitySet="Employee">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="CompID" ColumnName="CompID" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

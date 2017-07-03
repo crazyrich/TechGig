@@ -1,0 +1,6 @@
+D:\C#\session1\Array1\Array1\bin\Debug\Array1.exe.config
+D:\C#\session1\Array1\Array1\bin\Debug\Array1.exe
+D:\C#\session1\Array1\Array1\bin\Debug\Array1.pdb
+D:\C#\session1\Array1\Array1\obj\Debug\Array1.exe
+D:\C#\session1\Array1\Array1\obj\Debug\Array1.pdb
+D:\C#\session1\Array1\Array1\obj\Debug\Array1.csprojResolveAssemblyReference.cache

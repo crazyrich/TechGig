@@ -1,0 +1,15 @@
+D:\C#\session1_3\Genrics\Attributes\bin\Debug\Attributes.exe.config
+D:\C#\session1_3\Genrics\Attributes\bin\Debug\Attributes.exe
+D:\C#\session1_3\Genrics\Attributes\bin\Debug\Attributes.pdb
+D:\C#\session1_3\Genrics\Attributes\obj\Debug\Attributes.exe
+D:\C#\session1_3\Genrics\Attributes\obj\Debug\Attributes.pdb
+D:\C#\session1_3\GetSet_FileHandling\Attributes\bin\Debug\Attributes.exe.config
+D:\C#\session1_3\GetSet_FileHandling\Attributes\obj\Debug\Attributes.exe
+D:\C#\session1_3\GetSet_FileHandling\Attributes\obj\Debug\Attributes.pdb
+D:\PHASE _I_BootCamp\BootCamp\C#\session1_3\GetSet_FileHandling\Attributes\bin\Debug\Attributes.exe.config
+D:\PHASE _I_BootCamp\BootCamp\C#\session1_3\GetSet_FileHandling\Attributes\obj\Debug\Attributes.exe
+D:\PHASE _I_BootCamp\BootCamp\C#\session1_3\GetSet_FileHandling\Attributes\obj\Debug\Attributes.pdb
+D:\PHASE _I_BootCamp\BootCamp\C#\session1_3\GetSet_FileHandling\Attributes\bin\Debug\Attributes.exe
+D:\PHASE _I_BootCamp\BootCamp\C#\session1_3\GetSet_FileHandling\Attributes\bin\Debug\Attributes.pdb
+D:\PHASE _I_BootCamp\BootCamp\C#\session1_3\GetSet_FileHandling\Attributes\bin\Debug\Attributes.exe.CodeAnalysisLog.xml
+D:\PHASE _I_BootCamp\BootCamp\C#\session1_3\GetSet_FileHandling\Attributes\bin\Debug\Attributes.exe.lastcodeanalysissucceeded

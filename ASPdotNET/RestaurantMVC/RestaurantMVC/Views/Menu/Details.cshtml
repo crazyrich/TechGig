@@ -1,0 +1,24 @@
+﻿@model RestaurantMVC.Models.MenuServiceDB
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<table>
+    <tr>
+        <td>@Html.DisplayNameFor(model=>model.Id)</td>
+        <td>@Html.DisplayFor(model=>model.Id)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(model=>model.itemName)</td>
+        <td>@Html.DisplayFor(model=>model.itemName)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(model=>model.itemPrepTime)</td>
+        <td>@Html.DisplayFor(model=>model.itemPrepTime)</td>
+    </tr>
+    <tr>
+        <td>@Html.DisplayNameFor(model=>model.itemPrice)</td>
+        <td>@Html.DisplayFor(model=>model.itemPrice)</td>
+    </tr>
+</table>

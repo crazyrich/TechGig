@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="richModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="richEntities" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Products" EntityType="richModel.Product" />
+    <EntitySet Name="CarDetails" EntityType="richModel.CarDetail" />
+    <EntitySet Name="Cars" EntityType="richModel.Car" />
+    <AssociationSet Name="FK_CarDetails_Cars" Association="richModel.FK_CarDetails_Cars">
+      <End Role="Car" EntitySet="Cars" />
+      <End Role="CarDetail" EntitySet="CarDetails" />
+    </AssociationSet>
+    <EntitySet Name="Roles" EntityType="richModel.Role" />
+    <EntitySet Name="Users" EntityType="richModel.User" />
+    <AssociationSet Name="UserRoles" Association="richModel.UserRoles">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="productID" />
+    </Key>
+    <Property Name="productID" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="name" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="supplier" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="brand" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="CarDetail">
+    <Key>
+      <PropertyRef Name="CarDetailID" />
+    </Key>
+    <Property Type="Int32" Name="CarDetailID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="DateTime" Name="PurchaseDate" Precision="0" />
+    <Property Type="String" Name="BuyerName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="CarID" />
+    <NavigationProperty Name="Car" Relationship="richModel.FK_CarDetails_Cars" FromRole="CarDetail" ToRole="Car" />
+  </EntityType>
+  <EntityType Name="Car">
+    <Key>
+      <PropertyRef Name="CarID" />
+    </Key>
+    <Property Type="Int32" Name="CarID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Brand" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ModelNo" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="CarDetails" Relationship="richModel.FK_CarDetails_Cars" FromRole="Car" ToRole="CarDetail" />
+  </EntityType>
+  <Association Name="FK_CarDetails_Cars">
+    <End Type="richModel.Car" Role="Car" Multiplicity="0..1" />
+    <End Type="richModel.CarDetail" Role="CarDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Car">
+        <PropertyRef Name="CarID" />
+      </Principal>
+      <Dependent Role="CarDetail">
+        <PropertyRef Name="CarID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Type="Int32" Name="RoleID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="RoleName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="RoleDescription" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Users" Relationship="richModel.UserRoles" FromRole="Role" ToRole="User" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Type="Int32" Name="UserID" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="UserName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FirstName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LastName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Roles" Relationship="richModel.UserRoles" FromRole="User" ToRole="Role" />
+  </EntityType>
+  <Association Name="UserRoles">
+    <End Type="richModel.Role" Role="Role" Multiplicity="*" />
+    <End Type="richModel.User" Role="User" Multiplicity="*" />
+  </Association>
+</Schema>

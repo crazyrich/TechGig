@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="EmpComp" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="EmpCompContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Computers" EntityType="EmpComp.Computer" />
+    <EntitySet Name="Employees" EntityType="EmpComp.Employee" />
+    <AssociationSet Name="FK_Computer_Employee1" Association="EmpComp.FK_Computer_Employee1">
+      <End Role="Employee" EntitySet="Employees" />
+      <End Role="Computer" EntitySet="Computers" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Computer">
+    <Key>
+      <PropertyRef Name="CompID" />
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Type="Int32" Name="CompID" Nullable="false" />
+    <Property Type="String" Name="CompName" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="EmpID" Nullable="false" />
+    <Property Type="Int32" Name="Price" />
+    <NavigationProperty Name="Employee" Relationship="EmpComp.FK_Computer_Employee1" FromRole="Computer" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="CompID" />
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Type="Int32" Name="Age" />
+    <Property Type="String" Name="EmpName" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="CompID" Nullable="false" />
+    <Property Type="Int32" Name="EmpID" Nullable="false" />
+    <NavigationProperty Name="Computer" Relationship="EmpComp.FK_Computer_Employee1" FromRole="Employee" ToRole="Computer" />
+  </EntityType>
+  <Association Name="FK_Computer_Employee1">
+    <End Type="EmpComp.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="EmpComp.Computer" Role="Computer" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="CompID" />
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="Computer">
+        <PropertyRef Name="CompID" />
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

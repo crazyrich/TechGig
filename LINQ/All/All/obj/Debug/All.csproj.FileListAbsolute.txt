@@ -1,0 +1,8 @@
+D:\LINQ\All\All\bin\Debug\All.exe.config
+D:\LINQ\All\All\bin\Debug\All.exe
+D:\LINQ\All\All\bin\Debug\All.pdb
+D:\LINQ\All\All\bin\Debug\EntityFramework.dll
+D:\LINQ\All\All\bin\Debug\EntityFramework.xml
+D:\LINQ\All\All\obj\Debug\All.csprojResolveAssemblyReference.cache
+D:\LINQ\All\All\obj\Debug\All.exe
+D:\LINQ\All\All\obj\Debug\All.pdb

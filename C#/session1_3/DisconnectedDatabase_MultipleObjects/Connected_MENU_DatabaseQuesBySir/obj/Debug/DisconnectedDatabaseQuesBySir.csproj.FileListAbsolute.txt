@@ -1,0 +1,6 @@
+D:\C#\session1_3\DisconnectedDatabaseQuesBySir\DisconnectedDatabaseQuesBySir\bin\Debug\DisconnectedDatabaseQuesBySir.exe.config
+D:\C#\session1_3\DisconnectedDatabaseQuesBySir\DisconnectedDatabaseQuesBySir\obj\Debug\DisconnectedDatabaseQuesBySir.csprojResolveAssemblyReference.cache
+D:\C#\session1_3\DisconnectedDatabaseQuesBySir\DisconnectedDatabaseQuesBySir\bin\Debug\DisconnectedDatabaseQuesBySir.exe
+D:\C#\session1_3\DisconnectedDatabaseQuesBySir\DisconnectedDatabaseQuesBySir\bin\Debug\DisconnectedDatabaseQuesBySir.pdb
+D:\C#\session1_3\DisconnectedDatabaseQuesBySir\DisconnectedDatabaseQuesBySir\obj\Debug\DisconnectedDatabaseQuesBySir.exe
+D:\C#\session1_3\DisconnectedDatabaseQuesBySir\DisconnectedDatabaseQuesBySir\obj\Debug\DisconnectedDatabaseQuesBySir.pdb

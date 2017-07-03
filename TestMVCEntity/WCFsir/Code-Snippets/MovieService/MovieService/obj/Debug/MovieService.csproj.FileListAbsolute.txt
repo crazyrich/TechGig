@@ -1,0 +1,10 @@
+C:\Users\Ankur.Pathak\Desktop\MovieService\MovieService\bin\Debug\MovieService.dll
+C:\Users\Ankur.Pathak\Desktop\MovieService\MovieService\bin\Debug\MovieService.pdb
+C:\Users\Ankur.Pathak\Desktop\MovieService\MovieService\obj\Debug\MovieService.csprojResolveAssemblyReference.cache
+C:\Users\Ankur.Pathak\Desktop\MovieService\MovieService\obj\Debug\MovieService.dll
+C:\Users\Ankur.Pathak\Desktop\MovieService\MovieService\obj\Debug\MovieService.pdb
+C:\Users\Ankur.Pathak\Desktop\MovieService\MovieService\bin\Debug\MovieService.dll.config
+C:\Users\Ankur.Pathak\Desktop\MovieService\MovieService\bin\Debug\EntityFramework.dll
+C:\Users\Ankur.Pathak\Desktop\MovieService\MovieService\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ankur.Pathak\Desktop\MovieService\MovieService\bin\Debug\EntityFramework.xml
+C:\Users\Ankur.Pathak\Desktop\MovieService\MovieService\bin\Debug\EntityFramework.SqlServer.xml

@@ -1,0 +1,6 @@
+D:\C#\session1_3\Thread_ArrayEmployee\Thread_ArrayEmployee\bin\Debug\Thread_ArrayEmployee.exe.config
+D:\C#\session1_3\Thread_ArrayEmployee\Thread_ArrayEmployee\bin\Debug\Thread_ArrayEmployee.exe
+D:\C#\session1_3\Thread_ArrayEmployee\Thread_ArrayEmployee\bin\Debug\Thread_ArrayEmployee.pdb
+D:\C#\session1_3\Thread_ArrayEmployee\Thread_ArrayEmployee\obj\Debug\Thread_ArrayEmployee.csprojResolveAssemblyReference.cache
+D:\C#\session1_3\Thread_ArrayEmployee\Thread_ArrayEmployee\obj\Debug\Thread_ArrayEmployee.exe
+D:\C#\session1_3\Thread_ArrayEmployee\Thread_ArrayEmployee\obj\Debug\Thread_ArrayEmployee.pdb

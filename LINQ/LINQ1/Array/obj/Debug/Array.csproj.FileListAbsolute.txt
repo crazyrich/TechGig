@@ -1,0 +1,6 @@
+D:\LINQ\LINQ1\Array\bin\Debug\Array.exe.config
+D:\LINQ\LINQ1\Array\bin\Debug\Array.exe
+D:\LINQ\LINQ1\Array\bin\Debug\Array.pdb
+D:\LINQ\LINQ1\Array\obj\Debug\Array.csprojResolveAssemblyReference.cache
+D:\LINQ\LINQ1\Array\obj\Debug\Array.exe
+D:\LINQ\LINQ1\Array\obj\Debug\Array.pdb

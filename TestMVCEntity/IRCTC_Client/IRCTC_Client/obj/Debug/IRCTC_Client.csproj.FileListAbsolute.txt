@@ -1,0 +1,3 @@
+D:\TestMVCEntity\IRCTC_Client\IRCTC_Client\bin\Debug\IRCTC_Client.exe.config
+D:\TestMVCEntity\IRCTC_Client\IRCTC_Client\obj\Debug\IRCTC_Client.Properties.Resources.resources
+D:\TestMVCEntity\IRCTC_Client\IRCTC_Client\obj\Debug\IRCTC_Client.csproj.GenerateResource.Cache

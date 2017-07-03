@@ -1,0 +1,5 @@
+D:\C#\session1_1\DAY2.0\Student_Day_2\bin\Debug\Student_Day_2.exe.config
+D:\C#\session1_1\DAY2.0\Student_Day_2\bin\Debug\Student_Day_2.exe
+D:\C#\session1_1\DAY2.0\Student_Day_2\bin\Debug\Student_Day_2.pdb
+D:\C#\session1_1\DAY2.0\Student_Day_2\obj\Debug\Student_Day_2.exe
+D:\C#\session1_1\DAY2.0\Student_Day_2\obj\Debug\Student_Day_2.pdb

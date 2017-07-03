@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="x0032_PP.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="x0032_PPStoreContainer">
+          <EntitySet Name="Passport" EntityType="x0032_PP.Store.Passport" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Person" EntityType="x0032_PP.Store.Person" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Passport_Person" Association="x0032_PP.Store.FK_Passport_Person">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="Passport" EntitySet="Passport" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Passport">
+          <Key>
+            <PropertyRef Name="PassportID" />
+            <PropertyRef Name="PersonID" />
+          </Key>
+          <Property Name="PassportID" Type="int" Nullable="false" />
+          <Property Name="PassportNumber" Type="int" />
+          <Property Name="PersonID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="PersonID" />
+            <PropertyRef Name="PassportID" />
+          </Key>
+          <Property Name="PersonID" Type="int" Nullable="false" />
+          <Property Name="PersonName" Type="nchar" MaxLength="10" />
+          <Property Name="PersonAge" Type="int" />
+          <Property Name="PassportID" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Passport_Person">
+          <End Role="Person" Type="x0032_PP.Store.Person" Multiplicity="1" />
+          <End Role="Passport" Type="x0032_PP.Store.Passport" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="PersonID" />
+              <PropertyRef Name="PassportID" />
+            </Principal>
+            <Dependent Role="Passport">
+              <PropertyRef Name="PersonID" />
+              <PropertyRef Name="PassportID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="x0032_PP" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="x0032_PPContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Passports" EntityType="x0032_PP.Passport" />
+          <EntitySet Name="People" EntityType="x0032_PP.Person" />
+          <AssociationSet Name="FK_Passport_Person" Association="x0032_PP.FK_Passport_Person">
+            <End Role="Person" EntitySet="People" />
+            <End Role="Passport" EntitySet="Passports" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Passport">
+          <Key>
+            <PropertyRef Name="PassportID" />
+            <PropertyRef Name="PersonID" />
+          </Key>
+          <Property Type="Int32" Name="PassportID" Nullable="false" />
+          <Property Type="Int32" Name="PassportNumber" />
+          <Property Type="Int32" Name="PersonID" Nullable="false" />
+          <NavigationProperty Name="Person" Relationship="x0032_PP.FK_Passport_Person" FromRole="Passport" ToRole="Person" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="PersonID" />
+            <PropertyRef Name="PassportID" />
+          </Key>
+          <Property Type="Int32" Name="PersonID" Nullable="false" />
+          <Property Type="String" Name="PersonName" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="Int32" Name="PersonAge" />
+          <Property Type="Int32" Name="PassportID" Nullable="false" />
+          <NavigationProperty Name="Passport" Relationship="x0032_PP.FK_Passport_Person" FromRole="Person" ToRole="Passport" />
+        </EntityType>
+        <Association Name="FK_Passport_Person">
+          <End Type="x0032_PP.Person" Role="Person" Multiplicity="1" />
+          <End Type="x0032_PP.Passport" Role="Passport" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="PersonID" />
+              <PropertyRef Name="PassportID" />
+            </Principal>
+            <Dependent Role="Passport">
+              <PropertyRef Name="PersonID" />
+              <PropertyRef Name="PassportID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="x0032_PP" />
+        <Alias Key="Target" Value="x0032_PP.Store" />
+        <EntityContainerMapping CdmEntityContainer="x0032_PPContainer" StorageEntityContainer="x0032_PPStoreContainer">
+          <EntitySetMapping Name="Passports">
+            <EntityTypeMapping TypeName="x0032_PP.Passport">
+              <MappingFragment StoreEntitySet="Passport">
+                <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+                <ScalarProperty Name="PassportNumber" ColumnName="PassportNumber" />
+                <ScalarProperty Name="PassportID" ColumnName="PassportID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="People">
+            <EntityTypeMapping TypeName="x0032_PP.Person">
+              <MappingFragment StoreEntitySet="Person">
+                <ScalarProperty Name="PassportID" ColumnName="PassportID" />
+                <ScalarProperty Name="PersonAge" ColumnName="PersonAge" />
+                <ScalarProperty Name="PersonName" ColumnName="PersonName" />
+                <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

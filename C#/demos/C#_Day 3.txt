@@ -1,0 +1,337 @@
+using System;
+
+namespace Day1_Demos
+{
+    class Employee
+    {
+        public bool FindRecord(int EmpID, out string name, out string projectName, out string Email, ref int counter)
+        {
+            if(EmpID==1)
+            {
+                name= "Ram";
+                projectName = "Vertex";
+                Email = "ram@gmail.com";
+            }
+            else if(EmpID==2)
+            {
+                name = "Ramesh";
+                projectName = "Mitchell";
+                Email = "ramesh@gmail.com";
+            }
+            else
+            {
+                name = "Krishna";
+                projectName = "Retail";
+                Email = "krishna@gmail.com";
+            }
+            counter++;
+            return true;
+        }
+    }
+
+  
+    class MainClass
+    {
+        static void Main(string[] args)
+        {
+            Employee obj = new Employee();
+            int EmpID = 3;
+            string name,email, projectname;
+            int counter = 1;
+            bool returnvalue;
+
+            returnvalue=  obj.FindRecord(EmpID, out name , out projectname,out  email, ref counter);
+
+            Console.WriteLine(name+"   "+email+"   "+projectname+"  "+counter+" "+returnvalue);
+           
+        }
+    }
+}
+
+
+-================================
+using System;
+
+namespace Day1_Demos
+{
+    class Employee
+    {
+        public void Sum(string name, params int [] arr  )
+        {
+            int addition = 0;
+            foreach (int item in arr)
+            {
+                addition = addition + item;
+            }
+            Console.WriteLine(addition);
+        }
+        
+    }
+
+  
+    class MainClass
+    {
+        static void Main(string[] args)
+        {
+            Employee obj = new Employee();
+            obj.Sum("ram");
+            obj.Sum("ram",1);
+            obj.Sum("ram", 1, 2);
+            obj.Sum("ram", 1, 2, 3);
+            obj.Sum("ram", 1, 2, 3,4);
+            obj.Sum("ram", 1, 2, 3,4,5);
+            obj.Sum("ram", 1, 2, 3,4,5,6,7,8,9,10);
+
+           
+        }
+    }
+}
+
+
+------------------------------------------
+
+using System;
+
+namespace Day1_Demos
+{
+
+    interface IDetails
+    {
+          void PersonalDetails();
+          void ProjectDetails();
+          int i=10;
+    }
+
+    interface ISalary
+    {
+        void SalaryDetails();
+    }
+    class Employee : IDetails, ISalary
+    {
+         public void PersonalDetails()
+        {
+            Console.WriteLine("PersonalDetails");
+        }
+
+        public void ProjectDetails()
+        {
+            Console.WriteLine("ProjectDetails");
+        }
+
+        public void SalaryDetails()
+        {
+            Console.WriteLine("SalaryDetails");
+        }
+    }
+
+   
+
+  
+    class MainClass
+    {
+        static void Main(string[] args)
+        {
+            Employee obj = new Employee();
+            
+           
+        }
+    }
+}
+=========================
+
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace Day1_Demos
+{
+
+    
+    class Employee  
+    {
+        public int empID;
+        public string empName;
+        public int salary;
+        public void Show()
+        {
+            Console.WriteLine(empID+"  "+ empName+"   "+salary);
+        }       
+    }
+
+   
+
+  
+    class MainClass
+    {
+        static void Main(string[] args)
+        {
+            Hashtable hashtable = new Hashtable();
+            hashtable.Add(21601, "Amit");
+            hashtable.Add(21603, "Amam");
+            hashtable.Add(21605, "Amar");
+            hashtable.Add(21607, "Amitesh");
+            hashtable.Add(21608, "Amrinder");
+            hashtable.Add(21602, "Amitkumar");
+
+
+            foreach (DictionaryEntry item in hashtable)
+            {
+                Console.WriteLine(item.Key+"   " + item.Value);                
+            }
+            Console.WriteLine("=================================");
+
+            System.Console.WriteLine(hashtable.Keys.Count);
+            Console.WriteLine("=================================");
+            System.Console.WriteLine(hashtable.Values.Count);
+            Console.ReadLine();
+        }
+    }
+}
+
+
+=========================
+using System;
+using System.Collections;
+using System.Collections.Generic;
+
+namespace Day1_Demos
+{
+
+    
+    class Employee  
+    {
+         int empID;
+         string empName;
+         int salary;
+
+
+
+        public int EmpID
+         {
+             set
+             {
+                 this.empID = value;
+                 Console.WriteLine("Set is called ");
+             }
+            get
+             {
+                 Console.WriteLine("Get is called ");
+                 return this.empID;
+             }
+         }
+    }
+ 
+
+
+  
+    class MainClass
+    {
+        static void Main(string[] args)
+        {
+
+            Employee obj = new Employee();
+
+            obj.EmpID( 1001);
+
+            int x = obj.EmpID;
+
+            Console.WriteLine(x);
+            
+            Console.ReadLine();
+        }
+    }
+}
+==================================
+
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+using System.Data.SqlClient;
+
+
+namespace WindowsFormsApplication2
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+       
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = "Data Source=LP-ASHOKSH\\SQLSERVER2008;Initial Catalog=ashok;user id =sa;password=info123!";
+            connection.Open();
+            MessageBox.Show("Database Connected ");
+
+            SqlCommand command = new SqlCommand("select * from Login where loginid=@loginid and password=@pass", connection);
+            command.Parameters.Add("@loginid", txtLoginID.Text);
+            command.Parameters.Add("@pass", txtPassword.Text);
+
+             SqlDataReader reader =  command.ExecuteReader();
+            if(reader.Read())
+            {
+                MessageBox.Show("User Valid");
+            }
+            else
+            {
+                MessageBox.Show("User Invalid ");
+            }
+        }
+
+       
+    }
+}
+==============================
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+using System.Data.SqlClient;
+
+
+namespace WindowsFormsApplication2
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+       
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection();
+            connection.ConnectionString = "Data Source=LP-ASHOKSH\\SQLSERVER2008;Initial Catalog=ashok;user id =sa;password=info123!";
+            connection.Open();
+            MessageBox.Show("Database Connected ");
+
+            SqlCommand command = new SqlCommand("delete  Login set  values(@id, @pass)", connection);
+
+
+int result = command.ExecuteNonQuery();
+            
+         
+        }
+
+       
+    }
+}

@@ -1,0 +1,29 @@
+1)ls -l \bin
+2)ls -a ..
+3)ls r*
+4)ls -f ???
+5)ls *.doc
+6)ls [l-s]*
+7)ls -f
+8)cat>text1
+9)cp text1 text2
+10)cat text2 >> text1	
+11)ls -d */
+12)ls -l | tee file9
+13)tail -n +10 t3
+14)who|wc -l
+15)rm tmp*
+16)	
+	1:ronaldo:striker:1:12-12-12:footy
+	10:messi:striker:2:12-01-01:footy
+	17:ronaldo:striker:3:11-11-11:footy
+	10:ozil:mid:0:01-10-01:foo
+	7:ronaldo:striker:1:12-12-12:footy
+	7:ronaldo:striker:1:12-12-12:footy
+
+a) nl employee
+b) sort -t ":" -k 2 employee
+c) sort -r -t ":" -k 4 employee|head -n 3	
+d)  sort -n -t ":" -k 1 employee|uniq>somefile|cp somefile employee
+e) cut -d ":" -f 6 employee|sort|uniq -c
+f) sort -r -t ":" -k 4 employee

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Cars" EntityType="Model1.Car" />
+  </EntityContainer>
+  <EntityType Name="Car">
+    <Key>
+      <PropertyRef Name="CarID" />
+    </Key>
+    <Property Type="Int32" Name="CarID" Nullable="false" />
+    <Property Type="String" Name="Engine" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="Wheels" />
+    <Property Type="String" Name="Region" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GermanCar" BaseType="Model1.Car">
+    <Property Type="String" Name="Color" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="IndianCar" BaseType="Model1.Car">
+    <Property Type="String" Name="Company" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="JapaneseCar" BaseType="Model1.Car">
+    <Property Type="Int32" Name="Price" />
+  </EntityType>
+</Schema>

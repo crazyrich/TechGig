@@ -1,0 +1,6 @@
+D:\TestMVCEntity\Q1_Login_WCF\Q2_BillingDetails_Client\bin\Debug\Q2_BillingDetails_Client.exe.config
+D:\TestMVCEntity\Q1_Login_WCF\Q2_BillingDetails_Client\bin\Debug\Q2_BillingDetails_Client.exe
+D:\TestMVCEntity\Q1_Login_WCF\Q2_BillingDetails_Client\bin\Debug\Q2_BillingDetails_Client.pdb
+D:\TestMVCEntity\Q1_Login_WCF\Q2_BillingDetails_Client\obj\Debug\Q2_BillingDetails_Client.csprojResolveAssemblyReference.cache
+D:\TestMVCEntity\Q1_Login_WCF\Q2_BillingDetails_Client\obj\Debug\Q2_BillingDetails_Client.exe
+D:\TestMVCEntity\Q1_Login_WCF\Q2_BillingDetails_Client\obj\Debug\Q2_BillingDetails_Client.pdb

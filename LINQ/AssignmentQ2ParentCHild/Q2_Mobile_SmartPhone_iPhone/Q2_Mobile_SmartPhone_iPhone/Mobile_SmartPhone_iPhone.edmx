@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="richModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="richModelStoreContainer">
+          <EntitySet Name="iPhone" EntityType="richModel.Store.iPhone" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Mobile" EntityType="richModel.Store.Mobile" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SmartPhone" EntityType="richModel.Store.SmartPhone" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_iPhone_Mobile" Association="richModel.Store.FK_iPhone_Mobile">
+            <End Role="Mobile" EntitySet="Mobile" />
+            <End Role="iPhone" EntitySet="iPhone" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SmartPhone_Mobile" Association="richModel.Store.FK_SmartPhone_Mobile">
+            <End Role="Mobile" EntitySet="Mobile" />
+            <End Role="SmartPhone" EntitySet="SmartPhone" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="iPhone">
+          <Key>
+            <PropertyRef Name="MobileID" />
+          </Key>
+          <Property Name="MobileID" Type="int" Nullable="false" />
+          <Property Name="OperatingSystem" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Mobile">
+          <Key>
+            <PropertyRef Name="MobileID" />
+          </Key>
+          <Property Name="MobileID" Type="int" Nullable="false" />
+          <Property Name="ModelNo" Type="varchar" MaxLength="20" />
+          <Property Name="Price" Type="int" />
+        </EntityType>
+        <EntityType Name="SmartPhone">
+          <Key>
+            <PropertyRef Name="MobileID" />
+          </Key>
+          <Property Name="MobileID" Type="int" Nullable="false" />
+          <Property Name="AndroidVer" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <Association Name="FK_iPhone_Mobile">
+          <End Role="Mobile" Type="richModel.Store.Mobile" Multiplicity="1" />
+          <End Role="iPhone" Type="richModel.Store.iPhone" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Mobile">
+              <PropertyRef Name="MobileID" />
+            </Principal>
+            <Dependent Role="iPhone">
+              <PropertyRef Name="MobileID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SmartPhone_Mobile">
+          <End Role="Mobile" Type="richModel.Store.Mobile" Multiplicity="1" />
+          <End Role="SmartPhone" Type="richModel.Store.SmartPhone" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Mobile">
+              <PropertyRef Name="MobileID" />
+            </Principal>
+            <Dependent Role="SmartPhone">
+              <PropertyRef Name="MobileID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="richModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="richEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Mobiles" EntityType="richModel.Mobile" />
+        </EntityContainer>
+        <EntityType Name="iPhone" BaseType="richModel.Mobile">
+          <Property Name="OperatingSystem" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Mobile">
+          <Key>
+            <PropertyRef Name="MobileID" />
+          </Key>
+          <Property Name="MobileID" Type="Int32" Nullable="false" />
+          <Property Name="ModelNo" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Price" Type="Int32" />
+        </EntityType>
+        <EntityType Name="SmartPhone" BaseType="richModel.Mobile">
+          <Property Name="AndroidVer" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="richModelStoreContainer" CdmEntityContainer="richEntities">
+          <EntitySetMapping Name="Mobiles">
+            <EntityTypeMapping TypeName="IsTypeOf(richModel.Mobile)">
+              <MappingFragment StoreEntitySet="Mobile">
+                <ScalarProperty Name="MobileID" ColumnName="MobileID" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="ModelNo" ColumnName="ModelNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(richModel.iPhone)">
+              <MappingFragment StoreEntitySet="iPhone">
+                <ScalarProperty Name="OperatingSystem" ColumnName="OperatingSystem" />
+                <ScalarProperty Name="MobileID" ColumnName="MobileID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(richModel.SmartPhone)">
+              <MappingFragment StoreEntitySet="SmartPhone">
+                <ScalarProperty Name="AndroidVer" ColumnName="AndroidVer" />
+                <ScalarProperty Name="MobileID" ColumnName="MobileID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

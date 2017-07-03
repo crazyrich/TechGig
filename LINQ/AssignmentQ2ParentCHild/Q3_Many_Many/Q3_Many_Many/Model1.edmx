@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="richModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="richModelStoreContainer">
+          <EntitySet Name="Appearances" EntityType="richModel.Store.Appearances" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Band" EntityType="richModel.Store.Band" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Event" EntityType="richModel.Store.Event" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Appearances_Band" Association="richModel.Store.FK_Appearances_Band">
+            <End Role="Band" EntitySet="Band" />
+            <End Role="Appearances" EntitySet="Appearances" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Appearances_Event" Association="richModel.Store.FK_Appearances_Event">
+            <End Role="Event" EntitySet="Event" />
+            <End Role="Appearances" EntitySet="Appearances" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Appearances">
+          <Key>
+            <PropertyRef Name="BandID" />
+            <PropertyRef Name="EventID" />
+          </Key>
+          <Property Name="BandID" Type="int" Nullable="false" />
+          <Property Name="EventID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Band">
+          <Key>
+            <PropertyRef Name="BandID" />
+          </Key>
+          <Property Name="BandID" Type="int" Nullable="false" />
+          <Property Name="Members" Type="int" />
+        </EntityType>
+        <EntityType Name="Event">
+          <Key>
+            <PropertyRef Name="EventID" />
+          </Key>
+          <Property Name="EventID" Type="int" Nullable="false" />
+          <Property Name="Region" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <Association Name="FK_Appearances_Band">
+          <End Role="Band" Type="richModel.Store.Band" Multiplicity="1" />
+          <End Role="Appearances" Type="richModel.Store.Appearances" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Band">
+              <PropertyRef Name="BandID" />
+            </Principal>
+            <Dependent Role="Appearances">
+              <PropertyRef Name="BandID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Appearances_Event">
+          <End Role="Event" Type="richModel.Store.Event" Multiplicity="1" />
+          <End Role="Appearances" Type="richModel.Store.Appearances" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Event">
+              <PropertyRef Name="EventID" />
+            </Principal>
+            <Dependent Role="Appearances">
+              <PropertyRef Name="EventID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="richModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="richEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Bands" EntityType="richModel.Band" />
+          <EntitySet Name="Events" EntityType="richModel.Event" />
+          <AssociationSet Name="Appearances" Association="richModel.Appearances">
+            <End Role="Band" EntitySet="Bands" />
+            <End Role="Event" EntitySet="Events" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Band">
+          <Key>
+            <PropertyRef Name="BandID" />
+          </Key>
+          <Property Name="BandID" Type="Int32" Nullable="false" />
+          <Property Name="Members" Type="Int32" />
+          <NavigationProperty Name="Events" Relationship="richModel.Appearances" FromRole="Band" ToRole="Event" />
+        </EntityType>
+        <EntityType Name="Event">
+          <Key>
+            <PropertyRef Name="EventID" />
+          </Key>
+          <Property Name="EventID" Type="Int32" Nullable="false" />
+          <Property Name="Region" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Bands" Relationship="richModel.Appearances" FromRole="Event" ToRole="Band" />
+        </EntityType>
+        <Association Name="Appearances">
+          <End Role="Band" Type="richModel.Band" Multiplicity="*" />
+          <End Role="Event" Type="richModel.Event" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="richModelStoreContainer" CdmEntityContainer="richEntities">
+          <EntitySetMapping Name="Bands">
+            <EntityTypeMapping TypeName="richModel.Band">
+              <MappingFragment StoreEntitySet="Band">
+                <ScalarProperty Name="BandID" ColumnName="BandID" />
+                <ScalarProperty Name="Members" ColumnName="Members" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Events">
+            <EntityTypeMapping TypeName="richModel.Event">
+              <MappingFragment StoreEntitySet="Event">
+                <ScalarProperty Name="EventID" ColumnName="EventID" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="Appearances" TypeName="richModel.Appearances" StoreEntitySet="Appearances">
+            <EndProperty Name="Band">
+              <ScalarProperty Name="BandID" ColumnName="BandID" />
+            </EndProperty>
+            <EndProperty Name="Event">
+              <ScalarProperty Name="EventID" ColumnName="EventID" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="richModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="richModelStoreContainer">
+          <EntitySet Name="Developer" EntityType="richModel.Store.Developer" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EmpQ2" EntityType="richModel.Store.EmpQ2" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ProjectManager" EntityType="richModel.Store.ProjectManager" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TeamLead" EntityType="richModel.Store.TeamLead" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Tester" EntityType="richModel.Store.Tester" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Developer">
+          <Key>
+            <PropertyRef Name="EmpID" />
+          </Key>
+          <Property Name="EmpID" Type="int" Nullable="false" />
+          <Property Name="Region" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="EmpQ2">
+          <Key>
+            <PropertyRef Name="EmpID" />
+          </Key>
+          <Property Name="EmpID" Type="int" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="ProjectManager">
+          <Key>
+            <PropertyRef Name="EmpID" />
+          </Key>
+          <Property Name="EmpID" Type="int" Nullable="false" />
+          <Property Name="Department" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="TeamLead">
+          <Key>
+            <PropertyRef Name="EmpID" />
+          </Key>
+          <Property Name="EmpID" Type="int" Nullable="false" />
+          <Property Name="TeamCount" Type="int" />
+        </EntityType>
+        <EntityType Name="Tester">
+          <Key>
+            <PropertyRef Name="EmpID" />
+          </Key>
+          <Property Name="EmpID" Type="int" Nullable="false" />
+          <Property Name="ToolName" Type="varchar" MaxLength="20" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="richModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="richEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="EmpQ2" EntityType="richModel.EmpQ2" />
+        </EntityContainer>
+        <EntityType Name="Developer" BaseType="richModel.EmpQ2">
+          <Property Name="Region" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="EmpQ2">
+          <Key>
+            <PropertyRef Name="EmpID" />
+          </Key>
+          <Property Name="EmpID" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="ProjectManager" BaseType="richModel.EmpQ2">
+          <Property Name="Department" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TeamLead" BaseType="richModel.EmpQ2">
+          <Property Name="TeamCount" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Tester" BaseType="richModel.EmpQ2">
+          <Property Name="ToolName" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="richModelStoreContainer" CdmEntityContainer="richEntities">
+          <EntitySetMapping Name="EmpQ2">
+            <EntityTypeMapping TypeName="IsTypeOf(richModel.EmpQ2)">
+              <MappingFragment StoreEntitySet="EmpQ2">
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(richModel.Developer)">
+              <MappingFragment StoreEntitySet="Developer">
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(richModel.Tester)">
+              <MappingFragment StoreEntitySet="Tester">
+                <ScalarProperty Name="ToolName" ColumnName="ToolName" />
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(richModel.ProjectManager)">
+              <MappingFragment StoreEntitySet="ProjectManager">
+                <ScalarProperty Name="Department" ColumnName="Department" />
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(richModel.TeamLead)">
+              <MappingFragment StoreEntitySet="TeamLead">
+                <ScalarProperty Name="TeamCount" ColumnName="TeamCount" />
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

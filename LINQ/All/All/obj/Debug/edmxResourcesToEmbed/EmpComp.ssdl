@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmpComp.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="EmpCompStoreContainer">
+    <EntitySet Name="Computer" EntityType="EmpComp.Store.Computer" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Employee" EntityType="EmpComp.Store.Employee" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Computer_Employee1" Association="EmpComp.Store.FK_Computer_Employee1">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="Computer" EntitySet="Computer" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Computer">
+    <Key>
+      <PropertyRef Name="CompID" />
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Name="CompID" Type="int" Nullable="false" />
+    <Property Name="CompName" Type="nchar" MaxLength="10" />
+    <Property Name="EmpID" Type="int" Nullable="false" />
+    <Property Name="Price" Type="int" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="CompID" />
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Name="Age" Type="int" />
+    <Property Name="EmpName" Type="nchar" MaxLength="10" />
+    <Property Name="CompID" Type="int" Nullable="false" />
+    <Property Name="EmpID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Computer_Employee1">
+    <End Role="Employee" Type="EmpComp.Store.Employee" Multiplicity="1" />
+    <End Role="Computer" Type="EmpComp.Store.Computer" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="CompID" />
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="Computer">
+        <PropertyRef Name="CompID" />
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

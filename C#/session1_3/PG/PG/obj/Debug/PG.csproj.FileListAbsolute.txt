@@ -1,0 +1,6 @@
+D:\C#\session1_3\PG\PG\bin\Debug\PG.exe.config
+D:\C#\session1_3\PG\PG\bin\Debug\PG.exe
+D:\C#\session1_3\PG\PG\bin\Debug\PG.pdb
+D:\C#\session1_3\PG\PG\obj\Debug\PG.csprojResolveAssemblyReference.cache
+D:\C#\session1_3\PG\PG\obj\Debug\PG.exe
+D:\C#\session1_3\PG\PG\obj\Debug\PG.pdb

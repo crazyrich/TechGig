@@ -1,0 +1,6 @@
+C:\Users\Ankur.Pathak\Desktop\MovieClient\MovieClient\obj\Debug\MovieClient.csprojResolveAssemblyReference.cache
+C:\Users\Ankur.Pathak\Desktop\MovieClient\MovieClient\bin\Debug\MovieClient.exe.config
+C:\Users\Ankur.Pathak\Desktop\MovieClient\MovieClient\bin\Debug\MovieClient.exe
+C:\Users\Ankur.Pathak\Desktop\MovieClient\MovieClient\bin\Debug\MovieClient.pdb
+C:\Users\Ankur.Pathak\Desktop\MovieClient\MovieClient\obj\Debug\MovieClient.exe
+C:\Users\Ankur.Pathak\Desktop\MovieClient\MovieClient\obj\Debug\MovieClient.pdb

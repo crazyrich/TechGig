@@ -1,0 +1,5 @@
+D:\C#\session1_1\DAY2.0\Addition\bin\Debug\Addition.exe.config
+D:\C#\session1_1\DAY2.0\Addition\bin\Debug\Addition.exe
+D:\C#\session1_1\DAY2.0\Addition\bin\Debug\Addition.pdb
+D:\C#\session1_1\DAY2.0\Addition\obj\Debug\Addition.exe
+D:\C#\session1_1\DAY2.0\Addition\obj\Debug\Addition.pdb

@@ -1,0 +1,5 @@
+D:\C#\session1_3\Genrics\Attributes\bin\Debug\Attributes.exe.config
+D:\C#\session1_3\Genrics\Attributes\bin\Debug\Attributes.exe
+D:\C#\session1_3\Genrics\Attributes\bin\Debug\Attributes.pdb
+D:\C#\session1_3\Genrics\Attributes\obj\Debug\Attributes.exe
+D:\C#\session1_3\Genrics\Attributes\obj\Debug\Attributes.pdb

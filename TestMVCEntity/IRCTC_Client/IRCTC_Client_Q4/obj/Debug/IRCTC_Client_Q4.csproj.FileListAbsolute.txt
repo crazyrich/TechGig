@@ -1,0 +1,10 @@
+D:\TestMVCEntity\IRCTC_Client\IRCTC_Client_Q4\bin\Debug\IRCTC_Client_Q4.exe.config
+D:\TestMVCEntity\IRCTC_Client\IRCTC_Client_Q4\bin\Debug\IRCTC_Client_Q4.exe
+D:\TestMVCEntity\IRCTC_Client\IRCTC_Client_Q4\bin\Debug\IRCTC_Client_Q4.pdb
+D:\TestMVCEntity\IRCTC_Client\IRCTC_Client_Q4\obj\Debug\IRCTC_Client_Q4.csprojResolveAssemblyReference.cache
+D:\TestMVCEntity\IRCTC_Client\IRCTC_Client_Q4\obj\Debug\IRCTC_Client_Q4.Form1.resources
+D:\TestMVCEntity\IRCTC_Client\IRCTC_Client_Q4\obj\Debug\IRCTC_Client_Q4.Properties.Resources.resources
+D:\TestMVCEntity\IRCTC_Client\IRCTC_Client_Q4\obj\Debug\IRCTC_Client_Q4.csproj.GenerateResource.Cache
+D:\TestMVCEntity\IRCTC_Client\IRCTC_Client_Q4\obj\Debug\IRCTC_Client_Q4.exe
+D:\TestMVCEntity\IRCTC_Client\IRCTC_Client_Q4\obj\Debug\IRCTC_Client_Q4.pdb
+D:\TestMVCEntity\IRCTC_Client\IRCTC_Client_Q4\obj\Debug\IRCTC_Client_Q4.Form2.resources

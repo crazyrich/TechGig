@@ -1,0 +1,6 @@
+D:\C#\session1_3\Operator_Overloading\Operator_Overloading\bin\Debug\Operator_Overloading.exe.config
+D:\C#\session1_3\Operator_Overloading\Operator_Overloading\bin\Debug\Operator_Overloading.exe
+D:\C#\session1_3\Operator_Overloading\Operator_Overloading\bin\Debug\Operator_Overloading.pdb
+D:\C#\session1_3\Operator_Overloading\Operator_Overloading\obj\Debug\Operator_Overloading.csprojResolveAssemblyReference.cache
+D:\C#\session1_3\Operator_Overloading\Operator_Overloading\obj\Debug\Operator_Overloading.exe
+D:\C#\session1_3\Operator_Overloading\Operator_Overloading\obj\Debug\Operator_Overloading.pdb

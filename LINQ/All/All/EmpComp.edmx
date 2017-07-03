@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="EmpComp.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="EmpCompStoreContainer">
+          <EntitySet Name="Computer" EntityType="EmpComp.Store.Computer" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Employee" EntityType="EmpComp.Store.Employee" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Computer_Employee1" Association="EmpComp.Store.FK_Computer_Employee1">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Computer" EntitySet="Computer" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Computer">
+          <Key>
+            <PropertyRef Name="CompID" />
+            <PropertyRef Name="EmpID" />
+          </Key>
+          <Property Name="CompID" Type="int" Nullable="false" />
+          <Property Name="CompName" Type="nchar" MaxLength="10" />
+          <Property Name="EmpID" Type="int" Nullable="false" />
+          <Property Name="Price" Type="int" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="CompID" />
+            <PropertyRef Name="EmpID" />
+          </Key>
+          <Property Name="Age" Type="int" />
+          <Property Name="EmpName" Type="nchar" MaxLength="10" />
+          <Property Name="CompID" Type="int" Nullable="false" />
+          <Property Name="EmpID" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Computer_Employee1">
+          <End Role="Employee" Type="EmpComp.Store.Employee" Multiplicity="1" />
+          <End Role="Computer" Type="EmpComp.Store.Computer" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="CompID" />
+              <PropertyRef Name="EmpID" />
+            </Principal>
+            <Dependent Role="Computer">
+              <PropertyRef Name="CompID" />
+              <PropertyRef Name="EmpID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="EmpComp" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="EmpCompContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Computers" EntityType="EmpComp.Computer" />
+          <EntitySet Name="Employees" EntityType="EmpComp.Employee" />
+          <AssociationSet Name="FK_Computer_Employee1" Association="EmpComp.FK_Computer_Employee1">
+            <End Role="Employee" EntitySet="Employees" />
+            <End Role="Computer" EntitySet="Computers" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Computer">
+          <Key>
+            <PropertyRef Name="CompID" />
+            <PropertyRef Name="EmpID" />
+          </Key>
+          <Property Type="Int32" Name="CompID" Nullable="false" />
+          <Property Type="String" Name="CompName" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="Int32" Name="EmpID" Nullable="false" />
+          <Property Type="Int32" Name="Price" />
+          <NavigationProperty Name="Employee" Relationship="EmpComp.FK_Computer_Employee1" FromRole="Computer" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="CompID" />
+            <PropertyRef Name="EmpID" />
+          </Key>
+          <Property Type="Int32" Name="Age" />
+          <Property Type="String" Name="EmpName" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="Int32" Name="CompID" Nullable="false" />
+          <Property Type="Int32" Name="EmpID" Nullable="false" />
+          <NavigationProperty Name="Computer" Relationship="EmpComp.FK_Computer_Employee1" FromRole="Employee" ToRole="Computer" />
+        </EntityType>
+        <Association Name="FK_Computer_Employee1">
+          <End Type="EmpComp.Employee" Role="Employee" Multiplicity="1" />
+          <End Type="EmpComp.Computer" Role="Computer" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="CompID" />
+              <PropertyRef Name="EmpID" />
+            </Principal>
+            <Dependent Role="Computer">
+              <PropertyRef Name="CompID" />
+              <PropertyRef Name="EmpID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="EmpComp" />
+        <Alias Key="Target" Value="EmpComp.Store" />
+        <EntityContainerMapping CdmEntityContainer="EmpCompContainer" StorageEntityContainer="EmpCompStoreContainer">
+          <EntitySetMapping Name="Computers">
+            <EntityTypeMapping TypeName="EmpComp.Computer">
+              <MappingFragment StoreEntitySet="Computer">
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+                <ScalarProperty Name="CompName" ColumnName="CompName" />
+                <ScalarProperty Name="CompID" ColumnName="CompID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="EmpComp.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+                <ScalarProperty Name="CompID" ColumnName="CompID" />
+                <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+                <ScalarProperty Name="Age" ColumnName="Age" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

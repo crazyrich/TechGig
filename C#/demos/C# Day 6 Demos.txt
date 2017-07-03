@@ -1,0 +1,690 @@
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+using System.Reflection;
+
+using System.Runtime.InteropServices;
+using System.IO;
+
+namespace ConsoleApplication1
+{
+    class Testing
+    {
+        public delegate void del1(string s);
+        public static void WriteToDB(string name)
+        {
+            Console.WriteLine("Writing Data to DB  "+name);
+        }
+        public static void WriteToFile(string name)
+        {
+            Console.WriteLine("Writing Data to Files  "+name);
+        }
+        public static void WriteToScreen(string name)
+        {
+            Console.WriteLine("Writing Data to Screen "+name);
+        } 
+
+     public static void Main()
+     {        
+         del1 a, b, c, d; 
+         a = new del1(WriteToDB);
+         b =  new del1(WriteToScreen);
+         c = new del1(WriteToFile);
+
+         d = a + b + c;
+         d("ashok");
+
+
+         Console.WriteLine("==========================");
+
+         d = d - a;
+
+         d("Deepak");
+        
+     }
+ }    
+ 
+}
+
+====================================
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+using System.Reflection;
+
+using System.Runtime.InteropServices;
+using System.IO;
+
+namespace ConsoleApplication1
+{
+    class Testing
+    {
+        public delegate int del1(string s);
+        public static int WriteToDB(string name)
+        {
+            Console.WriteLine("Writing Data to DB  "+name);
+            return 100;
+        }
+        public static int WriteToFile(string name)
+        {
+            Console.WriteLine("Writing Data to Files  "+name);
+            return 1000;
+        }
+        public static int  WriteToScreen(string name)
+        {
+            Console.WriteLine("Writing Data to Screen "+name);
+            return 10000;
+        } 
+
+     public static void Main()
+     {
+         del1 obj1 = new del1(WriteToDB);
+         obj1 += new del1(WriteToFile);
+         obj1 += new del1(WriteToScreen);
+
+         int result = obj1("ashok");
+
+         Console.WriteLine(result);
+      
+        
+     }
+ }    
+ 
+}
+=====================================
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+using System.Reflection;
+
+using System.Runtime.InteropServices;
+using System.IO;
+
+namespace ConsoleApplication1
+{
+    class Testing
+    {
+        public delegate void del1(string name, string email);
+        public event del1 event1;
+
+        public static void WriteToDB(string name, string email)
+        {
+            Console.WriteLine("Writing Data to DB  "+ name+"   "+email
+                );
+            
+        }   
+         
+
+     public static void Main()
+     {
+         Testing testing = new Testing();
+         testing.event1 += new del1(WriteToDB);
+         testing.event1.Invoke("ashok","ashok@gmail.com");
+          
+        
+     }
+ }    
+ 
+}
+
+=============================
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+using System.Reflection;
+
+using System.Runtime.InteropServices;
+using System.IO;
+
+namespace ConsoleApplication1
+{
+    class Testing
+    {
+        public delegate void del1( );
+        public event del1 event1;
+
+        public static void WriteToDB( )
+        {
+            Console.WriteLine("Writing Data to DB  "           );
+            
+        }   
+         
+
+     public static void Main()
+     {
+         Testing testing = new Testing();
+         testing.event1 += new del1(WriteToDB);
+         testing.event1.Invoke( );
+          
+        
+     }
+ }    
+ 
+}
+
+================================
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+using System.Reflection;
+
+using System.Runtime.InteropServices;
+using System.IO;
+
+namespace ConsoleApplication1
+{
+    class Testing
+    {
+        
+        public void IntSum(int []array)
+        {
+            int sum = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                sum = sum + array[i];
+            }
+            Console.WriteLine("Sum is "+ sum);
+        }
+        public void FloatSum(float[] array)
+        {
+            float sum = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                sum = sum + array[i];
+            }
+            Console.WriteLine("Float Sum is " + sum);
+        }
+        public void DoubleSum(double[] array)
+        {
+            double sum = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                sum = sum + array[i];
+            }
+            Console.WriteLine("Double Sum is " + sum);
+        }
+     
+    
+     public static void Main()
+     {
+         Testing testing = new Testing();
+
+         int[] array = { 1, 2, 3, 4, 5 };
+         testing.IntSum(array);
+
+         float[] farray = { 1.1f, 1.2f, 1.3f, 1.4f };
+         testing.FloatSum(farray);
+
+         double[] darray = { 1000, 2000, 3000, 4000 };
+         testing.DoubleSum(darray);
+     }
+ }    
+ 
+}
+
+=======================
+
+
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+using System.Reflection;
+
+using System.Runtime.InteropServices;
+using System.IO;
+
+namespace ConsoleApplication1
+{
+    class Testing
+    {
+        
+        public void Sum<T>(T []array)
+        {
+            dynamic sum=0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                sum = sum + array[i];
+            }
+            Console.WriteLine("Sum is "+ sum);
+        }    
+    
+     public static void Main()
+     {
+         Testing testing = new Testing();
+
+         int[] array = { 1, 2, 3, 4, 5 };
+         testing.Sum<int>(array);
+
+         float[] farray = { 1.1f, 1.2f, 1.3f, 1.4f };
+         testing.Sum<float>(farray);
+
+         double[] darray = { 1000, 2000, 3000, 4000 };
+         testing.Sum<double>(darray);
+     }
+ }    
+ 
+}
+=============FUNCTION LEVEL GENERIC============
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+using System.Reflection;
+
+using System.Runtime.InteropServices;
+using System.IO;
+
+namespace ConsoleApplication1
+{
+    class Testing
+    {
+        
+        public void Sum<T>(T []array)
+        {             
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine(array[i]);
+            }
+            Console.WriteLine("----------------");
+        }    
+    
+     public static void Main()
+     {
+         Testing testing = new Testing();
+
+         int[] array = { 1, 2, 3, 4, 5 };
+         testing.Sum<int>(array);
+
+         float[] farray = { 1.1f, 1.2f, 1.3f, 1.4f };
+         testing.Sum<float>(farray);
+
+         double[] darray = { 1000, 2000, 3000, 4000 };
+         testing.Sum<double>(darray);
+
+         string[] sarray = { "ram", "deepak", "dinesh", "atul" };
+         testing.Sum<string>(sarray);
+     }
+ }    
+ 
+}
+
+
+=============CLASS LEVEL GENERIC===========
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+using System.Reflection;
+
+using System.Runtime.InteropServices;
+using System.IO;
+using System.Collections;
+
+namespace ConsoleApplication1
+{
+    public class MyCustomList<myType> where myType: struct
+    {
+        private ArrayList m_list = new ArrayList();
+        public int Add(myType value)
+        {
+            return m_list.Add(value);
+        }
+
+        public void Remove(myType value)
+        {
+            m_list.Remove(value);
+        }
+
+        public myType this[int index]
+        {
+            get
+            {
+                return (myType)m_list[index];
+            }
+            set
+            {
+                m_list[index] = value;
+            }
+        }
+    }
+
+    class Employee
+    {
+
+    }
+
+
+
+    class Testing
+    { 
+    
+     public static void Main()
+     {
+         MyCustomList<int> list = new MyCustomList<int>();
+         list.Add(10);
+         list.Add(20);
+
+         
+     }
+ }    
+ 
+}
+
+=================Indexer=============
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+using System.Reflection;
+
+using System.Runtime.InteropServices;
+using System.IO;
+using System.Collections;
+
+namespace ConsoleApplication1
+{
+   
+    
+
+    class Employee
+    {
+        string[] projects = new string[10];
+            public string this[int i]
+            {
+                set { projects[i] = value; }
+                get { return projects[i]; }
+            }       
+        
+     public static void Main()
+     {
+         Employee eobj = new Employee();
+         eobj[0] = "Vertex";
+         eobj[1] = "Mitchell";
+         eobj[2] = "Retail";
+         Console.WriteLine(eobj[0]);
+         Console.WriteLine(eobj[1]);
+         Console.WriteLine(eobj[2]);
+         
+     }
+ }    
+ 
+}
+
+=================Optional Parameter==========
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+using System.Reflection;
+
+using System.Runtime.InteropServices;
+using System.IO;
+using System.Collections;
+
+namespace ConsoleApplication1
+{
+   
+    
+
+    class Employee
+    {
+         public void Show(string name, int age, float rating=4.0f,double salary=5000)
+        {
+            Console.WriteLine(name+" "+age+"  "+ rating+"  "+salary);
+        }
+     public static void Main()
+     {
+         Employee eobj = new Employee();
+         string name = "ram";
+         int age = 23;
+         double salary = 10000d;
+         float rating = 4.5f;
+
+         eobj.Show(name, age);
+         eobj.Show(name, age, rating,salary);
+         
+     }
+ }    
+ 
+}
+
+
+=============Named Parameter============
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+using System.Reflection;
+
+using System.Runtime.InteropServices;
+using System.IO;
+using System.Collections;
+
+namespace ConsoleApplication1
+{
+   
+    
+
+    class Employee
+    {
+         public void Show(string name, int age, float rating ,double salary )
+        {
+            Console.WriteLine(name+" "+age+"  "+ rating+"  "+salary);
+        }
+     public static void Main()
+     {
+         Employee eobj = new Employee();
+         eobj.Show(rating:4.5f, salary:4000, name:"ram",age:34); 
+     }
+ }    
+ 
+}
+
+
+==================ENUM=============
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+using System.Reflection;
+
+using System.Runtime.InteropServices;
+using System.IO;
+using System.Collections;
+
+namespace ConsoleApplication1
+{
+   
+    
+
+    class Employee
+    {
+        enum days { SUNDAY, MONDAY, TUESDAY, THURSDAY, FRIDAY, SATURDAY };
+        public void show()
+        {
+            Console.WriteLine(days.SUNDAY);
+            Console.WriteLine((int)days.FRIDAY);
+        }
+
+     public static void Main()
+     {
+         Employee eobj = new Employee();
+         eobj.show();
+     }
+ }    
+ 
+}
+
+------------------------
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+using System.Reflection;
+
+using System.Runtime.InteropServices;
+using System.IO;
+using System.Collections;
+
+namespace ConsoleApplication1
+{
+   
+    
+
+    class Employee
+    {
+        enum days { SUNDAY=100, MONDAY, TUESDAY, THURSDAY, FRIDAY, SATURDAY };
+        public void show()
+        {
+            Console.WriteLine(days.SUNDAY);
+            Console.WriteLine((int)days.FRIDAY);
+        }
+
+     public static void Main()
+     {
+         Employee eobj = new Employee();
+         eobj.show();
+     }
+ }    
+ 
+}
+
+===============Structs================
+using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+using System.Reflection;
+
+using System.Runtime.InteropServices;
+using System.IO;
+using System.Collections;
+
+namespace ConsoleApplication1
+{
+   
+    struct AddressDetails
+    {
+       public string houseNo,street,city, state, country;
+        public int pinCode;
+
+        public void Show()
+        {
+            Console.WriteLine(houseNo+" "+street+" "+city+" "+state+" "+country+" "+pinCode);
+        }
+    }
+    class Employee
+    {
+        int EmpID;
+        string name;
+        AddressDetails address;
+
+        public void Show()
+        {
+            Console.WriteLine(EmpID);
+            Console.WriteLine(name);
+            address = new AddressDetails() { houseNo = "12/5", street = "abc", city = "delhi", state = "delhi", country = "india", pinCode = 110092 };
+            
+            address.Show();
+        }
+
+     public static void Main()
+     {
+         Employee obj = new Employee();
+         obj.EmpID = 1000001;
+         obj.name = "Ram";
+         obj.Show();
+         
+     }
+ }    
+ 
+}
+
+======================stored procedure=====
+select * from Employee
+
+
+create procedure Proc1
+as
+begin
+	select * from Employee;
+end
+
+
+ Proc1
+
+
+
+  command = new SqlCommand("Proc1", connection);
+  command.CommandType = CommandType.StoredProcedure;
+
+-------------------------------------------
+
+alter procedure Proc2 @id int
+as
+begin
+	select * from Employee
+	where EmpID=@id
+end
+
+exec Proc2 1007
+
+
+
+command = new SqlCommand("Proc2 ", connection);
+command.Parameters.Add("@id", 1005);
+command.CommandType = CommandType.StoredProcedure;
+
+
+
+
+
+

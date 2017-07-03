@@ -1,0 +1,6 @@
+D:\C#\session1_2\2160165_2\Question7\bin\Debug\Question7.exe.config
+D:\C#\session1_2\2160165_2\Question7\bin\Debug\Question7.exe
+D:\C#\session1_2\2160165_2\Question7\bin\Debug\Question7.pdb
+D:\C#\session1_2\2160165_2\Question7\obj\Debug\Question7.exe
+D:\C#\session1_2\2160165_2\Question7\obj\Debug\Question7.pdb
+D:\C#\session1_2\2160165_2\Question7\obj\Debug\Question7.csprojResolveAssemblyReference.cache

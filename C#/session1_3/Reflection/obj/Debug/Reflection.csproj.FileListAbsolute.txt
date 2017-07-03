@@ -1,0 +1,6 @@
+D:\C#\session1_3\Reflection\bin\Debug\Reflection.exe.config
+D:\C#\session1_3\Reflection\bin\Debug\Reflection.exe
+D:\C#\session1_3\Reflection\bin\Debug\Reflection.pdb
+D:\C#\session1_3\Reflection\obj\Debug\Reflection.csprojResolveAssemblyReference.cache
+D:\C#\session1_3\Reflection\obj\Debug\Reflection.exe
+D:\C#\session1_3\Reflection\obj\Debug\Reflection.pdb

@@ -1,0 +1,5 @@
+D:\C#\session1_3\EventsDelegates\EventDelegate_Practice\bin\Debug\EventDelegate_Practice.exe.config
+D:\C#\session1_3\EventsDelegates\EventDelegate_Practice\bin\Debug\EventDelegate_Practice.exe
+D:\C#\session1_3\EventsDelegates\EventDelegate_Practice\bin\Debug\EventDelegate_Practice.pdb
+D:\C#\session1_3\EventsDelegates\EventDelegate_Practice\obj\Debug\EventDelegate_Practice.exe
+D:\C#\session1_3\EventsDelegates\EventDelegate_Practice\obj\Debug\EventDelegate_Practice.pdb

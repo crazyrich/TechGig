@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="x0033_RoomDept.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="x0033_RoomDeptStoreContainer">
+    <EntitySet Name="Department" EntityType="x0033_RoomDept.Store.Department" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Room" EntityType="x0033_RoomDept.Store.Room" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Room_Department" Association="x0033_RoomDept.Store.FK_Room_Department">
+      <End Role="Department" EntitySet="Department" />
+      <End Role="Room" EntitySet="Room" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DepartmentID" />
+    </Key>
+    <Property Name="DepartmentID" Type="int" Nullable="false" />
+    <Property Name="DeptName" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Room">
+    <Key>
+      <PropertyRef Name="RoomID" />
+    </Key>
+    <Property Name="RoomID" Type="int" Nullable="false" />
+    <Property Name="RoomName" Type="nchar" MaxLength="10" />
+    <Property Name="DepartmentID" Type="int" />
+  </EntityType>
+  <Association Name="FK_Room_Department">
+    <End Role="Department" Type="x0033_RoomDept.Store.Department" Multiplicity="0..1" />
+    <End Role="Room" Type="x0033_RoomDept.Store.Room" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="Room">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

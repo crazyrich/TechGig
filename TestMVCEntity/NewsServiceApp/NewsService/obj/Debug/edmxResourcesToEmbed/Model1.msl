@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="richModelStoreContainer" CdmEntityContainer="richEntities">
+    <EntitySetMapping Name="News">
+      <EntityTypeMapping TypeName="richModel.News">
+        <MappingFragment StoreEntitySet="News">
+          <ScalarProperty Name="NewsDescription" ColumnName="NewsDescription" />
+          <ScalarProperty Name="NewsType" ColumnName="NewsType" />
+          <ScalarProperty Name="NewsDate" ColumnName="NewsDate" />
+          <ScalarProperty Name="ReportName" ColumnName="ReportName" />
+          <ScalarProperty Name="NewHeadLine" ColumnName="NewHeadLine" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="richModelStoreContainer" CdmEntityContainer="richEntities">
+    <EntitySetMapping Name="Bands">
+      <EntityTypeMapping TypeName="richModel.Band">
+        <MappingFragment StoreEntitySet="Band">
+          <ScalarProperty Name="BandID" ColumnName="BandID" />
+          <ScalarProperty Name="Members" ColumnName="Members" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Events">
+      <EntityTypeMapping TypeName="richModel.Event">
+        <MappingFragment StoreEntitySet="Event">
+          <ScalarProperty Name="EventID" ColumnName="EventID" />
+          <ScalarProperty Name="Region" ColumnName="Region" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Appearances" TypeName="richModel.Appearances" StoreEntitySet="Appearances">
+      <EndProperty Name="Band">
+        <ScalarProperty Name="BandID" ColumnName="BandID" />
+      </EndProperty>
+      <EndProperty Name="Event">
+        <ScalarProperty Name="EventID" ColumnName="EventID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

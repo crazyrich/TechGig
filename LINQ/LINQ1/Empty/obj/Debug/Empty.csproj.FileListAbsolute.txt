@@ -1,0 +1,7 @@
+D:\LINQ\LINQ1\Empty\bin\Debug\Empty.exe.config
+D:\LINQ\LINQ1\Empty\bin\Debug\Empty.exe
+D:\LINQ\LINQ1\Empty\bin\Debug\Empty.pdb
+D:\LINQ\LINQ1\Empty\bin\Debug\EntityFramework.dll
+D:\LINQ\LINQ1\Empty\bin\Debug\EntityFramework.xml
+D:\LINQ\LINQ1\Empty\obj\Debug\Empty.exe
+D:\LINQ\LINQ1\Empty\obj\Debug\Empty.pdb

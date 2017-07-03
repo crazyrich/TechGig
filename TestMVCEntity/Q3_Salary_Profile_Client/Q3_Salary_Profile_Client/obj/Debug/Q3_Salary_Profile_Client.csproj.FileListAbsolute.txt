@@ -1,0 +1,8 @@
+D:\TestMVCEntity\Q3_Salary_Profile_Client\Q3_Salary_Profile_Client\bin\Debug\Q3_Salary_Profile_Client.exe.config
+D:\TestMVCEntity\Q3_Salary_Profile_Client\Q3_Salary_Profile_Client\bin\Debug\Q3_Salary_Profile_Client.exe
+D:\TestMVCEntity\Q3_Salary_Profile_Client\Q3_Salary_Profile_Client\bin\Debug\Q3_Salary_Profile_Client.pdb
+D:\TestMVCEntity\Q3_Salary_Profile_Client\Q3_Salary_Profile_Client\obj\Debug\Q3_Salary_Profile_Client.exe
+D:\TestMVCEntity\Q3_Salary_Profile_Client\Q3_Salary_Profile_Client\obj\Debug\Q3_Salary_Profile_Client.pdb
+D:\PHASE _I_BootCamp\BootCamp\TestMVCEntity\Q3_Salary_Profile_Client\Q3_Salary_Profile_Client\bin\Debug\Q3_Salary_Profile_Client.exe.config
+D:\PHASE _I_BootCamp\BootCamp\TestMVCEntity\Q3_Salary_Profile_Client\Q3_Salary_Profile_Client\obj\Debug\Q3_Salary_Profile_Client.exe
+D:\PHASE _I_BootCamp\BootCamp\TestMVCEntity\Q3_Salary_Profile_Client\Q3_Salary_Profile_Client\obj\Debug\Q3_Salary_Profile_Client.pdb

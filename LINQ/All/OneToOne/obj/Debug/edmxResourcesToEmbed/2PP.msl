@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="x0032_PP" />
+  <Alias Key="Target" Value="x0032_PP.Store" />
+  <EntityContainerMapping CdmEntityContainer="x0032_PPContainer" StorageEntityContainer="x0032_PPStoreContainer">
+    <EntitySetMapping Name="Passports">
+      <EntityTypeMapping TypeName="x0032_PP.Passport">
+        <MappingFragment StoreEntitySet="Passport">
+          <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+          <ScalarProperty Name="PassportNumber" ColumnName="PassportNumber" />
+          <ScalarProperty Name="PassportID" ColumnName="PassportID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="People">
+      <EntityTypeMapping TypeName="x0032_PP.Person">
+        <MappingFragment StoreEntitySet="Person">
+          <ScalarProperty Name="PassportID" ColumnName="PassportID" />
+          <ScalarProperty Name="PersonAge" ColumnName="PersonAge" />
+          <ScalarProperty Name="PersonName" ColumnName="PersonName" />
+          <ScalarProperty Name="PersonID" ColumnName="PersonID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

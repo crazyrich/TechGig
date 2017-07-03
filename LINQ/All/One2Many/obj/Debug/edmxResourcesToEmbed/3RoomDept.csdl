@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="x0033_RoomDept" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="x0033_RoomDeptContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Departments" EntityType="x0033_RoomDept.Department" />
+    <EntitySet Name="Rooms" EntityType="x0033_RoomDept.Room" />
+    <AssociationSet Name="FK_Room_Department" Association="x0033_RoomDept.FK_Room_Department">
+      <End Role="Department" EntitySet="Departments" />
+      <End Role="Room" EntitySet="Rooms" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DepartmentID" />
+    </Key>
+    <Property Type="Int32" Name="DepartmentID" Nullable="false" />
+    <Property Type="String" Name="DeptName" MaxLength="10" FixedLength="true" Unicode="true" />
+    <NavigationProperty Name="Rooms" Relationship="x0033_RoomDept.FK_Room_Department" FromRole="Department" ToRole="Room" />
+  </EntityType>
+  <EntityType Name="Room">
+    <Key>
+      <PropertyRef Name="RoomID" />
+    </Key>
+    <Property Type="Int32" Name="RoomID" Nullable="false" />
+    <Property Type="String" Name="RoomName" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="DepartmentID" />
+    <NavigationProperty Name="Department" Relationship="x0033_RoomDept.FK_Room_Department" FromRole="Room" ToRole="Department" />
+  </EntityType>
+  <Association Name="FK_Room_Department">
+    <End Type="x0033_RoomDept.Department" Role="Department" Multiplicity="0..1" />
+    <End Type="x0033_RoomDept.Room" Role="Room" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Department">
+        <PropertyRef Name="DepartmentID" />
+      </Principal>
+      <Dependent Role="Room">
+        <PropertyRef Name="DepartmentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

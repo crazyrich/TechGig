@@ -1,0 +1,7 @@
+D:\LINQ\All\OneToOne\bin\Debug\OneToOne.exe.config
+D:\LINQ\All\OneToOne\bin\Debug\OneToOne.exe
+D:\LINQ\All\OneToOne\bin\Debug\OneToOne.pdb
+D:\LINQ\All\OneToOne\bin\Debug\EntityFramework.dll
+D:\LINQ\All\OneToOne\bin\Debug\EntityFramework.xml
+D:\LINQ\All\OneToOne\obj\Debug\OneToOne.exe
+D:\LINQ\All\OneToOne\obj\Debug\OneToOne.pdb

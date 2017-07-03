@@ -1,0 +1,6 @@
+D:\C#\session1_3\EventsDelegates\EventsDelegates\bin\Debug\EventsDelegates.exe.config
+D:\C#\session1_3\EventsDelegates\EventsDelegates\bin\Debug\EventsDelegates.exe
+D:\C#\session1_3\EventsDelegates\EventsDelegates\bin\Debug\EventsDelegates.pdb
+D:\C#\session1_3\EventsDelegates\EventsDelegates\obj\Debug\EventsDelegates.csprojResolveAssemblyReference.cache
+D:\C#\session1_3\EventsDelegates\EventsDelegates\obj\Debug\EventsDelegates.exe
+D:\C#\session1_3\EventsDelegates\EventsDelegates\obj\Debug\EventsDelegates.pdb

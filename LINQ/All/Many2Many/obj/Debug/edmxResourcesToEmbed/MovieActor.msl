@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+  <Alias Key="Model" Value="MovieActor" />
+  <Alias Key="Target" Value="MovieActor.Store" />
+  <EntityContainerMapping CdmEntityContainer="MovieActorContainer" StorageEntityContainer="MovieActorStoreContainer">
+    <EntitySetMapping Name="Actors">
+      <EntityTypeMapping TypeName="MovieActor.Actor">
+        <MappingFragment StoreEntitySet="Actor">
+          <ScalarProperty Name="ActorName" ColumnName="ActorName" />
+          <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Movies">
+      <EntityTypeMapping TypeName="MovieActor.Movie">
+        <MappingFragment StoreEntitySet="Movie">
+          <ScalarProperty Name="MovieDirector" ColumnName="MovieDirector" />
+          <ScalarProperty Name="MovieName" ColumnName="MovieName" />
+          <ScalarProperty Name="MovieID" ColumnName="MovieID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="MovieActor" TypeName="MovieActor.MovieActor" StoreEntitySet="MovieActor">
+      <EndProperty Name="Movie">
+        <ScalarProperty Name="MovieID" ColumnName="MovieID" />
+      </EndProperty>
+      <EndProperty Name="Actor">
+        <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="ProcMovieActor" FunctionName="MovieActor.Store.ProcMovieActor">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="MovieActor.ProcMovieActor_Result">
+          <ScalarProperty Name="MovieID" ColumnName="MovieID" />
+          <ScalarProperty Name="MovieName" ColumnName="MovieName" />
+          <ScalarProperty Name="MovieDirector" ColumnName="MovieDirector" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

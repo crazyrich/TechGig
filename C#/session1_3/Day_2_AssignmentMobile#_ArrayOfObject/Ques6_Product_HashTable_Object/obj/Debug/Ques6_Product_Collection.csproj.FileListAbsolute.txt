@@ -1,0 +1,6 @@
+D:\C#\session1_3\Day_2_Assignment\Ques6_Product_Collection\bin\Debug\Ques6_Product_Collection.exe.config
+D:\C#\session1_3\Day_2_Assignment\Ques6_Product_Collection\bin\Debug\Ques6_Product_Collection.exe
+D:\C#\session1_3\Day_2_Assignment\Ques6_Product_Collection\bin\Debug\Ques6_Product_Collection.pdb
+D:\C#\session1_3\Day_2_Assignment\Ques6_Product_Collection\obj\Debug\Ques6_Product_Collection.exe
+D:\C#\session1_3\Day_2_Assignment\Ques6_Product_Collection\obj\Debug\Ques6_Product_Collection.pdb
+D:\C#\session1_3\Day_2_Assignment\Ques6_Product_Collection\obj\Debug\Ques6_Product_Collection.csprojResolveAssemblyReference.cache

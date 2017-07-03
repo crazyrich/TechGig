@@ -1,0 +1,6 @@
+D:\C#\session1_3\PG\Restaurant\bin\Debug\Restaurant.exe.config
+D:\C#\session1_3\PG\Restaurant\bin\Debug\Restaurant.exe
+D:\C#\session1_3\PG\Restaurant\bin\Debug\Restaurant.pdb
+D:\C#\session1_3\PG\Restaurant\obj\Debug\Restaurant.exe
+D:\C#\session1_3\PG\Restaurant\obj\Debug\Restaurant.pdb
+D:\C#\session1_3\PG\Restaurant\obj\Debug\Restaurant.csprojResolveAssemblyReference.cache

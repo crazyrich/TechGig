@@ -1,0 +1,6 @@
+D:\C#\session1_3\Const_ReadOnly\NewProject_Thursday\bin\Debug\NewProject_Thursday.exe.config
+D:\C#\session1_3\Const_ReadOnly\NewProject_Thursday\obj\Debug\NewProject_Thursday.exe
+D:\C#\session1_3\Const_ReadOnly\NewProject_Thursday\obj\Debug\NewProject_Thursday.pdb
+D:\PHASE I\C#\session1_3\Const_ReadOnly\NewProject_Thursday\bin\Debug\NewProject_Thursday.exe.config
+D:\PHASE I\C#\session1_3\Const_ReadOnly\NewProject_Thursday\obj\Debug\NewProject_Thursday.exe
+D:\PHASE I\C#\session1_3\Const_ReadOnly\NewProject_Thursday\obj\Debug\NewProject_Thursday.pdb

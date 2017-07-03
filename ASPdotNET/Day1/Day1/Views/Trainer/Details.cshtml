@@ -1,0 +1,24 @@
+﻿@model Day1.Models.Trainer 
+@*no IEnumerable because it is returning the object *@
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<table>
+    <tr>
+        <td>@Html.DisplayNameFor(model=>model.Id)</td>
+        <td>@Html.DisplayFor(model=>model.Id)</td>
+    </tr>
+     <tr>
+        <td>@Html.DisplayNameFor(model=>model.Name)</td>
+        <td>@Html.DisplayFor(model=>model.Name)</td>
+    </tr>
+     <tr>
+        <td>@Html.DisplayNameFor(model=>model.TrainingId)</td>
+        <td>@Html.DisplayFor(model=>model.TrainingId)</td>
+    </tr>
+</table>
+<br />
+@Html.ActionLink("Back","Index")

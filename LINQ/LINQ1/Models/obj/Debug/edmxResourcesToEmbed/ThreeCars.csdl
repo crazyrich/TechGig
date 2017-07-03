@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="richModel1" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="richEntities1" p1:LazyLoadingEnabled="true">
+    <EntitySet Name="Cars" EntityType="richModel1.Car" />
+    <FunctionImport Name="proc101" ReturnType="Collection(richModel1.proc101_Result)" />
+    <FunctionImport Name="proc2" ReturnType="Collection(richModel1.proc2_Result)">
+      <Parameter Name="cid" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="proc1011" ReturnType="Collection(richModel1.proc101_Result)" />
+    <FunctionImport Name="proc21" ReturnType="Collection(richModel1.proc2_Result)">
+      <Parameter Name="cid" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <EntityType Name="Car">
+    <Key>
+      <PropertyRef Name="CarID" />
+    </Key>
+    <Property Name="CarID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+    <Property Name="Brand" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="ModelNo" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="GermanCar" BaseType="richModel1.Car">
+    <Property Name="AdditionalBrandDetails" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="JapaniesCar" BaseType="richModel1.Car">
+    <Property Name="Region" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="AdditionalDetails" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <ComplexType Name="proc101_Result">
+    <Property Type="Int32" Name="ProductID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Price" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="proc2_Result">
+    <Property Type="Int32" Name="ProductID" Nullable="false" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+    <Property Type="Int32" Name="Price" Nullable="true" />
+  </ComplexType>
+</Schema>

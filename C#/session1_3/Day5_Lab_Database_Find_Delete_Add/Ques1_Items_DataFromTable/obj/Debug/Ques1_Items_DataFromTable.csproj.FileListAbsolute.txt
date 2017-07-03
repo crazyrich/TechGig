@@ -1,0 +1,15 @@
+D:\C#\session1_3\Day5_Lab_Database\Ques1_Items_DataFromTable\bin\Debug\Ques1_Items_DataFromTable.exe.config
+D:\C#\session1_3\Day5_Lab_Database\Ques1_Items_DataFromTable\bin\Debug\Ques1_Items_DataFromTable.exe
+D:\C#\session1_3\Day5_Lab_Database\Ques1_Items_DataFromTable\bin\Debug\Ques1_Items_DataFromTable.pdb
+D:\C#\session1_3\Day5_Lab_Database\Ques1_Items_DataFromTable\obj\Debug\Ques1_Items_DataFromTable.csprojResolveAssemblyReference.cache
+D:\C#\session1_3\Day5_Lab_Database\Ques1_Items_DataFromTable\obj\Debug\Ques1_Items_DataFromTable.exe
+D:\C#\session1_3\Day5_Lab_Database\Ques1_Items_DataFromTable\obj\Debug\Ques1_Items_DataFromTable.pdb
+D:\C#\session1_3\Day5_Lab_Database_Find_Delete_Add\Ques1_Items_DataFromTable\bin\Debug\Ques1_Items_DataFromTable.exe.config
+D:\C#\session1_3\Day5_Lab_Database_Find_Delete_Add\Ques1_Items_DataFromTable\obj\Debug\Ques1_Items_DataFromTable.exe
+D:\C#\session1_3\Day5_Lab_Database_Find_Delete_Add\Ques1_Items_DataFromTable\obj\Debug\Ques1_Items_DataFromTable.pdb
+D:\C#\session1_3\Day5_Lab_Database_Find_Delete_Add\Ques1_Items_DataFromTable\bin\Debug\Ques1_Items_DataFromTable.exe
+D:\C#\session1_3\Day5_Lab_Database_Find_Delete_Add\Ques1_Items_DataFromTable\bin\Debug\Ques1_Items_DataFromTable.pdb
+D:\C#\session1_3\Day5_Lab_Database_Find_Delete_Add\Ques1_Items_DataFromTable\obj\Debug\Ques1_Items_DataFromTable.csprojResolveAssemblyReference.cache
+D:\PHASE _I_BootCamp\BootCamp\C#\session1_3\Day5_Lab_Database_Find_Delete_Add\Ques1_Items_DataFromTable\bin\Debug\Ques1_Items_DataFromTable.exe.config
+D:\PHASE _I_BootCamp\BootCamp\C#\session1_3\Day5_Lab_Database_Find_Delete_Add\Ques1_Items_DataFromTable\obj\Debug\Ques1_Items_DataFromTable.exe
+D:\PHASE _I_BootCamp\BootCamp\C#\session1_3\Day5_Lab_Database_Find_Delete_Add\Ques1_Items_DataFromTable\obj\Debug\Ques1_Items_DataFromTable.pdb

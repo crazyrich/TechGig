@@ -1,0 +1,11 @@
+D:\TestMVCEntity\Q1_Login_WCF\Q1_Login_WCF\bin\Debug\Q1_Login_WCF.exe.config
+D:\TestMVCEntity\Q1_Login_WCF\Q1_Login_WCF\bin\Debug\Q1_Login_WCF.exe
+D:\TestMVCEntity\Q1_Login_WCF\Q1_Login_WCF\bin\Debug\Q1_Login_WCF.pdb
+D:\TestMVCEntity\Q1_Login_WCF\Q1_Login_WCF\obj\Debug\Q1_Login_WCF.csprojResolveAssemblyReference.cache
+D:\TestMVCEntity\Q1_Login_WCF\Q1_Login_WCF\obj\Debug\Q1_Login_WCF.Form1.resources
+D:\TestMVCEntity\Q1_Login_WCF\Q1_Login_WCF\obj\Debug\Q1_Login_WCF.Properties.Resources.resources
+D:\TestMVCEntity\Q1_Login_WCF\Q1_Login_WCF\obj\Debug\Q1_Login_WCF.csproj.GenerateResource.Cache
+D:\TestMVCEntity\Q1_Login_WCF\Q1_Login_WCF\obj\Debug\Q1_Login_WCF.exe
+D:\TestMVCEntity\Q1_Login_WCF\Q1_Login_WCF\obj\Debug\Q1_Login_WCF.pdb
+D:\TestMVCEntity\Q1_Login_WCF\Q1_Login_WCF\bin\Debug\EntityFramework.dll
+D:\TestMVCEntity\Q1_Login_WCF\Q1_Login_WCF\bin\Debug\EntityFramework.SqlServer.dll

@@ -1,0 +1,6 @@
+D:\C#\session1_3\Day_2_Assignment\Day_2_Assignment\bin\Debug\Day_2_Assignment.exe.config
+D:\C#\session1_3\Day_2_Assignment\Day_2_Assignment\bin\Debug\Day_2_Assignment.exe
+D:\C#\session1_3\Day_2_Assignment\Day_2_Assignment\bin\Debug\Day_2_Assignment.pdb
+D:\C#\session1_3\Day_2_Assignment\Day_2_Assignment\obj\Debug\Day_2_Assignment.csprojResolveAssemblyReference.cache
+D:\C#\session1_3\Day_2_Assignment\Day_2_Assignment\obj\Debug\Day_2_Assignment.exe
+D:\C#\session1_3\Day_2_Assignment\Day_2_Assignment\obj\Debug\Day_2_Assignment.pdb

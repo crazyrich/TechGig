@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Windows Desktop
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidationService", "ValidationService\ValidationService.csproj", "{DE26DE01-3802-4547-811A-EB2E9C4D7F2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillingService", "BillingService\BillingService.csproj", "{BADEF03A-7F11-4044-AE54-792334EC2377}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowBalance", "ShowBalance\ShowBalance.csproj", "{2B8338B0-D346-46CF-929E-2A6F8C61519F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE26DE01-3802-4547-811A-EB2E9C4D7F2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE26DE01-3802-4547-811A-EB2E9C4D7F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE26DE01-3802-4547-811A-EB2E9C4D7F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE26DE01-3802-4547-811A-EB2E9C4D7F2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BADEF03A-7F11-4044-AE54-792334EC2377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BADEF03A-7F11-4044-AE54-792334EC2377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BADEF03A-7F11-4044-AE54-792334EC2377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BADEF03A-7F11-4044-AE54-792334EC2377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B8338B0-D346-46CF-929E-2A6F8C61519F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B8338B0-D346-46CF-929E-2A6F8C61519F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B8338B0-D346-46CF-929E-2A6F8C61519F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B8338B0-D346-46CF-929E-2A6F8C61519F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="richModel1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="richModel1StoreContainer">
+          <EntitySet Name="Cars" EntityType="richModel1.Store.Cars" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GermanCars" EntityType="richModel1.Store.GermanCars" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="JapaniesCars" EntityType="richModel1.Store.JapaniesCars" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_GermanCars_Cars" Association="richModel1.Store.FK_GermanCars_Cars">
+            <End Role="Cars" EntitySet="Cars" />
+            <End Role="GermanCars" EntitySet="GermanCars" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JapaniesCars_Cars" Association="richModel1.Store.FK_JapaniesCars_Cars">
+            <End Role="Cars" EntitySet="Cars" />
+            <End Role="JapaniesCars" EntitySet="JapaniesCars" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Cars">
+          <Key>
+            <PropertyRef Name="CarID" />
+          </Key>
+          <Property Name="CarID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Brand" Type="varchar" MaxLength="30" />
+          <Property Name="ModelNo" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="GermanCars">
+          <Key>
+            <PropertyRef Name="CarID" />
+          </Key>
+          <Property Name="CarID" Type="int" Nullable="false" />
+          <Property Name="AdditionalBrandDetails" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="JapaniesCars">
+          <Key>
+            <PropertyRef Name="CarID" />
+          </Key>
+          <Property Name="CarID" Type="int" Nullable="false" />
+          <Property Name="Region" Type="varchar" MaxLength="30" />
+          <Property Name="AdditionalDetails" Type="varchar" MaxLength="30" />
+        </EntityType>
+        <Association Name="FK_GermanCars_Cars">
+          <End Role="Cars" Type="richModel1.Store.Cars" Multiplicity="1" />
+          <End Role="GermanCars" Type="richModel1.Store.GermanCars" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Cars">
+              <PropertyRef Name="CarID" />
+            </Principal>
+            <Dependent Role="GermanCars">
+              <PropertyRef Name="CarID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JapaniesCars_Cars">
+          <End Role="Cars" Type="richModel1.Store.Cars" Multiplicity="1" />
+          <End Role="JapaniesCars" Type="richModel1.Store.JapaniesCars" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Cars">
+              <PropertyRef Name="CarID" />
+            </Principal>
+            <Dependent Role="JapaniesCars">
+              <PropertyRef Name="CarID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="proc101" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="proc2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="cid" Type="int" Mode="In" />
+        </Function>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="richModel1" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="richEntities1" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Cars" EntityType="richModel1.Car" />
+          <FunctionImport Name="proc101" ReturnType="Collection(richModel1.proc101_Result)" />
+          <FunctionImport Name="proc2" ReturnType="Collection(richModel1.proc2_Result)">
+          <Parameter Name="cid" Mode="In" Type="Int32" />
+          </FunctionImport>
+          <FunctionImport Name="proc1011" ReturnType="Collection(richModel1.proc101_Result)" />
+          <FunctionImport Name="proc21" ReturnType="Collection(richModel1.proc2_Result)">
+          <Parameter Name="cid" Mode="In" Type="Int32" />
+          </FunctionImport>
+        </EntityContainer>
+        <EntityType Name="Car">
+          <Key>
+            <PropertyRef Name="CarID" />
+          </Key>
+          <Property Name="CarID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Brand" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="ModelNo" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="GermanCar" BaseType="richModel1.Car">
+          <Property Name="AdditionalBrandDetails" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="JapaniesCar" BaseType="richModel1.Car">
+          <Property Name="Region" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="AdditionalDetails" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <ComplexType Name="proc101_Result">
+          <Property Type="Int32" Name="ProductID" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="Price" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="proc2_Result">
+          <Property Type="Int32" Name="ProductID" Nullable="false" />
+          <Property Type="String" Name="Name" Nullable="true" MaxLength="50" />
+          <Property Type="Int32" Name="Price" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="richModel1StoreContainer" CdmEntityContainer="richEntities1">
+          <EntitySetMapping Name="Cars">
+            <EntityTypeMapping TypeName="IsTypeOf(richModel1.Car)">
+              <MappingFragment StoreEntitySet="Cars">
+                <ScalarProperty Name="CarID" ColumnName="CarID" />
+                <ScalarProperty Name="ModelNo" ColumnName="ModelNo" />
+                <ScalarProperty Name="Brand" ColumnName="Brand" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(richModel1.JapaniesCar)">
+              <MappingFragment StoreEntitySet="JapaniesCars">
+                <ScalarProperty Name="AdditionalDetails" ColumnName="AdditionalDetails" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="CarID" ColumnName="CarID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(richModel1.GermanCar)">
+              <MappingFragment StoreEntitySet="GermanCars">
+                <ScalarProperty Name="AdditionalBrandDetails" ColumnName="AdditionalBrandDetails" />
+                <ScalarProperty Name="CarID" ColumnName="CarID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="proc101" FunctionName="richModel1.Store.proc101">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="richModel1.proc101_Result">
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="proc2" FunctionName="richModel1.Store.proc2">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="richModel1.proc2_Result">
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="proc1011" FunctionName="richModel1.Store.proc101">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="richModel1.proc101_Result">
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="proc21" FunctionName="richModel1.Store.proc2">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="richModel1.proc2_Result">
+                <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

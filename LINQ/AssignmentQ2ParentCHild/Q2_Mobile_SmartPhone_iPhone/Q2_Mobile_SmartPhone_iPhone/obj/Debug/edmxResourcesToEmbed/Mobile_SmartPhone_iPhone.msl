@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="richModelStoreContainer" CdmEntityContainer="richEntities">
+    <EntitySetMapping Name="Mobiles">
+      <EntityTypeMapping TypeName="IsTypeOf(richModel.Mobile)">
+        <MappingFragment StoreEntitySet="Mobile">
+          <ScalarProperty Name="MobileID" ColumnName="MobileID" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="ModelNo" ColumnName="ModelNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(richModel.iPhone)">
+        <MappingFragment StoreEntitySet="iPhone">
+          <ScalarProperty Name="OperatingSystem" ColumnName="OperatingSystem" />
+          <ScalarProperty Name="MobileID" ColumnName="MobileID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(richModel.SmartPhone)">
+        <MappingFragment StoreEntitySet="SmartPhone">
+          <ScalarProperty Name="AndroidVer" ColumnName="AndroidVer" />
+          <ScalarProperty Name="MobileID" ColumnName="MobileID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

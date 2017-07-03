@@ -1,0 +1,5 @@
+D:\C#\session1_1\DAY2.0\NonStatic_Static_2\bin\Debug\NonStatic_Static_2.exe.config
+D:\C#\session1_1\DAY2.0\NonStatic_Static_2\bin\Debug\NonStatic_Static_2.exe
+D:\C#\session1_1\DAY2.0\NonStatic_Static_2\bin\Debug\NonStatic_Static_2.pdb
+D:\C#\session1_1\DAY2.0\NonStatic_Static_2\obj\Debug\NonStatic_Static_2.exe
+D:\C#\session1_1\DAY2.0\NonStatic_Static_2\obj\Debug\NonStatic_Static_2.pdb

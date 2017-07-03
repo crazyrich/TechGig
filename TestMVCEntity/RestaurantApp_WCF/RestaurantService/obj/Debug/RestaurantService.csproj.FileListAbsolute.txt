@@ -1,0 +1,6 @@
+D:\TestMVCEntity\RestaurantApp_WCF\RestaurantService\bin\RestaurantService.dll
+D:\TestMVCEntity\RestaurantApp_WCF\RestaurantService\bin\RestaurantService.pdb
+D:\TestMVCEntity\RestaurantApp_WCF\RestaurantService\obj\Debug\RestaurantService.dll
+D:\TestMVCEntity\RestaurantApp_WCF\RestaurantService\obj\Debug\RestaurantService.pdb
+D:\TestMVCEntity\RestaurantApp_WCF\RestaurantService\bin\EntityFramework.dll
+D:\TestMVCEntity\RestaurantApp_WCF\RestaurantService\bin\EntityFramework.xml

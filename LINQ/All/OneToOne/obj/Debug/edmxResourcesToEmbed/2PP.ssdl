@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="x0032_PP.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="x0032_PPStoreContainer">
+    <EntitySet Name="Passport" EntityType="x0032_PP.Store.Passport" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Person" EntityType="x0032_PP.Store.Person" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Passport_Person" Association="x0032_PP.Store.FK_Passport_Person">
+      <End Role="Person" EntitySet="Person" />
+      <End Role="Passport" EntitySet="Passport" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Passport">
+    <Key>
+      <PropertyRef Name="PassportID" />
+      <PropertyRef Name="PersonID" />
+    </Key>
+    <Property Name="PassportID" Type="int" Nullable="false" />
+    <Property Name="PassportNumber" Type="int" />
+    <Property Name="PersonID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Person">
+    <Key>
+      <PropertyRef Name="PersonID" />
+      <PropertyRef Name="PassportID" />
+    </Key>
+    <Property Name="PersonID" Type="int" Nullable="false" />
+    <Property Name="PersonName" Type="nchar" MaxLength="10" />
+    <Property Name="PersonAge" Type="int" />
+    <Property Name="PassportID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Passport_Person">
+    <End Role="Person" Type="x0032_PP.Store.Person" Multiplicity="1" />
+    <End Role="Passport" Type="x0032_PP.Store.Passport" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Person">
+        <PropertyRef Name="PersonID" />
+        <PropertyRef Name="PassportID" />
+      </Principal>
+      <Dependent Role="Passport">
+        <PropertyRef Name="PersonID" />
+        <PropertyRef Name="PassportID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

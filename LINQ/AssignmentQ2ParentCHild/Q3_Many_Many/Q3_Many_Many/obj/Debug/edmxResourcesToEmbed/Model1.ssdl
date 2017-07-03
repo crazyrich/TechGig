@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="richModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="richModelStoreContainer">
+    <EntitySet Name="Appearances" EntityType="richModel.Store.Appearances" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Band" EntityType="richModel.Store.Band" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Event" EntityType="richModel.Store.Event" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Appearances_Band" Association="richModel.Store.FK_Appearances_Band">
+      <End Role="Band" EntitySet="Band" />
+      <End Role="Appearances" EntitySet="Appearances" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Appearances_Event" Association="richModel.Store.FK_Appearances_Event">
+      <End Role="Event" EntitySet="Event" />
+      <End Role="Appearances" EntitySet="Appearances" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Appearances">
+    <Key>
+      <PropertyRef Name="BandID" />
+      <PropertyRef Name="EventID" />
+    </Key>
+    <Property Name="BandID" Type="int" Nullable="false" />
+    <Property Name="EventID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Band">
+    <Key>
+      <PropertyRef Name="BandID" />
+    </Key>
+    <Property Name="BandID" Type="int" Nullable="false" />
+    <Property Name="Members" Type="int" />
+  </EntityType>
+  <EntityType Name="Event">
+    <Key>
+      <PropertyRef Name="EventID" />
+    </Key>
+    <Property Name="EventID" Type="int" Nullable="false" />
+    <Property Name="Region" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <Association Name="FK_Appearances_Band">
+    <End Role="Band" Type="richModel.Store.Band" Multiplicity="1" />
+    <End Role="Appearances" Type="richModel.Store.Appearances" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Band">
+        <PropertyRef Name="BandID" />
+      </Principal>
+      <Dependent Role="Appearances">
+        <PropertyRef Name="BandID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Appearances_Event">
+    <End Role="Event" Type="richModel.Store.Event" Multiplicity="1" />
+    <End Role="Appearances" Type="richModel.Store.Appearances" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Event">
+        <PropertyRef Name="EventID" />
+      </Principal>
+      <Dependent Role="Appearances">
+        <PropertyRef Name="EventID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

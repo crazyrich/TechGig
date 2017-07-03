@@ -1,0 +1,8 @@
+D:\LINQ\AssignmentQ2ParentCHild\Q3_Many_Many\Q3_Many_Many\bin\Debug\Q3_Many_Many.exe.config
+D:\LINQ\AssignmentQ2ParentCHild\Q3_Many_Many\Q3_Many_Many\bin\Debug\Q3_Many_Many.exe
+D:\LINQ\AssignmentQ2ParentCHild\Q3_Many_Many\Q3_Many_Many\bin\Debug\Q3_Many_Many.pdb
+D:\LINQ\AssignmentQ2ParentCHild\Q3_Many_Many\Q3_Many_Many\bin\Debug\EntityFramework.dll
+D:\LINQ\AssignmentQ2ParentCHild\Q3_Many_Many\Q3_Many_Many\bin\Debug\EntityFramework.xml
+D:\LINQ\AssignmentQ2ParentCHild\Q3_Many_Many\Q3_Many_Many\obj\Debug\Q3_Many_Many.csprojResolveAssemblyReference.cache
+D:\LINQ\AssignmentQ2ParentCHild\Q3_Many_Many\Q3_Many_Many\obj\Debug\Q3_Many_Many.exe
+D:\LINQ\AssignmentQ2ParentCHild\Q3_Many_Many\Q3_Many_Many\obj\Debug\Q3_Many_Many.pdb

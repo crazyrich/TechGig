@@ -1,0 +1,5 @@
+D:\C#\session1_2\Question1\Question2\bin\Debug\Question2.exe.config
+D:\C#\session1_2\Question1\Question2\bin\Debug\Question2.exe
+D:\C#\session1_2\Question1\Question2\bin\Debug\Question2.pdb
+D:\C#\session1_2\Question1\Question2\obj\Debug\Question2.exe
+D:\C#\session1_2\Question1\Question2\obj\Debug\Question2.pdb

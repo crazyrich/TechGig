@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Model1.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="Model1StoreContainer">
+          <EntitySet Name="Car" EntityType="Model1.Store.Car" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GermanCar" EntityType="Model1.Store.GermanCar" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="IndianCar" EntityType="Model1.Store.IndianCar" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="JapaneseCar" EntityType="Model1.Store.JapaneseCar" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_GermanCar_Car" Association="Model1.Store.FK_GermanCar_Car">
+            <End Role="Car" EntitySet="Car" />
+            <End Role="GermanCar" EntitySet="GermanCar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IndianCar_Car" Association="Model1.Store.FK_IndianCar_Car">
+            <End Role="Car" EntitySet="Car" />
+            <End Role="IndianCar" EntitySet="IndianCar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_JapaneseCar_Car" Association="Model1.Store.FK_JapaneseCar_Car">
+            <End Role="Car" EntitySet="Car" />
+            <End Role="JapaneseCar" EntitySet="JapaneseCar" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Car">
+          <Key>
+            <PropertyRef Name="CarID" />
+          </Key>
+          <Property Name="CarID" Type="int" Nullable="false" />
+          <Property Name="Engine" Type="nchar" MaxLength="10" />
+          <Property Name="Wheels" Type="int" />
+          <Property Name="Region" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="GermanCar">
+          <Key>
+            <PropertyRef Name="CarID" />
+          </Key>
+          <Property Name="CarID" Type="int" Nullable="false" />
+          <Property Name="Color" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="IndianCar">
+          <Key>
+            <PropertyRef Name="CarID" />
+          </Key>
+          <Property Name="CarID" Type="int" Nullable="false" />
+          <Property Name="Company" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="JapaneseCar">
+          <Key>
+            <PropertyRef Name="CarID" />
+          </Key>
+          <Property Name="CarID" Type="int" Nullable="false" />
+          <Property Name="Price" Type="int" />
+        </EntityType>
+        <Association Name="FK_GermanCar_Car">
+          <End Role="Car" Type="Model1.Store.Car" Multiplicity="1" />
+          <End Role="GermanCar" Type="Model1.Store.GermanCar" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Car">
+              <PropertyRef Name="CarID" />
+            </Principal>
+            <Dependent Role="GermanCar">
+              <PropertyRef Name="CarID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IndianCar_Car">
+          <End Role="Car" Type="Model1.Store.Car" Multiplicity="1" />
+          <End Role="IndianCar" Type="Model1.Store.IndianCar" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Car">
+              <PropertyRef Name="CarID" />
+            </Principal>
+            <Dependent Role="IndianCar">
+              <PropertyRef Name="CarID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_JapaneseCar_Car">
+          <End Role="Car" Type="Model1.Store.Car" Multiplicity="1" />
+          <End Role="JapaneseCar" Type="Model1.Store.JapaneseCar" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Car">
+              <PropertyRef Name="CarID" />
+            </Principal>
+            <Dependent Role="JapaneseCar">
+              <PropertyRef Name="CarID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Model1" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="Model1Container" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Cars" EntityType="Model1.Car" />
+        </EntityContainer>
+        <EntityType Name="Car">
+          <Key>
+            <PropertyRef Name="CarID" />
+          </Key>
+          <Property Type="Int32" Name="CarID" Nullable="false" />
+          <Property Type="String" Name="Engine" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="Int32" Name="Wheels" />
+          <Property Type="String" Name="Region" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="GermanCar" BaseType="Model1.Car">
+          <Property Type="String" Name="Color" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="IndianCar" BaseType="Model1.Car">
+          <Property Type="String" Name="Company" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="JapaneseCar" BaseType="Model1.Car">
+          <Property Type="Int32" Name="Price" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="Model1" />
+        <Alias Key="Target" Value="Model1.Store" />
+        <EntityContainerMapping CdmEntityContainer="Model1Container" StorageEntityContainer="Model1StoreContainer">
+          <EntitySetMapping Name="Cars">
+            <EntityTypeMapping TypeName="IsTypeOf(Model1.Car)">
+              <MappingFragment StoreEntitySet="Car">
+                <ScalarProperty Name="CarID" ColumnName="CarID" />
+                <ScalarProperty Name="Region" ColumnName="Region" />
+                <ScalarProperty Name="Wheels" ColumnName="Wheels" />
+                <ScalarProperty Name="Engine" ColumnName="Engine" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(Model1.GermanCar)">
+              <MappingFragment StoreEntitySet="GermanCar">
+                <ScalarProperty Name="CarID" ColumnName="CarID" />
+                <ScalarProperty Name="Color" ColumnName="Color" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(Model1.JapaneseCar)">
+              <MappingFragment StoreEntitySet="JapaneseCar">
+                <ScalarProperty Name="CarID" ColumnName="CarID" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+            <EntityTypeMapping TypeName="IsTypeOf(Model1.IndianCar)">
+              <MappingFragment StoreEntitySet="IndianCar">
+                <ScalarProperty Name="CarID" ColumnName="CarID" />
+                <ScalarProperty Name="Company" ColumnName="Company" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

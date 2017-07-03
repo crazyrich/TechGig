@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            border: 1px solid #808080;
+            background-color: #CCFF99;
+        }
+        .auto-style2 {
+            width: 355px;
+        }
+        .auto-style5 {
+            width: 1032px;
+            height: 299px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2">
+                        <img alt="" class="auto-style5" src="img/images%20(1).jpg" /></td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        <asp:Menu ID="Menu1" runat="server" Height="17px" Orientation="Horizontal" RenderingMode="Table" Width="762px">
+                            <Items>
+                                <asp:MenuItem Text="Show Menu" Value="Show Menu" NavigateUrl="~/ShowMenu.aspx"></asp:MenuItem>
+                                 <asp:MenuItem Text="Take Order" Value="Take Order" NavigateUrl="~/TakeOrder.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Show Order Status" Value="Show Order Status"></asp:MenuItem>
+                                <asp:MenuItem Text="Show Corporate Offers" Value="Show Corporate Offers"></asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2">
+                        <asp:Label ID="Label1" runat="server"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">LinkButton</asp:LinkButton>
+                    </td>
+                    
+                    <td class="auto-style2">&nbsp; </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"> </asp:ContentPlaceHolder>
+                    </td>
+
+                </tr>
+                
+                
+                <tr>
+                    <td class="auto-style2">&nbsp;</td>
+                </tr>
+            </table>
+       
+    </div>
+    </form>
+</body>
+</html>

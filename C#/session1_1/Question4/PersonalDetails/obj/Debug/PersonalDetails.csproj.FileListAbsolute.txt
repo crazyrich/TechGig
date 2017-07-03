@@ -1,0 +1,5 @@
+D:\C#\session1_1\Question4\PersonalDetails\obj\Debug\PersonalDetails.csprojResolveAssemblyReference.cache
+D:\C#\session1_1\Question4\PersonalDetails\bin\Debug\PersonalDetails.dll
+D:\C#\session1_1\Question4\PersonalDetails\bin\Debug\PersonalDetails.pdb
+D:\C#\session1_1\Question4\PersonalDetails\obj\Debug\PersonalDetails.dll
+D:\C#\session1_1\Question4\PersonalDetails\obj\Debug\PersonalDetails.pdb

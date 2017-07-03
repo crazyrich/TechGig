@@ -1,0 +1,35 @@
+MobileID: 103
+Model: galaxy2
+Brand: samsung
+Price: 10000
+ManufactureDate: 01-08-2015 00:00:00
+MobileID: 101
+Model: galaxy
+Brand: samsung
+Price: 5000
+ManufactureDate: 01-12-2015 00:00:00
+MobileID: 103
+Model: galaxy2
+Brand: samsung
+Price: 10000
+ManufactureDate: 01-08-2015 00:00:00
+MobileID: 102
+Model: motog
+Brand: google
+Price: 15000
+ManufactureDate: 09-07-2015 00:00:00
+MobileID: 102
+Model: motog
+Brand: google
+Price: 15000
+ManufactureDate: 09-07-2015 00:00:00
+MobileID: 103
+Model: galaxy2
+Brand: samsung
+Price: 10000
+ManufactureDate: 01-08-2015 00:00:00
+MobileID: 101
+Model: galaxy
+Brand: samsung
+Price: 5000
+ManufactureDate: 01-12-2015 00:00:00
