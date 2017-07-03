@@ -1,0 +1,6 @@
+D:\Post_Prep\TechGig\BeginnerCodeChamp\BeginnerCodeChamp\bin\Debug\BeginnerCodeChamp.exe.config
+D:\Post_Prep\TechGig\BeginnerCodeChamp\BeginnerCodeChamp\bin\Debug\BeginnerCodeChamp.exe
+D:\Post_Prep\TechGig\BeginnerCodeChamp\BeginnerCodeChamp\bin\Debug\BeginnerCodeChamp.pdb
+D:\Post_Prep\TechGig\BeginnerCodeChamp\BeginnerCodeChamp\obj\Debug\BeginnerCodeChamp.csprojResolveAssemblyReference.cache
+D:\Post_Prep\TechGig\BeginnerCodeChamp\BeginnerCodeChamp\obj\Debug\BeginnerCodeChamp.exe
+D:\Post_Prep\TechGig\BeginnerCodeChamp\BeginnerCodeChamp\obj\Debug\BeginnerCodeChamp.pdb
