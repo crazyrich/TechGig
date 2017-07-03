@@ -1,6 +1,0 @@
-D:\TestMVCEntity\ProductionService\ProductionService\bin\ProductionService.dll
-D:\TestMVCEntity\ProductionService\ProductionService\bin\ProductionService.pdb
-D:\TestMVCEntity\ProductionService\ProductionService\bin\EntityFramework.dll
-D:\TestMVCEntity\ProductionService\ProductionService\bin\EntityFramework.xml
-D:\TestMVCEntity\ProductionService\ProductionService\obj\Debug\ProductionService.dll
-D:\TestMVCEntity\ProductionService\ProductionService\obj\Debug\ProductionService.pdb

@@ -1,6 +1,0 @@
-D:\TestMVCEntity\StudentServiceApp\StudentService\bin\StudentService.dll
-D:\TestMVCEntity\StudentServiceApp\StudentService\bin\StudentService.pdb
-D:\TestMVCEntity\StudentServiceApp\StudentService\bin\EntityFramework.dll
-D:\TestMVCEntity\StudentServiceApp\StudentService\bin\EntityFramework.xml
-D:\TestMVCEntity\StudentServiceApp\StudentService\obj\Debug\StudentService.dll
-D:\TestMVCEntity\StudentServiceApp\StudentService\obj\Debug\StudentService.pdb

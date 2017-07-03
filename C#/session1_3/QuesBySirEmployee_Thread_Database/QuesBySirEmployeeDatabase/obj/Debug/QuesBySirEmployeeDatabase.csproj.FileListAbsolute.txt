@@ -1,9 +1,0 @@
-D:\C#\session1_3\QuesBySirEmployeeDatabase\QuesBySirEmployeeDatabase\bin\Debug\QuesBySirEmployeeDatabase.exe.config
-D:\C#\session1_3\QuesBySirEmployeeDatabase\QuesBySirEmployeeDatabase\bin\Debug\QuesBySirEmployeeDatabase.exe
-D:\C#\session1_3\QuesBySirEmployeeDatabase\QuesBySirEmployeeDatabase\bin\Debug\QuesBySirEmployeeDatabase.pdb
-D:\C#\session1_3\QuesBySirEmployeeDatabase\QuesBySirEmployeeDatabase\obj\Debug\QuesBySirEmployeeDatabase.csprojResolveAssemblyReference.cache
-D:\C#\session1_3\QuesBySirEmployeeDatabase\QuesBySirEmployeeDatabase\obj\Debug\QuesBySirEmployeeDatabase.exe
-D:\C#\session1_3\QuesBySirEmployeeDatabase\QuesBySirEmployeeDatabase\obj\Debug\QuesBySirEmployeeDatabase.pdb
-D:\C#\session1_3\QuesBySirEmployee_Thread_Database\QuesBySirEmployeeDatabase\bin\Debug\QuesBySirEmployeeDatabase.exe.config
-D:\C#\session1_3\QuesBySirEmployee_Thread_Database\QuesBySirEmployeeDatabase\obj\Debug\QuesBySirEmployeeDatabase.exe
-D:\C#\session1_3\QuesBySirEmployee_Thread_Database\QuesBySirEmployeeDatabase\obj\Debug\QuesBySirEmployeeDatabase.pdb

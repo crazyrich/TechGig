@@ -1,7 +1,0 @@
-CREATE TABLE dbo.Employee(
-	EmpID int primary key,
-	EmpName varchar(50) NOT NULL,
-	Salary int NOT NULL,
-	Address varchar(200) NOT NULL,
- 
-)

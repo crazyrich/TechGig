@@ -1,6 +1,0 @@
-D:\LINQ\LINQ1\LINQ1\bin\Debug\LINQ1.exe.config
-D:\LINQ\LINQ1\LINQ1\bin\Debug\LINQ1.exe
-D:\LINQ\LINQ1\LINQ1\bin\Debug\LINQ1.pdb
-D:\LINQ\LINQ1\LINQ1\obj\Debug\LINQ1.csprojResolveAssemblyReference.cache
-D:\LINQ\LINQ1\LINQ1\obj\Debug\LINQ1.exe
-D:\LINQ\LINQ1\LINQ1\obj\Debug\LINQ1.pdb

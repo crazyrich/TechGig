@@ -1,5 +1,0 @@
-D:\C#\session1_3\Demos\Demos\bin\Debug\Demos.exe.config
-D:\C#\session1_3\Demos\Demos\bin\Debug\Demos.exe
-D:\C#\session1_3\Demos\Demos\bin\Debug\Demos.pdb
-D:\C#\session1_3\Demos\Demos\obj\Debug\Demos.exe
-D:\C#\session1_3\Demos\Demos\obj\Debug\Demos.pdb

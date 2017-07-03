@@ -1,8 +1,0 @@
-D:\LINQ\All\One2Many\bin\Debug\One2Many.exe.config
-D:\LINQ\All\One2Many\bin\Debug\One2Many.exe
-D:\LINQ\All\One2Many\bin\Debug\One2Many.pdb
-D:\LINQ\All\One2Many\bin\Debug\EntityFramework.dll
-D:\LINQ\All\One2Many\bin\Debug\EntityFramework.xml
-D:\LINQ\All\One2Many\obj\Debug\One2Many.csprojResolveAssemblyReference.cache
-D:\LINQ\All\One2Many\obj\Debug\One2Many.exe
-D:\LINQ\All\One2Many\obj\Debug\One2Many.pdb

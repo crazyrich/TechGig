@@ -1,5 +1,0 @@
-D:\LINQ\LINQ1\EmployeeList\bin\Debug\EmployeeList.exe.config
-D:\LINQ\LINQ1\EmployeeList\bin\Debug\EmployeeList.exe
-D:\LINQ\LINQ1\EmployeeList\bin\Debug\EmployeeList.pdb
-D:\LINQ\LINQ1\EmployeeList\obj\Debug\EmployeeList.exe
-D:\LINQ\LINQ1\EmployeeList\obj\Debug\EmployeeList.pdb

@@ -1,6 +1,0 @@
-D:\C#\session1_3\NewProject_Thursday\NewProject_Thursday\bin\Debug\NewProject_Thursday.exe.config
-D:\C#\session1_3\NewProject_Thursday\NewProject_Thursday\bin\Debug\NewProject_Thursday.exe
-D:\C#\session1_3\NewProject_Thursday\NewProject_Thursday\bin\Debug\NewProject_Thursday.pdb
-D:\C#\session1_3\NewProject_Thursday\NewProject_Thursday\obj\Debug\NewProject_Thursday.csprojResolveAssemblyReference.cache
-D:\C#\session1_3\NewProject_Thursday\NewProject_Thursday\obj\Debug\NewProject_Thursday.exe
-D:\C#\session1_3\NewProject_Thursday\NewProject_Thursday\obj\Debug\NewProject_Thursday.pdb

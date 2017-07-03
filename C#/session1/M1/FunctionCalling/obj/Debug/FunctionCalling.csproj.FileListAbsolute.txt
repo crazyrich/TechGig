@@ -1,5 +1,0 @@
-D:\C#\session1\M1\FunctionCalling\bin\Debug\FunctionCalling.exe.config
-D:\C#\session1\M1\FunctionCalling\bin\Debug\FunctionCalling.exe
-D:\C#\session1\M1\FunctionCalling\bin\Debug\FunctionCalling.pdb
-D:\C#\session1\M1\FunctionCalling\obj\Debug\FunctionCalling.exe
-D:\C#\session1\M1\FunctionCalling\obj\Debug\FunctionCalling.pdb

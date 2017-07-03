@@ -1,9 +1,0 @@
-D:\C#\session1_3\WindowsFormsApplication1\Same_As_Sir\bin\Debug\Same_As_Sir.exe.config
-D:\C#\session1_3\WindowsFormsApplication1\Same_As_Sir\bin\Debug\Same_As_Sir.exe
-D:\C#\session1_3\WindowsFormsApplication1\Same_As_Sir\bin\Debug\Same_As_Sir.pdb
-D:\C#\session1_3\WindowsFormsApplication1\Same_As_Sir\obj\Debug\Same_As_Sir.Properties.Resources.resources
-D:\C#\session1_3\WindowsFormsApplication1\Same_As_Sir\obj\Debug\Same_As_Sir.csproj.GenerateResource.Cache
-D:\C#\session1_3\WindowsFormsApplication1\Same_As_Sir\obj\Debug\Same_As_Sir.exe
-D:\C#\session1_3\WindowsFormsApplication1\Same_As_Sir\obj\Debug\Same_As_Sir.pdb
-D:\C#\session1_3\WindowsFormsApplication1\Same_As_Sir\obj\Debug\Same_As_Sir.Form2.resources
-D:\C#\session1_3\WindowsFormsApplication1\Same_As_Sir\obj\Debug\Same_As_Sir.csprojResolveAssemblyReference.cache

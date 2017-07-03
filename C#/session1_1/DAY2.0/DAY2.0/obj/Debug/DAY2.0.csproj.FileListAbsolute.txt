@@ -1,6 +1,0 @@
-D:\C#\session1_1\DAY2.0\DAY2.0\bin\Debug\DAY2.0.exe.config
-D:\C#\session1_1\DAY2.0\DAY2.0\bin\Debug\DAY2.0.exe
-D:\C#\session1_1\DAY2.0\DAY2.0\bin\Debug\DAY2.0.pdb
-D:\C#\session1_1\DAY2.0\DAY2.0\obj\Debug\DAY2.0.csprojResolveAssemblyReference.cache
-D:\C#\session1_1\DAY2.0\DAY2.0\obj\Debug\DAY2.0.exe
-D:\C#\session1_1\DAY2.0\DAY2.0\obj\Debug\DAY2.0.pdb

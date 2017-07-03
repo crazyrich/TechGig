@@ -1,9 +1,0 @@
-C:\Users\Ankur.Pathak\Desktop\RestaurantApplication\RestaurantService\bin\RestaurantService.dll.config
-C:\Users\Ankur.Pathak\Desktop\RestaurantApplication\RestaurantService\bin\RestaurantService.dll
-C:\Users\Ankur.Pathak\Desktop\RestaurantApplication\RestaurantService\bin\RestaurantService.pdb
-C:\Users\Ankur.Pathak\Desktop\RestaurantApplication\RestaurantService\bin\EntityFramework.dll
-C:\Users\Ankur.Pathak\Desktop\RestaurantApplication\RestaurantService\bin\EntityFramework.SqlServer.dll
-C:\Users\Ankur.Pathak\Desktop\RestaurantApplication\RestaurantService\bin\EntityFramework.xml
-C:\Users\Ankur.Pathak\Desktop\RestaurantApplication\RestaurantService\bin\EntityFramework.SqlServer.xml
-C:\Users\Ankur.Pathak\Desktop\RestaurantApplication\RestaurantService\obj\Debug\RestaurantService.dll
-C:\Users\Ankur.Pathak\Desktop\RestaurantApplication\RestaurantService\obj\Debug\RestaurantService.pdb

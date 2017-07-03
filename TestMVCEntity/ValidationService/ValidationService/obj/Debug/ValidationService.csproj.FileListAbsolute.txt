@@ -1,9 +1,0 @@
-D:\TestMVCEntity\ValidationService\ValidationService\bin\Debug\ValidationService.dll.config
-D:\TestMVCEntity\ValidationService\ValidationService\bin\Debug\ValidationService.dll
-D:\TestMVCEntity\ValidationService\ValidationService\bin\Debug\ValidationService.pdb
-D:\TestMVCEntity\ValidationService\ValidationService\bin\Debug\EntityFramework.dll
-D:\TestMVCEntity\ValidationService\ValidationService\bin\Debug\EntityFramework.xml
-D:\TestMVCEntity\ValidationService\ValidationService\obj\Debug\ValidationService.csprojResolveAssemblyReference.cache
-D:\TestMVCEntity\ValidationService\ValidationService\obj\Debug\ValidationService.dll
-D:\TestMVCEntity\ValidationService\ValidationService\obj\Debug\ValidationService.pdb
-D:\TestMVCEntity\ValidationService\ValidationService\bin\Debug\EntityFramework.SqlServer.dll

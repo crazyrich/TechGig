@@ -1,6 +1,0 @@
-D:\C#\session1_1\DAY2.0\Partial_1\bin\Debug\Partial_1.exe.config
-D:\C#\session1_1\DAY2.0\Partial_1\bin\Debug\Partial_1.exe
-D:\C#\session1_1\DAY2.0\Partial_1\bin\Debug\Partial_1.pdb
-D:\C#\session1_1\DAY2.0\Partial_1\obj\Debug\Partial_1.exe
-D:\C#\session1_1\DAY2.0\Partial_1\obj\Debug\Partial_1.pdb
-D:\C#\session1_1\DAY2.0\Partial_1\obj\Debug\Partial_Function.csprojResolveAssemblyReference.cache

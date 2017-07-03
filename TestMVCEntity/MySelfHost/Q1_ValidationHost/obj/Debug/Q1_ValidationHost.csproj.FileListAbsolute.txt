@@ -1,9 +1,0 @@
-D:\TestMVCEntity\MySelfHost\Q1_ValidationHost\bin\Debug\Q1_ValidationHost.exe
-D:\TestMVCEntity\MySelfHost\Q1_ValidationHost\bin\Debug\ValidationService.dll
-D:\TestMVCEntity\MySelfHost\Q1_ValidationHost\bin\Debug\EntityFramework.dll
-D:\TestMVCEntity\MySelfHost\Q1_ValidationHost\bin\Debug\ValidationService.pdb
-D:\TestMVCEntity\MySelfHost\Q1_ValidationHost\bin\Debug\EntityFramework.xml
-D:\TestMVCEntity\MySelfHost\Q1_ValidationHost\obj\Debug\Q1_ValidationHost.exe
-D:\TestMVCEntity\MySelfHost\Q1_ValidationHost\obj\Debug\Q1_ValidationHost.pdb
-D:\TestMVCEntity\MySelfHost\Q1_ValidationHost\bin\Debug\Q1_ValidationHost.exe.config
-D:\TestMVCEntity\MySelfHost\Q1_ValidationHost\bin\Debug\Q1_ValidationHost.pdb

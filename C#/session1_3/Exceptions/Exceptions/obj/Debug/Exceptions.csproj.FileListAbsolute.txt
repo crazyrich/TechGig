@@ -1,5 +1,0 @@
-D:\C#\session1_3\Exceptions\Exceptions\bin\Debug\Exceptions.exe.config
-D:\C#\session1_3\Exceptions\Exceptions\bin\Debug\Exceptions.exe
-D:\C#\session1_3\Exceptions\Exceptions\bin\Debug\Exceptions.pdb
-D:\C#\session1_3\Exceptions\Exceptions\obj\Debug\Exceptions.exe
-D:\C#\session1_3\Exceptions\Exceptions\obj\Debug\Exceptions.pdb

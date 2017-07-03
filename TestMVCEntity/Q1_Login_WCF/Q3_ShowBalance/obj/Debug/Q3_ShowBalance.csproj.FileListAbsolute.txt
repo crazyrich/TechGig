@@ -1,5 +1,0 @@
-D:\TestMVCEntity\Q1_Login_WCF\Q3_ShowBalance\bin\Debug\Q3_ShowBalance.exe.config
-D:\TestMVCEntity\Q1_Login_WCF\Q3_ShowBalance\bin\Debug\Q3_ShowBalance.exe
-D:\TestMVCEntity\Q1_Login_WCF\Q3_ShowBalance\bin\Debug\Q3_ShowBalance.pdb
-D:\TestMVCEntity\Q1_Login_WCF\Q3_ShowBalance\obj\Debug\Q3_ShowBalance.exe
-D:\TestMVCEntity\Q1_Login_WCF\Q3_ShowBalance\obj\Debug\Q3_ShowBalance.pdb

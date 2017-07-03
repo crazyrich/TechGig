@@ -1,1 +1,0 @@
-﻿<%@ ServiceHost Language="C#" Debug="true" Service="Q4_IRCTC_Service.ReservationClass" %>

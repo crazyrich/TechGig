@@ -1,6 +1,0 @@
-D:\C#\session1_1\DAY2.0\Constructor_2\obj\Debug\Constructor_2.exe
-D:\C#\session1_1\DAY2.0\Constructor_2\obj\Debug\Constructor_2.pdb
-D:\C#\session1_1\DAY2.0\Constructor_2\bin\Debug\Constructor_2.exe.config
-D:\C#\session1_1\DAY2.0\Constructor_2\bin\Debug\Constructor_2.exe
-D:\C#\session1_1\DAY2.0\Constructor_2\bin\Debug\Constructor_2.pdb
-D:\C#\session1_1\DAY2.0\Constructor_2\obj\Debug\Parametrized_Constructor_Inheritence.csprojResolveAssemblyReference.cache

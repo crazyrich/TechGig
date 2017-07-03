@@ -1,6 +1,0 @@
-D:\C#\session1_3\Operator_Overloading\OperatorOverloadingBySir_Unary\bin\Debug\OperatorOverloadingBySir_Unary.exe.config
-D:\C#\session1_3\Operator_Overloading\OperatorOverloadingBySir_Unary\bin\Debug\OperatorOverloadingBySir_Unary.exe
-D:\C#\session1_3\Operator_Overloading\OperatorOverloadingBySir_Unary\bin\Debug\OperatorOverloadingBySir_Unary.pdb
-D:\C#\session1_3\Operator_Overloading\OperatorOverloadingBySir_Unary\obj\Debug\OperatorOverloadingBySir_Unary.exe
-D:\C#\session1_3\Operator_Overloading\OperatorOverloadingBySir_Unary\obj\Debug\OperatorOverloadingBySir_Unary.pdb
-D:\C#\session1_3\Operator_Overloading\OperatorOverloadingBySir_Unary\obj\Debug\OperatorOverloadingBySir_Unary.csprojResolveAssemblyReference.cache

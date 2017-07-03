@@ -1,5 +1,0 @@
-D:\C#\session1\M2\M2\bin\Debug\M2.exe.config
-D:\C#\session1\M2\M2\bin\Debug\M2.exe
-D:\C#\session1\M2\M2\bin\Debug\M2.pdb
-D:\C#\session1\M2\M2\obj\Debug\M2.exe
-D:\C#\session1\M2\M2\obj\Debug\M2.pdb

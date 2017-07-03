@@ -1,9 +1,0 @@
-D:\TestMVCEntity\LoginClientApp\LoginClientApp\bin\Debug\LoginClientApp.exe.config
-D:\TestMVCEntity\LoginClientApp\LoginClientApp\bin\Debug\LoginClientApp.exe
-D:\TestMVCEntity\LoginClientApp\LoginClientApp\bin\Debug\LoginClientApp.pdb
-D:\TestMVCEntity\LoginClientApp\LoginClientApp\obj\Debug\LoginClientApp.csprojResolveAssemblyReference.cache
-D:\TestMVCEntity\LoginClientApp\LoginClientApp\obj\Debug\LoginClientApp.Form1.resources
-D:\TestMVCEntity\LoginClientApp\LoginClientApp\obj\Debug\LoginClientApp.Properties.Resources.resources
-D:\TestMVCEntity\LoginClientApp\LoginClientApp\obj\Debug\LoginClientApp.csproj.GenerateResource.Cache
-D:\TestMVCEntity\LoginClientApp\LoginClientApp\obj\Debug\LoginClientApp.exe
-D:\TestMVCEntity\LoginClientApp\LoginClientApp\obj\Debug\LoginClientApp.pdb

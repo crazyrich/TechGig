@@ -1,5 +1,0 @@
-D:\TestMVCEntity\ValidationService\BillingService\bin\Debug\BillingService.dll
-D:\TestMVCEntity\ValidationService\BillingService\bin\Debug\BillingService.pdb
-D:\TestMVCEntity\ValidationService\BillingService\obj\Debug\BillingService.dll
-D:\TestMVCEntity\ValidationService\BillingService\obj\Debug\BillingService.pdb
-D:\TestMVCEntity\ValidationService\BillingService\obj\Debug\BillingService.csprojResolveAssemblyReference.cache

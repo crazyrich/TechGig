@@ -1,5 +1,0 @@
-D:\TestMVCEntity\ValidationService\ShowBalance\bin\Debug\ShowBalance.dll
-D:\TestMVCEntity\ValidationService\ShowBalance\bin\Debug\ShowBalance.pdb
-D:\TestMVCEntity\ValidationService\ShowBalance\obj\Debug\ShowBalance.csprojResolveAssemblyReference.cache
-D:\TestMVCEntity\ValidationService\ShowBalance\obj\Debug\ShowBalance.dll
-D:\TestMVCEntity\ValidationService\ShowBalance\obj\Debug\ShowBalance.pdb

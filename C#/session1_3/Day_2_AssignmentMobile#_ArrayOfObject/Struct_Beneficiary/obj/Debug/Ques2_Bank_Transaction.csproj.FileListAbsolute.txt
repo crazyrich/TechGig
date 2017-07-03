@@ -1,6 +1,0 @@
-D:\C#\session1_3\Day_2_Assignment\Ques1_Abstract\bin\Debug\Ques1_Abstract.exe.config
-D:\C#\session1_3\Day_2_Assignment\Ques1_Abstract\obj\Debug\Ques2_Bank_Transaction.csprojResolveAssemblyReference.cache
-D:\C#\session1_3\Day_2_Assignment\Ques1_Abstract\bin\Debug\Ques1_Abstract.exe
-D:\C#\session1_3\Day_2_Assignment\Ques1_Abstract\bin\Debug\Ques1_Abstract.pdb
-D:\C#\session1_3\Day_2_Assignment\Ques1_Abstract\obj\Debug\Ques1_Abstract.exe
-D:\C#\session1_3\Day_2_Assignment\Ques1_Abstract\obj\Debug\Ques1_Abstract.pdb

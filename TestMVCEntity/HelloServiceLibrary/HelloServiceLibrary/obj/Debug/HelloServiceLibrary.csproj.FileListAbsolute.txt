@@ -1,5 +1,0 @@
-D:\TestMVCEntity\HelloServiceLibrary\HelloServiceLibrary\bin\Debug\HelloServiceLibrary.dll
-D:\TestMVCEntity\HelloServiceLibrary\HelloServiceLibrary\bin\Debug\HelloServiceLibrary.pdb
-D:\TestMVCEntity\HelloServiceLibrary\HelloServiceLibrary\obj\Debug\HelloServiceLibrary.csprojResolveAssemblyReference.cache
-D:\TestMVCEntity\HelloServiceLibrary\HelloServiceLibrary\obj\Debug\HelloServiceLibrary.dll
-D:\TestMVCEntity\HelloServiceLibrary\HelloServiceLibrary\obj\Debug\HelloServiceLibrary.pdb

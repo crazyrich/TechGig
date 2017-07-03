@@ -1,7 +1,0 @@
-D:\TestMVCEntity\Q4_IRCTC_Service\Q4_IRCTC_Service\bin\Q4_IRCTC_Service.dll
-D:\TestMVCEntity\Q4_IRCTC_Service\Q4_IRCTC_Service\bin\Q4_IRCTC_Service.pdb
-D:\TestMVCEntity\Q4_IRCTC_Service\Q4_IRCTC_Service\bin\EntityFramework.dll
-D:\TestMVCEntity\Q4_IRCTC_Service\Q4_IRCTC_Service\bin\EntityFramework.xml
-D:\TestMVCEntity\Q4_IRCTC_Service\Q4_IRCTC_Service\obj\Debug\Q4_IRCTC_Service.dll
-D:\TestMVCEntity\Q4_IRCTC_Service\Q4_IRCTC_Service\obj\Debug\Q4_IRCTC_Service.pdb
-D:\TestMVCEntity\Q4_IRCTC_Service\Q4_IRCTC_Service\obj\Debug\Q4_IRCTC_Service.csprojResolveAssemblyReference.cache

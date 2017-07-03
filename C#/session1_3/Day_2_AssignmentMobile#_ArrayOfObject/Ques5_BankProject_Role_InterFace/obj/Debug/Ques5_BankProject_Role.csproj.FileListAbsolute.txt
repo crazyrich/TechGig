@@ -1,5 +1,0 @@
-D:\C#\session1_3\Day_2_Assignment\Ques5_BankProject_Role\bin\Debug\Ques5_BankProject_Role.exe.config
-D:\C#\session1_3\Day_2_Assignment\Ques5_BankProject_Role\bin\Debug\Ques5_BankProject_Role.exe
-D:\C#\session1_3\Day_2_Assignment\Ques5_BankProject_Role\bin\Debug\Ques5_BankProject_Role.pdb
-D:\C#\session1_3\Day_2_Assignment\Ques5_BankProject_Role\obj\Debug\Ques5_BankProject_Role.exe
-D:\C#\session1_3\Day_2_Assignment\Ques5_BankProject_Role\obj\Debug\Ques5_BankProject_Role.pdb

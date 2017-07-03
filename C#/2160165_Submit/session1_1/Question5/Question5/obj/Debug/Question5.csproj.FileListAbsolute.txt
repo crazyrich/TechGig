@@ -1,6 +1,0 @@
-D:\C#\session1_1\Question5\Question5\bin\Debug\Question5.exe.config
-D:\C#\session1_1\Question5\Question5\bin\Debug\Question5.exe
-D:\C#\session1_1\Question5\Question5\bin\Debug\Question5.pdb
-D:\C#\session1_1\Question5\Question5\obj\Debug\Question5.csprojResolveAssemblyReference.cache
-D:\C#\session1_1\Question5\Question5\obj\Debug\Question5.exe
-D:\C#\session1_1\Question5\Question5\obj\Debug\Question5.pdb

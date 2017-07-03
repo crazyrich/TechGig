@@ -1,6 +1,0 @@
-D:\C#\session1_1\DAY2.0\Abstract2\bin\Debug\Abstract2.exe.config
-D:\C#\session1_1\DAY2.0\Abstract2\bin\Debug\Abstract2.exe
-D:\C#\session1_1\DAY2.0\Abstract2\bin\Debug\Abstract2.pdb
-D:\C#\session1_1\DAY2.0\Abstract2\obj\Debug\Constructor_Destructor_Inheritance.csprojResolveAssemblyReference.cache
-D:\C#\session1_1\DAY2.0\Abstract2\obj\Debug\Abstract2.exe
-D:\C#\session1_1\DAY2.0\Abstract2\obj\Debug\Abstract2.pdb

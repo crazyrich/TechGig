@@ -1,5 +1,0 @@
-D:\C#\session1_1\DAY2.0\Class_Ques_Emp\bin\Debug\Class_Ques_Emp.exe.config
-D:\C#\session1_1\DAY2.0\Class_Ques_Emp\bin\Debug\Class_Ques_Emp.exe
-D:\C#\session1_1\DAY2.0\Class_Ques_Emp\bin\Debug\Class_Ques_Emp.pdb
-D:\C#\session1_1\DAY2.0\Class_Ques_Emp\obj\Debug\Class_Ques_Emp.exe
-D:\C#\session1_1\DAY2.0\Class_Ques_Emp\obj\Debug\Class_Ques_Emp.pdb

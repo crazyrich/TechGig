@@ -1,2 +1,0 @@
-D:\C#\session1_3\Genrics\Genrics\bin\Debug\Genrics.exe.config
-D:\C#\session1_3\Genrics\Genrics\obj\Debug\Genrics.csprojResolveAssemblyReference.cache

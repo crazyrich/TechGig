@@ -1,5 +1,0 @@
-D:\C#\session1_3\Operator_Overloading\OperatorOverloading_AverageSalary\bin\Debug\OperatorOverloading_AverageSalary.exe.config
-D:\C#\session1_3\Operator_Overloading\OperatorOverloading_AverageSalary\bin\Debug\OperatorOverloading_AverageSalary.exe
-D:\C#\session1_3\Operator_Overloading\OperatorOverloading_AverageSalary\bin\Debug\OperatorOverloading_AverageSalary.pdb
-D:\C#\session1_3\Operator_Overloading\OperatorOverloading_AverageSalary\obj\Debug\OperatorOverloading_AverageSalary.exe
-D:\C#\session1_3\Operator_Overloading\OperatorOverloading_AverageSalary\obj\Debug\OperatorOverloading_AverageSalary.pdb

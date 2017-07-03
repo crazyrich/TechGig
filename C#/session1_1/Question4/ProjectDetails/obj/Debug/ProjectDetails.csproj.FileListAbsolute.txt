@@ -1,5 +1,0 @@
-D:\C#\session1_1\Question4\ProjectDetails\bin\Debug\ProjectDetails.dll
-D:\C#\session1_1\Question4\ProjectDetails\bin\Debug\ProjectDetails.pdb
-D:\C#\session1_1\Question4\ProjectDetails\obj\Debug\ProjectDetails.csprojResolveAssemblyReference.cache
-D:\C#\session1_1\Question4\ProjectDetails\obj\Debug\ProjectDetails.dll
-D:\C#\session1_1\Question4\ProjectDetails\obj\Debug\ProjectDetails.pdb

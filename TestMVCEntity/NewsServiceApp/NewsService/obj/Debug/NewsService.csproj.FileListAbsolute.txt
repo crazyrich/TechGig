@@ -1,7 +1,0 @@
-D:\TestMVCEntity\NewsServiceApp\NewsService\bin\NewsService.dll
-D:\TestMVCEntity\NewsServiceApp\NewsService\bin\NewsService.pdb
-D:\TestMVCEntity\NewsServiceApp\NewsService\bin\EntityFramework.dll
-D:\TestMVCEntity\NewsServiceApp\NewsService\bin\EntityFramework.xml
-D:\TestMVCEntity\NewsServiceApp\NewsService\obj\Debug\NewsService.dll
-D:\TestMVCEntity\NewsServiceApp\NewsService\obj\Debug\NewsService.pdb
-D:\TestMVCEntity\NewsServiceApp\NewsService\obj\Debug\NewsService.csprojResolveAssemblyReference.cache

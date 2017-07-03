@@ -1,1 +1,0 @@
-D:\TestMVCEntity\Q1_Login_WCF\Q2_BillingDetails\bin\Debug\Q2_BillingDetails.exe.config

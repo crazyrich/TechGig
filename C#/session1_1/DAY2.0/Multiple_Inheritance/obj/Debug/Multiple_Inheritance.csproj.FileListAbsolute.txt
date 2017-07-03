@@ -1,5 +1,0 @@
-D:\C#\session1_1\DAY2.0\Multiple_Inheritance\bin\Debug\Multiple_Inheritance.exe.config
-D:\C#\session1_1\DAY2.0\Multiple_Inheritance\bin\Debug\Multiple_Inheritance.exe
-D:\C#\session1_1\DAY2.0\Multiple_Inheritance\bin\Debug\Multiple_Inheritance.pdb
-D:\C#\session1_1\DAY2.0\Multiple_Inheritance\obj\Debug\Multiple_Inheritance.exe
-D:\C#\session1_1\DAY2.0\Multiple_Inheritance\obj\Debug\Multiple_Inheritance.pdb
